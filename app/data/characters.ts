@@ -55,7 +55,99 @@ export const characters = [
     "fetter": 0,
     "level": 80,
     "rarity": 5,
-    "actived_constellation_num": 4,
+    "actived_constellation_num": 5,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+    "is_chosen": false,
+    "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11521,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "affix_level": 3,
+      "name": "Exaiphanes Blade"
+    }
+  },
+  {
+    "id": 10000007,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+    "name": "Traveler",
+    "element": "Geo",
+    "fetter": 0,
+    "level": 80,
+    "rarity": 5,
+    "actived_constellation_num": 2,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+    "is_chosen": false,
+    "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11521,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "affix_level": 3,
+      "name": "Exaiphanes Blade"
+    }
+  },
+  {
+    "id": 10000007,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+    "name": "Traveler",
+    "element": "Electro",
+    "fetter": 0,
+    "level": 80,
+    "rarity": 5,
+    "actived_constellation_num": 2,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+    "is_chosen": false,
+    "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11521,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "affix_level": 3,
+      "name": "Exaiphanes Blade"
+    }
+  },
+  {
+    "id": 10000007,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+    "name": "Traveler",
+    "element": "Dendro",
+    "fetter": 0,
+    "level": 80,
+    "rarity": 5,
+    "actived_constellation_num": 3,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+    "is_chosen": false,
+    "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11521,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "affix_level": 3,
+      "name": "Exaiphanes Blade"
+    }
+  },
+  {
+    "id": 10000007,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+    "name": "Traveler",
+    "element": "Cryo",
+    "fetter": 0,
+    "level": 80,
+    "rarity": 5,
+    "actived_constellation_num": 2,
     "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
     "is_chosen": false,
     "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
@@ -337,13 +429,13 @@ export const characters = [
     "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/54213a15451315dcfc47c040cb46abf4.png",
     "weapon_type": 12,
     "weapon": {
-      "id": 15302,
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/5f810f2e0af41ab46e69f96a44e7aa0e.png",
+      "id": 15403,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/4a03625fdbc739dca379573871a4c2ca.png",
       "type": 12,
-      "rarity": 3,
+      "rarity": 4,
       "level": 40,
-      "affix_level": 5,
-      "name": "Sharpshooter's Oath"
+      "affix_level": 1,
+      "name": "Sacrificial Bow"
     }
   },
   {
@@ -360,13 +452,13 @@ export const characters = [
     "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/a61ccec5064fe90c87ed3257bc194b19.png",
     "weapon_type": 11,
     "weapon": {
-      "id": 12101,
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/b1e284917f1ca8330ba929ef8f116aba.png",
+      "id": 12401,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7646388f158d62d56f368631a37427c3.png",
       "type": 11,
-      "rarity": 1,
-      "level": 1,
+      "rarity": 4,
+      "level": 60,
       "affix_level": 1,
-      "name": "Waster Greatsword"
+      "name": "Favonius Greatsword"
     }
   },
   {
@@ -387,7 +479,7 @@ export const characters = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f0b8edcc330cd9de1dcf97eccb20cbaf.png",
       "type": 12,
       "rarity": 4,
-      "level": 40,
+      "level": 50,
       "affix_level": 1,
       "name": "Favonius Warbow"
     }
@@ -429,13 +521,13 @@ export const characters = [
     "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/a3c31e121de86652d1ff2cfd717b60fd.png",
     "weapon_type": 10,
     "weapon": {
-      "id": 14401,
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bb4ff947d3649e393b6ca2e117b072d6.png",
+      "id": 14101,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/852d232e46ddaacdfcb86b3f53413405.png",
       "type": 10,
-      "rarity": 4,
-      "level": 29,
+      "rarity": 1,
+      "level": 1,
       "affix_level": 1,
-      "name": "Favonius Codex"
+      "name": "Apprentice's Notes"
     }
   },
   {
@@ -465,7 +557,7 @@ export const characters = [
     "id": 10000118,
     "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2025/10/16/7328f006a498626b32a1e187c0dba1ea_7198130205836288559.png",
     "name": "Manekina",
-    "element": "Anemo",
+    "element": "Cryo",
     "fetter": 0,
     "level": 20,
     "rarity": 5,
@@ -577,6 +669,52 @@ export const characters = [
     }
   },
   {
+    "id": 10000136,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6776/a024f93489bf998b23dd8a41746bbc17.png",
+    "name": "Mitya",
+    "element": "Electro",
+    "fetter": 1,
+    "level": 1,
+    "rarity": 5,
+    "actived_constellation_num": 0,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/3737799e7624da61da147e5727774470.png",
+    "is_chosen": false,
+    "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6782/3c0a0dabc8a92dd8b3a3ac227f1eba39.png",
+    "weapon_type": 10,
+    "weapon": {
+      "id": 14401,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bb4ff947d3649e393b6ca2e117b072d6.png",
+      "type": 10,
+      "rarity": 4,
+      "level": 29,
+      "affix_level": 1,
+      "name": "Favonius Codex"
+    }
+  },
+  {
+    "id": 10000089,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0a024f0f2e06e99d67f112cd12eef4af.png",
+    "name": "Furina",
+    "element": "Hydro",
+    "fetter": 1,
+    "level": 1,
+    "rarity": 5,
+    "actived_constellation_num": 0,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/58caba691327772ae49b7b008f1802d4.png",
+    "is_chosen": false,
+    "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/1111b471573254806ab26b00445c887c.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11101,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+      "type": 1,
+      "rarity": 1,
+      "level": 1,
+      "affix_level": 1,
+      "name": "Dull Blade"
+    }
+  },
+  {
     "id": 10000035,
     "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2825ff5127afc078dd1bd3e1b2e39996.png",
     "name": "Qiqi",
@@ -600,6 +738,29 @@ export const characters = [
     }
   },
   {
+    "id": 10000137,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6776/2cd496faf46d4727430723b840e61881.png",
+    "name": "Valeriy",
+    "element": "Electro",
+    "fetter": 1,
+    "level": 1,
+    "rarity": 4,
+    "actived_constellation_num": 5,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/db2897ea4bb1116cc37252bf2b25dabe.png",
+    "is_chosen": false,
+    "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6782/0486b11cf20a958e13748693f418f5e5.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11101,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+      "type": 1,
+      "rarity": 1,
+      "level": 1,
+      "affix_level": 1,
+      "name": "Dull Blade"
+    }
+  },
+  {
     "id": 10000124,
     "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/8ce70ee6c41e48a78bdb1a17be8b554e.png",
     "name": "Jahoda",
@@ -607,7 +768,7 @@ export const characters = [
     "fetter": 1,
     "level": 1,
     "rarity": 4,
-    "actived_constellation_num": 0,
+    "actived_constellation_num": 1,
     "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/766cc154ff5c4c232e7997217b50d4ee.png",
     "is_chosen": false,
     "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7dce/0f74abd472d9ed1a60318d9843fc37f0.png",
@@ -659,13 +820,36 @@ export const characters = [
     "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/06daf41434926868981682a72bf6e82f.png",
     "weapon_type": 13,
     "weapon": {
-      "id": 13407,
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7db45b7a84bb80468aaf0f5f430e9bdc.png",
+      "id": 13303,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/badaa063427a6e3f39d9c031b3dddc24.png",
       "type": 13,
-      "rarity": 4,
+      "rarity": 3,
       "level": 1,
       "affix_level": 1,
-      "name": "Favonius Lance"
+      "name": "Black Tassel"
+    }
+  },
+  {
+    "id": 10000088,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f4e68e94225fa95112ae03c0a6d10938.png",
+    "name": "Charlotte",
+    "element": "Cryo",
+    "fetter": 1,
+    "level": 1,
+    "rarity": 4,
+    "actived_constellation_num": 1,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/1d3fd45b4793e3ac84b71f5495249332.png",
+    "is_chosen": false,
+    "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/bee59717b62a91c6863009a394ca7e4c.png",
+    "weapon_type": 10,
+    "weapon": {
+      "id": 14101,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/852d232e46ddaacdfcb86b3f53413405.png",
+      "type": 10,
+      "rarity": 1,
+      "level": 1,
+      "affix_level": 1,
+      "name": "Apprentice's Notes"
     }
   },
   {
@@ -738,6 +922,29 @@ export const characters = [
     }
   },
   {
+    "id": 10000045,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7987cb608a5375cdfd1e34dda9455a31.png",
+    "name": "Rosaria",
+    "element": "Cryo",
+    "fetter": 1,
+    "level": 1,
+    "rarity": 4,
+    "actived_constellation_num": 4,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/1e36f82f68276f97b62e2fbe798ecdc4.png",
+    "is_chosen": false,
+    "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/2964c67bb9181d96e02695a1fc4f5bf9.png",
+    "weapon_type": 13,
+    "weapon": {
+      "id": 13407,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7db45b7a84bb80468aaf0f5f430e9bdc.png",
+      "type": 13,
+      "rarity": 4,
+      "level": 1,
+      "affix_level": 1,
+      "name": "Favonius Lance"
+    }
+  },
+  {
     "id": 10000039,
     "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/3de7b18fbecffbb57a73fe5032d24950.png",
     "name": "Diona",
@@ -761,6 +968,29 @@ export const characters = [
     }
   },
   {
+    "id": 10000031,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/207a0e35e0637a2bcb0a28fdfa61f7a4.png",
+    "name": "Fischl",
+    "element": "Electro",
+    "fetter": 1,
+    "level": 1,
+    "rarity": 4,
+    "actived_constellation_num": 0,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/a07343a21aecb509e849a541c9d72901.png",
+    "is_chosen": false,
+    "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/2ad457efe47f31a54bd683286fd03144.png",
+    "weapon_type": 12,
+    "weapon": {
+      "id": 15101,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c75ade4a5acb5eb9aaefbed318bf75ff.png",
+      "type": 12,
+      "rarity": 1,
+      "level": 1,
+      "affix_level": 1,
+      "name": "Hunter's Bow"
+    }
+  },
+  {
     "id": 10000024,
     "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bc2903d1a46616c871d5108d033a463d.png",
     "name": "Beidou",
@@ -774,13 +1004,13 @@ export const characters = [
     "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/d0d7146418af643964a4bc7f8cf9671f.png",
     "weapon_type": 11,
     "weapon": {
-      "id": 12401,
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7646388f158d62d56f368631a37427c3.png",
+      "id": 12101,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/b1e284917f1ca8330ba929ef8f116aba.png",
       "type": 11,
-      "rarity": 4,
-      "level": 60,
+      "rarity": 1,
+      "level": 1,
       "affix_level": 1,
-      "name": "Favonius Greatsword"
+      "name": "Waster Greatsword"
     }
   }
 ]

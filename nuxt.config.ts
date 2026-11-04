@@ -4,9 +4,21 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@pinia/nuxt',
-    '@nuxtjs/tailwindcss'
+  ],
+  css: [
+    '~/assets/styles/main.scss',
   ],
   typescript: {
     strict: true
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          quietDeps: true,
+          silenceDeprecations: ["import", "color-functions", "global-builtin", "if-function"]
+        }
+      }
+    }
   }
 })

@@ -1,0 +1,15 @@
+@import '@fontsource-variable/nunito';
+@import './variables';
+
+// $primary: #d9b875;
+$primary: #d3bc8e;
+$secondary: #a8aab5;
+
+$body-bg: #171923;
+$body-color: #f5f5f5;
+
+@import "bootstrap/scss/bootstrap";
+
+@import './fonts';
+@import './global';
+@import './components';
