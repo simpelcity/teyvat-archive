@@ -1,6 +1,6 @@
+import type { Character } from '~/types/character'
 
-
-export const character_detail = [
+export const character_detail: Character[] = [
   {
     "base": {
       "id": 10000143,
@@ -2444,7 +2444,7 @@ export const character_detail = [
   },
   {
     "base": {
-      "id": 10000007,
+      "id": 10000008,
       "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
       "name": "Traveler",
       "element": "Geo",
@@ -3237,7 +3237,7 @@ export const character_detail = [
   },
   {
     "base": {
-      "id": 10000007,
+      "id": 10000009,
       "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
       "name": "Traveler",
       "element": "Electro",
@@ -4050,7 +4050,7 @@ export const character_detail = [
   },
   {
     "base": {
-      "id": 10000007,
+      "id": 100000010,
       "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
       "name": "Traveler",
       "element": "Dendro",
@@ -4843,7 +4843,1617 @@ export const character_detail = [
   },
   {
     "base": {
-      "id": 10000007,
+      "id": 100000011,
+      "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+      "name": "Traveler",
+      "element": "Hydro",
+      "fetter": 0,
+      "level": 80,
+      "rarity": 5,
+      "actived_constellation_num": 3,
+      "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+      "is_chosen": false,
+      "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+      "weapon_type": 1,
+      "weapon": {
+        "id": 11521,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+        "type": 1,
+        "rarity": 5,
+        "level": 80,
+        "affix_level": 3,
+        "name": "Exaiphanes Blade"
+      }
+    },
+    "weapon": {
+      "id": 11521,
+      "name": "Exaiphanes Blade",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "promote_level": 5,
+      "type_name": "Sword",
+      "desc": "A longsword that once shone with the Pale Star's light. In the voyager's hand, it becomes a brand-new light that has nothing to do with any past era.",
+      "affix_level": 3,
+      "main_property": {
+        "property_type": 4,
+        "base": "",
+        "add": "",
+        "final": "532"
+      },
+      "sub_property": {
+        "property_type": 20,
+        "base": "",
+        "add": "",
+        "final": "30.2%"
+      }
+    },
+    "relics": [
+      {
+        "id": 48543,
+        "name": "Foundryman's Conjecture",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/09729586ce0f78f5111f9ee8d25eb431.png",
+        "pos": 1,
+        "rarity": 5,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Flower of Life",
+        "main_property": {
+          "property_type": 2,
+          "value": "2342",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 22,
+            "value": "6.2%",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "10.5%",
+            "times": 1
+          },
+          {
+            "property_type": 3,
+            "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "6.5%",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 48422,
+        "name": "Foundryman's Observation",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/6d43279928ae731e4199ff123ecd210e.png",
+        "pos": 2,
+        "rarity": 4,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Plume of Death",
+        "main_property": {
+          "property_type": 5,
+          "value": "137",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 28,
+            "value": "17",
+            "times": 0
+          },
+          {
+            "property_type": 20,
+            "value": "2.2%",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "215",
+            "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "17",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 48553,
+        "name": "Foundryman's Calculus",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/0119db4ca0f7c650686e2da11b9c6a1d.png",
+        "pos": 3,
+        "rarity": 5,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Sands of Eon",
+        "main_property": {
+          "property_type": 6,
+          "value": "22.8%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 23,
+            "value": "5.2%",
+            "times": 0
+          },
+          {
+            "property_type": 5,
+            "value": "14",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "448",
+            "times": 1
+          },
+          {
+            "property_type": 20,
+            "value": "3.5%",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 59413,
+        "name": "Exile's Goblet",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7847bfdeab60c072ec09b17462505cdc.png",
+        "pos": 4,
+        "rarity": 4,
+        "level": 12,
+        "set": {
+          "id": 2100091,
+          "name": "The Exile",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "Energy Recharge +20%"
+            },
+            {
+              "activation_number": 4,
+              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+            }
+          ]
+        },
+        "pos_name": "Goblet of Eonothem",
+        "main_property": {
+          "property_type": 6,
+          "value": "27.7%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 5,
+            "value": "16",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "8.8%",
+            "times": 1
+          },
+          {
+            "property_type": 28,
+            "value": "34",
+            "times": 1
+          },
+          {
+            "property_type": 8,
+            "value": "17",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 48432,
+        "name": "Foundryman's Legacy",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/2aece34359e0f99802feced2f25ee01b.png",
+        "pos": 5,
+        "rarity": 4,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Circlet of Logos",
+        "main_property": {
+          "property_type": 22,
+          "value": "27.4%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 8,
+            "value": "13",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "3.3%",
+            "times": 0
+          },
+          {
+            "property_type": 3,
+            "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "3.6%",
+            "times": 0
+          }
+        ]
+      }
+    ],
+    "constellations": [
+      {
+        "id": 61,
+        "name": "Swelling Lake",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/eefd0112adccd2bd60d9458993b2ecae.png",
+        "effect": "Picking up a Sourcewater Droplet will restore 2 Energy to the Traveler.\\nYou must first unlock the Ascension Talent \"Spotless Waters.\"",
+        "is_actived": true,
+        "pos": 1,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 62,
+        "name": "Trickling Purity",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/decde2026cdbf78b52dc8102be73b8ec.png",
+        "effect": "The Movement SPD of <color=#FFD780FF>Rising Waters</color>' bubble will be decreased by 30%, and its duration increased by 3s.",
+        "is_actived": true,
+        "pos": 2,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 63,
+        "name": "Turbulent Ripples",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/e2cc55d2a8b2a27b02664d89406ce3eb.png",
+        "effect": "Increases the Level of <color=#FFD780FF>Aquacrest Saber</color> by 3.\\nMaximum upgrade level is 15.",
+        "is_actived": true,
+        "pos": 3,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 64,
+        "name": "Pouring Descent",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/360c3fb66a225d44948971292370565b.png",
+        "effect": "When using <color=#FFD780FF>Aquacrest Saber</color>, an Aquacrest Aegis that can absorb 10% of the Traveler's Max HP in DMG will be created and will absorb <color=#80C0FFFF>Hydro DMG</color> with 250% effectiveness. It will persist until the Traveler finishes using the skill.\\nOnce every 2s, after a Dewdrop hits an opponent, if the Traveler is being protected by Aquacrest Aegis, the DMG Absorption of the Aegis will be restored to 10% of the Traveler's Max HP. If the Traveler is not presently being protected by an Aegis, one will be redeployed.",
+        "is_actived": false,
+        "pos": 4,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 65,
+        "name": "Churning Whirlpool",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/f0dc8659ebe7aa2554715a7f5b091b48.png",
+        "effect": "Increases the Level of <color=#FFD780FF>Rising Waters</color> by 3.\\nMaximum upgrade level is 15.",
+        "is_actived": false,
+        "pos": 5,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 66,
+        "name": "Tides of Justice",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/796dbc6cefdaf4a3500138e0ec2203f5.png",
+        "effect": "When the Traveler picks up a Sourcewater Droplet, they will restore HP to a nearby party member with the lowest remaining HP percentage based on 6% of said member's Max HP.",
+        "is_actived": false,
+        "pos": 6,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      }
+    ],
+    "costumes": [
+      {
+        "id": 200701,
+        "name": "As Heaven and Earth Are Made Anew",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_2/2f91d7c102df0056de11dce08b296624.png"
+      }
+    ],
+    "selected_properties": [
+      {
+        "property_type": 2000,
+        "base": "9638",
+        "add": "3903",
+        "final": "13541"
+      },
+      {
+        "property_type": 20,
+        "base": "40.8%",
+        "add": "",
+        "final": "40.8%"
+      },
+      {
+        "property_type": 2001,
+        "base": "723",
+        "add": "892",
+        "final": "1615"
+      },
+      {
+        "property_type": 22,
+        "base": "83.6%",
+        "add": "",
+        "final": "83.6%"
+      },
+      {
+        "property_type": 2002,
+        "base": "605",
+        "add": "46",
+        "final": "651"
+      },
+      {
+        "property_type": 26,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 28,
+        "base": "50",
+        "add": "",
+        "final": "50"
+      },
+      {
+        "property_type": 27,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 42,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 23,
+        "base": "124.1%",
+        "add": "",
+        "final": "124.1%"
+      }
+    ],
+    "base_properties": [
+      {
+        "property_type": 2000,
+        "base": "9638",
+        "add": "3903",
+        "final": "13541"
+      },
+      {
+        "property_type": 2001,
+        "base": "723",
+        "add": "892",
+        "final": "1615"
+      },
+      {
+        "property_type": 2002,
+        "base": "605",
+        "add": "46",
+        "final": "651"
+      },
+      {
+        "property_type": 28,
+        "base": "50",
+        "add": "",
+        "final": "50"
+      },
+      {
+        "property_type": 999999,
+        "base": "227",
+        "add": "",
+        "final": "227"
+      }
+    ],
+    "extra_properties": [
+      {
+        "property_type": 20,
+        "base": "40.8%",
+        "add": "",
+        "final": "40.8%"
+      },
+      {
+        "property_type": 22,
+        "base": "83.6%",
+        "add": "",
+        "final": "83.6%"
+      },
+      {
+        "property_type": 26,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 27,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 23,
+        "base": "124.1%",
+        "add": "",
+        "final": "124.1%"
+      },
+      {
+        "property_type": 80,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 81,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      }
+    ],
+    "element_properties": [
+      {
+        "property_type": 40,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 50,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 42,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 52,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 43,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 53,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 41,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 51,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 44,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 54,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 46,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 56,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 45,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 55,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 30,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 29,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 100552,
+        "skill_type": 1,
+        "level": 1,
+        "desc": "<color=#FFD780FF>Normal Attack</color>\\nPerforms up to 5 rapid strikes.\\n\\n<color=#FFD780FF>Charged Attack</color>\\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\\n\\n<color=#FFD780FF>Plunging Attack</color>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "skill_affix_list": [
+          {
+            "name": "1-Hit DMG",
+            "value": "44.5%"
+          },
+          {
+            "name": "2-Hit DMG",
+            "value": "43.4%"
+          },
+          {
+            "name": "3-Hit DMG",
+            "value": "53.0%"
+          },
+          {
+            "name": "4-Hit DMG",
+            "value": "58.3%"
+          },
+          {
+            "name": "5-Hit DMG",
+            "value": "70.8%"
+          },
+          {
+            "name": "Charged Attack DMG",
+            "value": "55.9%+72.2%"
+          },
+          {
+            "name": "Charged Attack Stamina Cost",
+            "value": "20.0"
+          },
+          {
+            "name": "Plunge DMG",
+            "value": "63.9%"
+          },
+          {
+            "name": "Low/High Plunge DMG",
+            "value": "128%/160%"
+          }
+        ],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/3f016e2d606ca39ea86e24d5245dfa5b.png",
+        "is_unlock": true,
+        "name": "Foreign Stream",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 10087,
+        "skill_type": 1,
+        "level": 4,
+        "desc": "Unleashes a torrent that can cleanse the world.\\n\\n<color=#FFD780FF>Press</color>\\nSends a Torrent Surge forward that will deal <color=#80C0FFFF>Hydro DMG</color> to opponents it comes into contact with.\\n\\n<color=#FFD780FF>Hold</color>\\nEnter Aiming Mode and constantly fire off Dewdrops in the direction in which you are aiming, dealing <color=#80C0FFFF>Hydro DMG</color> to opponents they hit.\\nWhen the skill ends, it will send a Torrent Surge forward that will deal <color=#80C0FFFF>Hydro DMG</color> to opponents it comes into contact with.\\nSuffusion: When using the Hold configuration of this skill, if the Traveler's HP is higher than 50%, the DMG dealt by Dewdrops will increase based on the Traveler's Max HP, and the Traveler will lose a fixed amount of HP every second.\\n\\n<color=#FFD780FF>Arkhe: Pneuma</color>\\nAt certain intervals, after using Torrent Surge, this skill will unleash a Spiritbreath Thorn that pierces opponents, dealing Pneuma-aligned <color=#80C0FFFF>Hydro DMG</color>.\\n\\n<i>You studied the ripples in the water with Paimon.</i>",
+        "skill_affix_list": [
+          {
+            "name": "Torrent Surge DMG",
+            "value": "236.6%"
+          },
+          {
+            "name": "Dewdrop DMG",
+            "value": "41.0%"
+          },
+          {
+            "name": "Spiritbreath Thorn DMG",
+            "value": "41.0%"
+          },
+          {
+            "name": "Spiritbreath Thorn Interval",
+            "value": "9.0s"
+          },
+          {
+            "name": "Suffusion HP Cost",
+            "value": "4.00% Max HP"
+          },
+          {
+            "name": "Suffusion DMG Bonus",
+            "value": "0.80% Max HP"
+          },
+          {
+            "name": "Hold Duration",
+            "value": "Max 6.0s"
+          },
+          {
+            "name": "CD",
+            "value": "10.0s"
+          }
+        ],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/dcc561d097dd02d66a3c7d9614ae5c6f.png",
+        "is_unlock": true,
+        "name": "Aquacrest Saber",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 10088,
+        "skill_type": 1,
+        "level": 1,
+        "desc": "Unleashes a slow-moving floating bubble that deals continuous <color=#80C0FFFF>Hydro DMG</color> to nearby opponents.\\n\\n<i>You studied the ebb and flow of the tides with Paimon.</i>",
+        "skill_affix_list": [
+          {
+            "name": "Skill DMG",
+            "value": "101.9%"
+          },
+          {
+            "name": "Duration",
+            "value": "4.0s"
+          },
+          {
+            "name": "CD",
+            "value": "20.0s"
+          },
+          {
+            "name": "Energy Cost",
+            "value": "80"
+          }
+        ],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/05c8da91b2fa3a8a075b598c5702a3e5.png",
+        "is_unlock": true,
+        "name": "Rising Waters",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 621,
+        "skill_type": 2,
+        "level": 1,
+        "desc": "After the Dewdrop fired by the Hold Mode of the <color=#FFD780FF>Aquacrest Saber</color> hits an opponent, a Sourcewater Droplet will be generated near to the Traveler. If the Traveler picks it up, they will restore 7% HP.\\n1 Droplet can be created this way every second, and each use of Aquacrest Saber can create 4 Droplets at most.",
+        "skill_affix_list": [],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/60c10abdfebb76bf820eaf88bdb84d25.png",
+        "is_unlock": true,
+        "name": "Spotless Waters",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 622,
+        "skill_type": 2,
+        "level": 1,
+        "desc": "If HP has been consumed via Suffusion while using the Hold Mode <color=#FFD780FF>Aquacrest Saber</color>, the Torrent Surge at the skill's end will deal Bonus DMG equal to 45% of the total HP the Traveler has consumed in this skill use via Suffusion.\\nThe maximum DMG Bonus that can be gained this way is 5,000.",
+        "skill_affix_list": [],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/75710e9414a1977c4e240478b2ae261d.png",
+        "is_unlock": true,
+        "name": "Clear Waters",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 651,
+        "skill_type": 3,
+        "level": 1,
+        "desc": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\\n\\nAdditionally, when nearby party members' current HP increases or decreases by 5%, Traveler will receive 1 stack of Blade of Many Waters. You can gain 1 stack of Blade of Many Waters this way once every 4s, max 3 stacks. After obtaining 3 stacks of Blade of Many Waters, performing a Charged Attack will consume all stacks of Blade of Many Waters and transform into the special <color=#FFD780FF>Charged Attack: Tidebound</color>.\\n\\n<color=#FFD780FF>Charged Attack: Tidebound</color>\\n· Each Charged Attack hit deals increased <color=#80C0FFFF>Hydro DMG</color>. Increase in DMG is equal to 150% of Traveler's ATK,\\n· When Traveler's HP is no less than 50%, 10% of Traveler's Max HP will be consumed to increase DMG inflicted by each Charged Attack hit by 100% of Traveler's ATK.\\n· When Traveler's HP is lower than 50%, one instance of healing equal to 25% of Traveler's Max HP will be restored upon hitting an enemy.\\n· <color=#FFD780FF>Charged Attack: Tidebound</color> can be triggered up to once every 15s.",
+        "skill_affix_list": [],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dce8/10be31244c6bfef067ef41fdb0504871.png",
+        "is_unlock": true,
+        "name": "Foreign Aqualis",
+        "is_enhanced": true,
+        "enhanced_desc": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\\n\\nAdditionally, when nearby party members' current HP increases or decreases by 5%, Traveler will receive 1 stack of Blade of Many Waters. You can gain 1 stack of Blade of Many Waters this way once every 4s, max 3 stacks. After obtaining 3 stacks of Blade of Many Waters, performing a Charged Attack will consume all stacks of Blade of Many Waters and transform into the special <color=#FFD780FF>Charged Attack: Tidebound</color>.\\n\\n<color=#FFD780FF>Charged Attack: Tidebound</color>\\n· Each Charged Attack hit deals increased <color=#80C0FFFF>Hydro DMG</color>. Increase in DMG is equal to 150% of Traveler's ATK,\\n· When Traveler's HP is no less than 50%, 10% of Traveler's Max HP will be consumed to increase DMG inflicted by each Charged Attack hit by 100% of Traveler's ATK.\\n· When Traveler's HP is lower than 50%, one instance of healing equal to 25% of Traveler's Max HP will be restored upon hitting an enemy.\\n· <color=#FFD780FF>Charged Attack: Tidebound</color> can be triggered up to once every 15s.",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": true
+      }
+    ],
+    "recommend_relic_property": {
+      "recommend_properties": {
+        "sand_main_property_list": [
+          6
+        ],
+        "goblet_main_property_list": [
+          6
+        ],
+        "circlet_main_property_list": [
+          22
+        ],
+        "sub_property_list": [
+          20,
+          22,
+          6
+        ]
+      },
+      "custom_properties": null,
+      "has_set_recommend_prop": false
+    },
+    "weapon_skin": null,
+    "unlock_tps": true
+  },
+  {
+    "base": {
+      "id": 100000012,
+      "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+      "name": "Traveler",
+      "element": "Pyro",
+      "fetter": 0,
+      "level": 80,
+      "rarity": 5,
+      "actived_constellation_num": 6,
+      "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+      "is_chosen": false,
+      "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+      "weapon_type": 1,
+      "weapon": {
+        "id": 11521,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+        "type": 1,
+        "rarity": 5,
+        "level": 80,
+        "affix_level": 3,
+        "name": "Exaiphanes Blade"
+      }
+    },
+    "weapon": {
+      "id": 11521,
+      "name": "Exaiphanes Blade",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "promote_level": 5,
+      "type_name": "Sword",
+      "desc": "A longsword that once shone with the Pale Star's light. In the voyager's hand, it becomes a brand-new light that has nothing to do with any past era.",
+      "affix_level": 3,
+      "main_property": {
+        "property_type": 4,
+        "base": "",
+        "add": "",
+        "final": "532"
+      },
+      "sub_property": {
+        "property_type": 20,
+        "base": "",
+        "add": "",
+        "final": "30.2%"
+      }
+    },
+    "relics": [
+      {
+        "id": 48543,
+        "name": "Foundryman's Conjecture",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/09729586ce0f78f5111f9ee8d25eb431.png",
+        "pos": 1,
+        "rarity": 5,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Flower of Life",
+        "main_property": {
+          "property_type": 2,
+          "value": "2342",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 22,
+            "value": "6.2%",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "10.5%",
+            "times": 1
+          },
+          {
+            "property_type": 3,
+            "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "6.5%",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 48422,
+        "name": "Foundryman's Observation",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/6d43279928ae731e4199ff123ecd210e.png",
+        "pos": 2,
+        "rarity": 4,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Plume of Death",
+        "main_property": {
+          "property_type": 5,
+          "value": "137",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 28,
+            "value": "17",
+            "times": 0
+          },
+          {
+            "property_type": 20,
+            "value": "2.2%",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "215",
+            "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "17",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 48553,
+        "name": "Foundryman's Calculus",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/0119db4ca0f7c650686e2da11b9c6a1d.png",
+        "pos": 3,
+        "rarity": 5,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Sands of Eon",
+        "main_property": {
+          "property_type": 6,
+          "value": "22.8%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 23,
+            "value": "5.2%",
+            "times": 0
+          },
+          {
+            "property_type": 5,
+            "value": "14",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "448",
+            "times": 1
+          },
+          {
+            "property_type": 20,
+            "value": "3.5%",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 59413,
+        "name": "Exile's Goblet",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7847bfdeab60c072ec09b17462505cdc.png",
+        "pos": 4,
+        "rarity": 4,
+        "level": 12,
+        "set": {
+          "id": 2100091,
+          "name": "The Exile",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "Energy Recharge +20%"
+            },
+            {
+              "activation_number": 4,
+              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+            }
+          ]
+        },
+        "pos_name": "Goblet of Eonothem",
+        "main_property": {
+          "property_type": 6,
+          "value": "27.7%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 5,
+            "value": "16",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "8.8%",
+            "times": 1
+          },
+          {
+            "property_type": 28,
+            "value": "34",
+            "times": 1
+          },
+          {
+            "property_type": 8,
+            "value": "17",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 48432,
+        "name": "Foundryman's Legacy",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/2aece34359e0f99802feced2f25ee01b.png",
+        "pos": 5,
+        "rarity": 4,
+        "level": 8,
+        "set": {
+          "id": 2150481,
+          "name": "Heart of the Furnace",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+            }
+          ]
+        },
+        "pos_name": "Circlet of Logos",
+        "main_property": {
+          "property_type": 22,
+          "value": "27.4%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 8,
+            "value": "13",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "3.3%",
+            "times": 0
+          },
+          {
+            "property_type": 3,
+            "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "3.6%",
+            "times": 0
+          }
+        ]
+      }
+    ],
+    "constellations": [
+      {
+        "id": 51,
+        "name": "Starfire's Flowing Light",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/239b1fb1f27f4b1b57efa2cad396620b.png",
+        "effect": "When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth, while the <color=#FFD780FF>Blazing Threshold</color> or <color=#FFD780FF>Scorching Threshold</color> is active, the Traveler's ATK increases by 40%, they take 40% less DMG, and their interruption resistance is increased.",
+        "is_actived": true,
+        "pos": 1,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 52,
+        "name": "Ever-Lit Candle",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/f4cb7bc2c77d895f6920748a0ce87a07.png",
+        "effect": "When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth, while in the Nightsoul's Blessing state, after the Traveler hits an opponent with <color=#FF9999FF>Pyro</color> attacks, that opponent's <color=#FF9999FF>Pyro RES</color> is decreased by 20% for 6s. Max 2 stacks. Each stack's duration is counted independently.",
+        "is_actived": true,
+        "pos": 2,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 53,
+        "name": "Relayed Beacon",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/6d636b106d3abeab33b6fea38aa89225.png",
+        "effect": "When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth, the Traveler gains 40% <color=#FF9999FF>Pyro DMG Bonus</color>.",
+        "is_actived": true,
+        "pos": 3,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 54,
+        "name": "Ravaging Flame",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/eeb3fa8f4402f989771201f6fe307fb4.png",
+        "effect": "When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth, after using the Elemental Burst <color=#FFD780FF>Plains Scorcher</color>, all nearby party members will restore 40% of their Max HP. The Traveler will regain 4 Energy per second for the next 10s.",
+        "is_actived": true,
+        "pos": 4,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 55,
+        "name": "The Fire Inextinguishable",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/620c536c24e82d7638b4da0537dae6c8.png",
+        "effect": "When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth, the Traveler's CRIT Rate increases by 20%, and their CRIT DMG increases by 40%.",
+        "is_actived": true,
+        "pos": 5,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      },
+      {
+        "id": 56,
+        "name": "The Sacred Flame Imperishable",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/0b632038f14a2c3b0b332ee4debdb404.png",
+        "effect": "When opposing the Lord of Eroded Primal Fire incarnated by Gosoythoth, while in the Nightsoul's Blessing state, the Traveler's Movement SPD increases by 20%, their Stamina consumption decreases by 30%, and when they use Normal or Charged Attacks, they will send flaming waves flowing forward, dealing 96% of their ATK to opponents in the wave's path as Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color>.",
+        "is_actived": true,
+        "pos": 6,
+        "is_enhanced": false,
+        "enhanced_effect": "",
+        "can_enhanced": false
+      }
+    ],
+    "costumes": [
+      {
+        "id": 200701,
+        "name": "As Heaven and Earth Are Made Anew",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_2/2f91d7c102df0056de11dce08b296624.png"
+      }
+    ],
+    "selected_properties": [
+      {
+        "property_type": 2000,
+        "base": "9638",
+        "add": "3903",
+        "final": "13541"
+      },
+      {
+        "property_type": 20,
+        "base": "40.8%",
+        "add": "",
+        "final": "40.8%"
+      },
+      {
+        "property_type": 2001,
+        "base": "723",
+        "add": "892",
+        "final": "1615"
+      },
+      {
+        "property_type": 22,
+        "base": "83.6%",
+        "add": "",
+        "final": "83.6%"
+      },
+      {
+        "property_type": 2002,
+        "base": "605",
+        "add": "46",
+        "final": "651"
+      },
+      {
+        "property_type": 26,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 28,
+        "base": "50",
+        "add": "",
+        "final": "50"
+      },
+      {
+        "property_type": 27,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 40,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 23,
+        "base": "124.1%",
+        "add": "",
+        "final": "124.1%"
+      }
+    ],
+    "base_properties": [
+      {
+        "property_type": 2000,
+        "base": "9638",
+        "add": "3903",
+        "final": "13541"
+      },
+      {
+        "property_type": 2001,
+        "base": "723",
+        "add": "892",
+        "final": "1615"
+      },
+      {
+        "property_type": 2002,
+        "base": "605",
+        "add": "46",
+        "final": "651"
+      },
+      {
+        "property_type": 28,
+        "base": "50",
+        "add": "",
+        "final": "50"
+      },
+      {
+        "property_type": 999999,
+        "base": "227",
+        "add": "",
+        "final": "227"
+      }
+    ],
+    "extra_properties": [
+      {
+        "property_type": 20,
+        "base": "40.8%",
+        "add": "",
+        "final": "40.8%"
+      },
+      {
+        "property_type": 22,
+        "base": "83.6%",
+        "add": "",
+        "final": "83.6%"
+      },
+      {
+        "property_type": 26,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 27,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 23,
+        "base": "124.1%",
+        "add": "",
+        "final": "124.1%"
+      },
+      {
+        "property_type": 80,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 81,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      }
+    ],
+    "element_properties": [
+      {
+        "property_type": 40,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 50,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 42,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 52,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 43,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 53,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 41,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 51,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 44,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 54,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 46,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 56,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 45,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 55,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 30,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      },
+      {
+        "property_type": 29,
+        "base": "0.0%",
+        "add": "",
+        "final": "0.0%"
+      }
+    ],
+    "skills": [
+      {
+        "skill_id": 100551,
+        "skill_type": 1,
+        "level": 1,
+        "desc": "<color=#FFD780FF>Normal Attack</color>\\nPerforms up to 5 rapid strikes.\\n\\n<color=#FFD780FF>Charged Attack</color>\\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\\n\\n<color=#FFD780FF>Plunging Attack</color>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+        "skill_affix_list": [
+          {
+            "name": "1-Hit DMG",
+            "value": "44.5%"
+          },
+          {
+            "name": "2-Hit DMG",
+            "value": "43.4%"
+          },
+          {
+            "name": "3-Hit DMG",
+            "value": "53.0%"
+          },
+          {
+            "name": "4-Hit DMG",
+            "value": "58.3%"
+          },
+          {
+            "name": "5-Hit DMG",
+            "value": "70.8%"
+          },
+          {
+            "name": "Charged Attack DMG",
+            "value": "55.9%+72.2%"
+          },
+          {
+            "name": "Charged Attack Stamina Cost",
+            "value": "20.0"
+          },
+          {
+            "name": "Plunge DMG",
+            "value": "63.9%"
+          },
+          {
+            "name": "Low/High Plunge DMG",
+            "value": "128%/160%"
+          }
+        ],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/3f016e2d606ca39ea86e24d5245dfa5b.png",
+        "is_unlock": true,
+        "name": "Foreign Blaze",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 10097,
+        "skill_type": 1,
+        "level": 1,
+        "desc": "Wields a searing flame that can incinerate the very earth. Has different effects when Tapped or Held.\\n\\n<color=#FFD780FF>Tap</color>\\nCall forth flames in a raging blaze. When used, the Traveler gains 42 Nightsoul points and enters the Nightsoul's Blessing state, summoning a Blazing Threshold that follows the current active character.\\nWhen the Blazing Threshold gets close to opponents, it will deal Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> to nearby opponents at intervals.\\n\\n<color=#FFD780FF>Hold</color>\\nUnleash fire in a composed manner, dealing Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> to nearby opponents. When used, the Traveler gains 42 Nightsoul points and enters the Nightsoul's Blessing state, summoning a Scorching Threshold that follows the current active character.\\nWhen the current active character within a Scorching Threshold deals DMG to opponents, the Threshold will launch a Coordinated Attack that deals Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color> based on the Traveler's ATK. This effect can occur once every 3s.\\n\\n<color=#FFD780FF>Nightsoul's Blessing: Traveler</color>\\nContinuously consumes Nightsoul points. The Traveler's Nightsoul's Blessing state lasts 12s at maximum, and when their Nightsoul points are exhausted, this state will end. If this Elemental Skill is used again while active, the Traveler's Nightsoul points will be reset to 42 points.\\nBlazing and Scorching Thresholds will disappear once the Traveler's Nightsoul's Blessing state ends, and only 1 Blazing or Scorching Threshold summoned by the Traveler themselves can exist at any one time.\\n\\n<i>Together, you and Paimon watched the shifting colors of the flowing flames.</i>",
+        "skill_affix_list": [
+          {
+            "name": "Blazing Threshold",
+            "value": "28.1%"
+          },
+          {
+            "name": "Hold DMG",
+            "value": "98.8%"
+          },
+          {
+            "name": "Scorching Threshold",
+            "value": "81.4%"
+          },
+          {
+            "name": "Nightsoul Point Limit",
+            "value": "80.0"
+          },
+          {
+            "name": "CD",
+            "value": "18.0s"
+          }
+        ],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/131562716a03fa2128681b0ef5340b25.png",
+        "is_unlock": true,
+        "name": "Flowfire Blade",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 10098,
+        "skill_type": 1,
+        "level": 1,
+        "desc": "Condense the flames into a mark, dealing Nightsoul-aligned <color=#FF9999FF>AoE Pyro DMG</color> to opponents up ahead. The Traveler restores 7 Nightsoul points per second for the next 4s.\\n\\n<i>Together, you and Paimon studied the principles behind an undying flame.</i>",
+        "skill_affix_list": [
+          {
+            "name": "Skill DMG",
+            "value": "427.2%"
+          },
+          {
+            "name": "CD",
+            "value": "18.0s"
+          },
+          {
+            "name": "Energy Cost",
+            "value": "70"
+          }
+        ],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/846009236ed056f59b77ff299e9a1172.png",
+        "is_unlock": true,
+        "name": "Plains Scorcher",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 521,
+        "skill_type": 2,
+        "level": 1,
+        "desc": "When the Traveler has over 20 Nightsoul points, the attack AoE of the Blazing and Scorching Thresholds from the Elemental Skill <color=#FFD780FF>Flowfire Blade</color> after they hit opponents is increased.",
+        "skill_affix_list": [],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/31747e0666769375df7e965da8c49460.png",
+        "is_unlock": true,
+        "name": "True Flame of Incineration",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 522,
+        "skill_type": 2,
+        "level": 1,
+        "desc": "After the current active character inside a <color=#FFD780FF>Blazing Threshold</color> or <color=#FFD780FF>Scorching Threshold</color> triggers a <color=#FF9999FF>Pyro-related reaction</color>, the Traveler will regain 5 Energy. This can occur once every 12s. Additionally, when a nearby party member triggers a Nightsoul Burst, the Traveler will regain 4 Energy.",
+        "skill_affix_list": [],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/113b7ca00d4bddf1b7d586c05c9c1b05.png",
+        "is_unlock": true,
+        "name": "Embers Unspent",
+        "is_enhanced": true,
+        "enhanced_desc": "",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": false
+      },
+      {
+        "skill_id": 551,
+        "skill_type": 3,
+        "level": 1,
+        "desc": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\\n\\nAdditionally, when nearby party members trigger Nightsoul Burst, Traveler will receive 1 stack of Blade of the Sacred Flame, max 2 stacks. After obtaining 2 stacks of Blade of the Sacred Flame, performing a Charged Attack will consume all stacks of Blade of the Sacred Flame and transform into a special <color=#FFD780FF>Charged Attack: Inferno</color>.\\n\\n<color=#FFD780FF>Charged Attack: Inferno</color>\\n· Each Charged Attack hit deals increased, Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color>. Increase in DMG is equal to 200% of Traveler's ATK.\\n· <color=#FFD780FF>Charged Attack: Inferno</color> can be triggered up to once every 15s.",
+        "skill_affix_list": [],
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dce8/53a26cd146893b4cb89f2f32a5b0adb7.png",
+        "is_unlock": true,
+        "name": "Foreign Starfire",
+        "is_enhanced": true,
+        "enhanced_desc": "Draw new strength from journeys past. For every element you have resonated with, you gain additional {LINK#N10050001}<color=#FFD780FF>buffs</color>{/LINK}.\\n\\nAdditionally, when nearby party members trigger Nightsoul Burst, Traveler will receive 1 stack of Blade of the Sacred Flame, max 2 stacks. After obtaining 2 stacks of Blade of the Sacred Flame, performing a Charged Attack will consume all stacks of Blade of the Sacred Flame and transform into a special <color=#FFD780FF>Charged Attack: Inferno</color>.\\n\\n<color=#FFD780FF>Charged Attack: Inferno</color>\\n· Each Charged Attack hit deals increased, Nightsoul-aligned <color=#FF9999FF>Pyro DMG</color>. Increase in DMG is equal to 200% of Traveler's ATK.\\n· <color=#FFD780FF>Charged Attack: Inferno</color> can be triggered up to once every 15s.",
+        "before_enhanced_skill_attr_index": [],
+        "after_enhanced_skill_attr_index": [],
+        "can_enhanced": true
+      }
+    ],
+    "recommend_relic_property": {
+      "recommend_properties": {
+        "sand_main_property_list": [
+          6
+        ],
+        "goblet_main_property_list": [
+          40
+        ],
+        "circlet_main_property_list": [
+          22
+        ],
+        "sub_property_list": [
+          20,
+          22,
+          6
+        ]
+      },
+      "custom_properties": null,
+      "has_set_recommend_prop": false
+    },
+    "weapon_skin": null,
+    "unlock_tps": true
+  },
+  {
+    "base": {
+      "id": 100000013,
       "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
       "name": "Traveler",
       "element": "Cryo",

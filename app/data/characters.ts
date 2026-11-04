@@ -1,6 +1,6 @@
+import type { Characters } from "~/types/character"
 
-
-export const characters = [
+export const characters: Characters[] = [
   {
     "id": 10000143,
     "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31686/88e4654b892a5ada8d0fd21301c07518.png",
@@ -71,7 +71,7 @@ export const characters = [
     }
   },
   {
-    "id": 10000007,
+    "id": 10000008,
     "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
     "name": "Traveler",
     "element": "Geo",
@@ -94,7 +94,7 @@ export const characters = [
     }
   },
   {
-    "id": 10000007,
+    "id": 10000009,
     "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
     "name": "Traveler",
     "element": "Electro",
@@ -117,7 +117,7 @@ export const characters = [
     }
   },
   {
-    "id": 10000007,
+    "id": 100000010,
     "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
     "name": "Traveler",
     "element": "Dendro",
@@ -140,7 +140,53 @@ export const characters = [
     }
   },
   {
-    "id": 10000007,
+    "id": 100000011,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+    "name": "Traveler",
+    "element": "Hydro",
+    "fetter": 0,
+    "level": 80,
+    "rarity": 5,
+    "actived_constellation_num": 3,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+    "is_chosen": false,
+    "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11521,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "affix_level": 3,
+      "name": "Exaiphanes Blade"
+    }
+  },
+  {
+    "id": 100000012,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+    "name": "Traveler",
+    "element": "Pyro",
+    "fetter": 0,
+    "level": 80,
+    "rarity": 5,
+    "actived_constellation_num": 6,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
+    "is_chosen": false,
+    "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
+    "weapon_type": 1,
+    "weapon": {
+      "id": 11521,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "type": 1,
+      "rarity": 5,
+      "level": 80,
+      "affix_level": 3,
+      "name": "Exaiphanes Blade"
+    }
+  },
+  {
+    "id": 100000013,
     "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
     "name": "Traveler",
     "element": "Cryo",
