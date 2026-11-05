@@ -1652,7 +1652,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
         "type": 1,
         "rarity": 5,
-        "level": 80,
+        "level": 90,
         "affix_level": 3,
         "name": "Exaiphanes Blade"
       }
@@ -1663,7 +1663,7 @@ export const character_detail: Character[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "promote_level": 5,
       "type_name": "Sword",
       "desc": "A longsword that once shone with the Pale Star's light. In the voyager's hand, it becomes a brand-new light that has nothing to do with any past era.",
@@ -1672,13 +1672,13 @@ export const character_detail: Character[] = [
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "532"
+        "final": "608"
       },
       "sub_property": {
         "property_type": 20,
         "base": "",
         "add": "",
-        "final": "30.2%"
+        "final": "33.1%"
       }
     },
     "relics": [
@@ -6458,7 +6458,7 @@ export const character_detail: Character[] = [
       "name": "Traveler",
       "element": "Cryo",
       "fetter": 0,
-      "level": 80,
+      "level": 90,
       "rarity": 5,
       "actived_constellation_num": 2,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
@@ -6470,8 +6470,8 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
         "type": 1,
         "rarity": 5,
-        "level": 80,
-        "affix_level": 3,
+        "level": 90,
+        "affix_level": 5,
         "name": "Exaiphanes Blade"
       }
     },
@@ -6481,22 +6481,22 @@ export const character_detail: Character[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
-      "promote_level": 5,
+      "level": 90,
+      "promote_level": 6,
       "type_name": "Sword",
       "desc": "A longsword that once shone with the Pale Star's light. In the voyager's hand, it becomes a brand-new light that has nothing to do with any past era.",
-      "affix_level": 3,
+      "affix_level": 5,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "532"
+        "final": "608"
       },
       "sub_property": {
         "property_type": 20,
         "base": "",
         "add": "",
-        "final": "30.2%"
+        "final": "33.1%"
       }
     },
     "relics": [
@@ -6506,7 +6506,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/09729586ce0f78f5111f9ee8d25eb431.png",
         "pos": 1,
         "rarity": 5,
-        "level": 8,
+        "level": 12,
         "set": {
           "id": 2150481,
           "name": "Heart of the Furnace",
@@ -6524,7 +6524,7 @@ export const character_detail: Character[] = [
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "2342",
+          "value": "3155",
           "times": 0
         },
         "sub_property_list": [
@@ -6540,8 +6540,8 @@ export const character_detail: Character[] = [
           },
           {
             "property_type": 3,
-            "value": "4.7%",
-            "times": 0
+            "value": "9.9%",
+            "times": 1
           },
           {
             "property_type": 23,
@@ -6556,7 +6556,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/6d43279928ae731e4199ff123ecd210e.png",
         "pos": 2,
         "rarity": 4,
-        "level": 8,
+        "level": 12,
         "set": {
           "id": 2150481,
           "name": "Heart of the Furnace",
@@ -6574,14 +6574,14 @@ export const character_detail: Character[] = [
         "pos_name": "Plume of Death",
         "main_property": {
           "property_type": 5,
-          "value": "137",
+          "value": "185",
           "times": 0
         },
         "sub_property_list": [
           {
             "property_type": 28,
-            "value": "17",
-            "times": 0
+            "value": "34",
+            "times": 1
           },
           {
             "property_type": 20,
@@ -6606,7 +6606,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/0119db4ca0f7c650686e2da11b9c6a1d.png",
         "pos": 3,
         "rarity": 5,
-        "level": 8,
+        "level": 12,
         "set": {
           "id": 2150481,
           "name": "Heart of the Furnace",
@@ -6624,7 +6624,7 @@ export const character_detail: Character[] = [
         "pos_name": "Sands of Eon",
         "main_property": {
           "property_type": 6,
-          "value": "22.8%",
+          "value": "30.8%",
           "times": 0
         },
         "sub_property_list": [
@@ -6635,8 +6635,8 @@ export const character_detail: Character[] = [
           },
           {
             "property_type": 5,
-            "value": "14",
-            "times": 0
+            "value": "31",
+            "times": 1
           },
           {
             "property_type": 2,
@@ -6706,7 +6706,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/2aece34359e0f99802feced2f25ee01b.png",
         "pos": 5,
         "rarity": 4,
-        "level": 8,
+        "level": 12,
         "set": {
           "id": 2150481,
           "name": "Heart of the Furnace",
@@ -6724,7 +6724,7 @@ export const character_detail: Character[] = [
         "pos_name": "Circlet of Logos",
         "main_property": {
           "property_type": 22,
-          "value": "27.4%",
+          "value": "36.9%",
           "times": 0
         },
         "sub_property_list": [
@@ -6740,8 +6740,8 @@ export const character_detail: Character[] = [
           },
           {
             "property_type": 3,
-            "value": "4.7%",
-            "times": 0
+            "value": "9.3%",
+            "times": 1
           },
           {
             "property_type": 23,
@@ -6829,33 +6829,33 @@ export const character_detail: Character[] = [
     "selected_properties": [
       {
         "property_type": 2000,
-        "base": "9638",
-        "add": "3903",
-        "final": "13541"
+        "base": "10875",
+        "add": "5909",
+        "final": "16784"
       },
       {
         "property_type": 20,
-        "base": "40.8%",
+        "base": "43.8%",
         "add": "",
-        "final": "40.8%"
+        "final": "43.8%"
       },
       {
         "property_type": 2001,
-        "base": "723",
-        "add": "892",
-        "final": "1615"
+        "base": "823",
+        "add": "1173",
+        "final": "1996"
       },
       {
         "property_type": 22,
-        "base": "83.6%",
+        "base": "93.1%",
         "add": "",
-        "final": "83.6%"
+        "final": "93.1%"
       },
       {
         "property_type": 2002,
-        "base": "605",
+        "base": "683",
         "add": "46",
-        "final": "651"
+        "final": "729"
       },
       {
         "property_type": 26,
@@ -6865,9 +6865,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "50",
+        "base": "67",
         "add": "",
-        "final": "50"
+        "final": "67"
       },
       {
         "property_type": 27,
@@ -6891,47 +6891,47 @@ export const character_detail: Character[] = [
     "base_properties": [
       {
         "property_type": 2000,
-        "base": "9638",
-        "add": "3903",
-        "final": "13541"
+        "base": "10875",
+        "add": "5909",
+        "final": "16784"
       },
       {
         "property_type": 2001,
-        "base": "723",
-        "add": "892",
-        "final": "1615"
+        "base": "823",
+        "add": "1173",
+        "final": "1996"
       },
       {
         "property_type": 2002,
-        "base": "605",
+        "base": "683",
         "add": "46",
-        "final": "651"
+        "final": "729"
       },
       {
         "property_type": 28,
-        "base": "50",
+        "base": "67",
         "add": "",
-        "final": "50"
+        "final": "67"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "227",
         "add": "",
-        "final": "220"
+        "final": "227"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "40.8%",
+        "base": "43.8%",
         "add": "",
-        "final": "40.8%"
+        "final": "43.8%"
       },
       {
         "property_type": 22,
-        "base": "83.6%",
+        "base": "93.1%",
         "add": "",
-        "final": "83.6%"
+        "final": "93.1%"
       },
       {
         "property_type": 26,

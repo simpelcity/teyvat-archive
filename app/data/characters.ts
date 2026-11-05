@@ -65,7 +65,7 @@ export const characters: Characters[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "affix_level": 3,
       "name": "Exaiphanes Blade"
     }
@@ -88,7 +88,7 @@ export const characters: Characters[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "affix_level": 3,
       "name": "Exaiphanes Blade"
     }
@@ -111,7 +111,7 @@ export const characters: Characters[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "affix_level": 3,
       "name": "Exaiphanes Blade"
     }
@@ -134,7 +134,7 @@ export const characters: Characters[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "affix_level": 3,
       "name": "Exaiphanes Blade"
     }
@@ -157,7 +157,7 @@ export const characters: Characters[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "affix_level": 3,
       "name": "Exaiphanes Blade"
     }
@@ -180,7 +180,7 @@ export const characters: Characters[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "affix_level": 3,
       "name": "Exaiphanes Blade"
     }
@@ -203,7 +203,7 @@ export const characters: Characters[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
       "type": 1,
       "rarity": 5,
-      "level": 80,
+      "level": 90,
       "affix_level": 3,
       "name": "Exaiphanes Blade"
     }

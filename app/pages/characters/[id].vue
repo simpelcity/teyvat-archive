@@ -39,16 +39,6 @@ function getProperty(id: number) {
   return property
 }
 
-const tabs = [
-  { id: 'weapon', label: 'Weapon' },
-  { id: 'artifacts', label: 'Artifacts' },
-  { id: 'constellations', label: 'Constellations' },
-] as const
-
-type TabId = (typeof tabs)[number]['id']
-
-const activeTab = ref<TabId>('weapon')
-
 const constellations = computed(() =>
   [...character.constellations].sort((a, b) => a.pos - b.pos)
 )
@@ -58,6 +48,46 @@ const activeConstellationPos = ref(1)
 const activeConstellation = computed(() =>
   constellations.value.find(c => c.pos === activeConstellationPos.value)
 )
+
+// const properties = computed(() => [
+//   ...new Map(
+//     [...character.base_properties, ...character.extra_properties]
+//       .map(p => [p.property_type, p])
+//   ).values(),
+// ])
+
+const properties = computed(() => [
+  ...character.base_properties,
+  ...character.extra_properties,
+])
+
+const mid = Math.floor(properties.value.length / 2);
+const col1 = properties.value.slice(0, mid)
+const col2 = properties.value.slice(mid)
+
+// const col1 = []
+// const col2 = []
+
+// properties.value.forEach((prop, i) => {
+//   if (i % 2 === 0) {
+//     col1.push(prop);
+//   } else {
+//     col2.push(prop);
+//   }
+// });
+
+// const rows = computed(() =>
+//   properties.value.map(p => {
+//     const info = property_map.find(m => m.property_type === p.property_type)
+//     return {
+//       ...p,
+//       name: info?.name ?? `Unknown (${p.property_type})`,
+//       icon: info?.icon,
+//     }
+//   })
+// )
+
+console.log('props:', properties.value)
 </script>
 
 <template>
@@ -74,13 +104,13 @@ const activeConstellation = computed(() =>
       <section class="d-flex flex-column gap-3">
         <div class="row g-3">
           <div class="col col-md-4">
-            <div class="card">
-              <div class="card-body text-center p-0 d-flex flex-column">
+            <div class="card h-100">
+              <div class="card-body text-center p-0 d-flex flex-column h-100">
                 <div class="bg-primary rounded-top">
                   <h5 class="font-genshin my-2">{{ character.base.name }}</h5>
                 </div>
                 <img
-                  class="w-100 object-fit-cover rounded-bottom"
+                  class="w-100 h-100 object-fit-cover rounded-bottom"
                   :src="character.base.image"
                   :alt="`${displayName(character)} image`"
                   :style="{
@@ -112,9 +142,37 @@ const activeConstellation = computed(() =>
               </div>
             </div>
             
-            <hr />
+            <hr class="mt-2" />
 
             <div class="row g-3">
+              <div class="col col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title font-genshin text-primary mb-0">Character Stats</h5>
+                  </div>
+  
+                  <div class="card-body py-2">
+                    <div class="row">
+                      <div v-for="p in properties" class="col col-6">
+                        <div class="d-flex align-items-center justify-content-between py-1 px-2">
+                          <div class="d-flex gap-1">
+                            <div class="property-img d-flex">
+                              <img v-if="getProperty(p.property_type)?.icon" :src="getProperty(p.property_type)?.icon" class="w-100 h-100" />
+                            </div>
+  
+                            <span class="text-secondary fw-semibold">{{ getProperty(p.property_type)?.name }}</span>
+                          </div>
+
+                          <div class="">
+                            <span class="font-genshin">{{ p.final }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="col col-12">
                 <div class="card">
                   <div class="card-header">
@@ -143,18 +201,6 @@ const activeConstellation = computed(() =>
                       <span class="text-secondary small">{{ getProperty(character.weapon.main_property.property_type)?.name }}: {{ character.weapon.main_property.final }}</span>
                       <span class="text-secondary small" v-if="character.weapon.sub_property">{{ getProperty(character.weapon.sub_property.property_type)?.name }}: {{ character.weapon.sub_property.final }}</span>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col col-12">
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="card-title font-genshin text-primary mb-0">Character Stats</h5>
-                  </div>
-  
-                  <div class="card-body py-2">
-                    
                   </div>
                 </div>
               </div>
