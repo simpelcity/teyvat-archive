@@ -8,13 +8,13 @@ import IconHydro from '~/assets/images/elements/Icon_Hydro.png'
 import IconPyro from '~/assets/images/elements/Icon_Pyro.png'
 
 const elementBg: Record<Element, string> = {
-  "Anemo": "#00bc7d33",
-  "Cryo": "#00d3f333",
-  "Dendro": "#9ae60033",
-  "Electro": "#a684ff33",
-  "Geo": "#ffb90033",
-  "Hydro": "#00bcff33",
-  "Pyro": "#fb2c3633"
+  "Anemo": "#00bc7d50",
+  "Cryo": "#00d3f350",
+  "Dendro": "#9ae60050",
+  "Electro": "#a684ff50",
+  "Geo": "#ffb90050",
+  "Hydro": "#00bcff50",
+  "Pyro": "#fb2c3650"
 }
 
 const elementColor: Record<Element, string> = {

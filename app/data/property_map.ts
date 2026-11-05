@@ -1,6 +1,6 @@
+import type { PropertyMap } from '~/types/property_map'
 
-
-export const property_map = [
+export const property_map: PropertyMap[] = [
   {
     "property_type": 1,
     "name": "HP",
