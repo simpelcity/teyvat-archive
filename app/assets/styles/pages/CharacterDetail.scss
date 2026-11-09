@@ -1,4 +1,14 @@
+@use 'sass:color';
+@use '../variables' as *;
+
 .property-img {
   width: 20px;
   height: 20px;
+}
+
+.prop-div:nth-child(4n + 1) > div,
+.prop-div:nth-child(4n + 2) > div {
+  background-color: color.mix(white, $card-bg, 8%);
+  // background-opacity: 50% !important;
+  // background-position-x: 50%;
 }

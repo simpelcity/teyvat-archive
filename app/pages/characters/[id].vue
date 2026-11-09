@@ -49,45 +49,12 @@ const activeConstellation = computed(() =>
   constellations.value.find(c => c.pos === activeConstellationPos.value)
 )
 
-// const properties = computed(() => [
-//   ...new Map(
-//     [...character.base_properties, ...character.extra_properties]
-//       .map(p => [p.property_type, p])
-//   ).values(),
-// ])
-
 const properties = computed(() => [
   ...character.base_properties,
   ...character.extra_properties,
 ])
 
-const mid = Math.floor(properties.value.length / 2);
-const col1 = properties.value.slice(0, mid)
-const col2 = properties.value.slice(mid)
-
-// const col1 = []
-// const col2 = []
-
-// properties.value.forEach((prop, i) => {
-//   if (i % 2 === 0) {
-//     col1.push(prop);
-//   } else {
-//     col2.push(prop);
-//   }
-// });
-
-// const rows = computed(() =>
-//   properties.value.map(p => {
-//     const info = property_map.find(m => m.property_type === p.property_type)
-//     return {
-//       ...p,
-//       name: info?.name ?? `Unknown (${p.property_type})`,
-//       icon: info?.icon,
-//     }
-//   })
-// )
-
-console.log('props:', properties.value)
+console.log('constellations:', constellations.value)
 </script>
 
 <template>
@@ -151,9 +118,9 @@ console.log('props:', properties.value)
                     <h5 class="card-title font-genshin text-primary mb-0">Character Stats</h5>
                   </div>
   
-                  <div class="card-body py-2">
-                    <div class="row">
-                      <div v-for="p in properties" class="col col-6">
+                  <div class="card-body p-0">
+                    <div class="row gx-2">
+                      <div v-for="p in properties" class="col col-6 prop-div">
                         <div class="d-flex align-items-center justify-content-between py-1 px-2">
                           <div class="d-flex gap-1">
                             <div class="property-img d-flex">
@@ -229,7 +196,11 @@ console.log('props:', properties.value)
                       :aria-selected="activeConstellationPos === c.pos"
                       @click="activeConstellationPos = c.pos"
                     >
-                      C{{ c.pos }}
+                      <div class="rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center"
+                        :style="``"
+                      >
+                        <img :src="c.icon" :alt="c.name" width="50" height="50" />
+                      </div>
                     </button>
                   </li>
                 </ul>
