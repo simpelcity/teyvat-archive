@@ -3,6 +3,7 @@ import { character_detail } from '~/data/character_detail'
 import { property_map } from '~/data/property_map'
 import { getElementColors } from '~/constants/elements'
 import { getRarityBg } from '~/constants/weapons'
+import type { Skills } from '~/types/character'
 import { Star, MoveLeft } from '@lucide/vue'
 import { RiLock2Fill } from '@remixicon/vue';
 import '@/assets/styles/pages/CharacterDetail.scss'
@@ -54,6 +55,25 @@ const properties = computed(() => [
   ...character.base_properties,
   ...character.extra_properties,
 ])
+
+const selectedSkill = ref<Skills | null>(null)
+
+// The modal is open while a skill is selected; closing it clears the selection
+const skillModalOpen = computed({
+  get: () => selectedSkill.value !== null,
+  set: (open) => { if (!open) selectedSkill.value = null },
+})
+
+const skill_map: Record<number, string> = {
+  1: "Combat",
+  2: "Passive",
+  3: "Additional"
+}
+
+const skillTab = ref<'info' | 'attributes'>('info')
+
+// Start on "Talent Info" each time a different skill is opened
+watch(selectedSkill, () => { skillTab.value = 'info' })
 </script>
 
 <template>
@@ -90,10 +110,82 @@ const properties = computed(() => [
                   />
 
                   <div class="d-flex position-absolute bottom-0 start-0 bg-dark bg-opacity-25 w-100 d-flex justify-content-evenly py-2">
-                    <div v-for="skill in character.skills" class="bg-dark bg-opacity-50 rounded-circle border border-secondary position-relative">
+                    <div role="button" @click="selectedSkill = skill" v-for="skill in character.skills" class="bg-dark bg-opacity-50 rounded-circle border border-secondary position-relative">
                       <img :src="skill.icon" alt="" width="35" height="35" class="" />
                       <span class="position-absolute top-50 start-50 badge rounded-pill bg-dark d-flex justify-content-center align-items-center py-0 px-1 test">{{ skill.level }}</span>
                     </div>
+                    
+                    <UiModal v-model="skillModalOpen" title="Details" class="">
+                      <template v-if="selectedSkill">
+                        <div class="">
+                          <div class="d-flex column-gap-2 mb-3">
+                            <div class="bg-dark rounded-circle border border-2 border-secondary">
+                              <img :src="selectedSkill.icon" alt="" width="50" height="50" class="" />
+                            </div>
+  
+                            <div class="d-flex flex-column justify-content-center text-start">
+                              <span class="font-genshin text-primary fs-5">{{ selectedSkill.name }}</span>
+                              <span class="text-muted">{{ skill_map[selectedSkill.skill_type] }} Talent  | Lv. {{ selectedSkill.level }}</span>
+                            </div>
+                          </div>
+
+                          <div class="">
+                            <ul class="nav nav-pills mb-3" role="tablist">
+                              <li class="nav-item w-50" role="presentation">
+                                <button
+                                  type="button"
+                                  class="nav-link rounded-end-0 rounded-start-5 w-100 fw-semibold"
+                                  :class="{
+                                    'active text-dark': skillTab === 'info',
+                                    'bg-light bg-opacity-25 text-light': skillTab !== 'info'
+                                  }"
+                                  role="tab"
+                                  :aria-selected="skillTab === 'info'"
+                                  @click="skillTab = 'info'"
+                                >
+                                  <span class="">Talent Info</span>
+                                </button>
+                              </li>
+
+                              <li class="nav-item w-50" role="presentation">
+                                <button
+                                  type="button"
+                                  class="nav-link rounded-start-0 rounded-end-5 w-100 fw-semibold"
+                                  :class="{
+                                    'active text-dark': skillTab === 'attributes',
+                                    'bg-light bg-opacity-25 text-light': skillTab !== 'attributes'
+                                  }"
+                                  role="tab"
+                                  :aria-selected="skillTab === 'attributes'"
+                                  :disabled="!selectedSkill.skill_affix_list.length"
+                                  @click="skillTab = 'attributes'"
+                                >
+                                  <span class="">Skill Attributes</span>
+                                </button>
+                              </li>
+                            </ul>
+                
+                            <div role="tabpanel" class="text-start">
+                              <div v-if="skillTab === 'info'">
+                                <p class="text-secondary mb-0" v-html="formatEffect(selectedSkill.desc)" />
+
+                                <div v-if="selectedSkill.is_enhanced && selectedSkill.enhanced_desc" class="alert alert-primary py-2 mt-3 mb-0">
+                                  <span class="fw-bold d-block mb-1">Enhanced</span>
+                                  <span v-html="formatEffect(selectedSkill.enhanced_desc)" />
+                                </div>
+                              </div>
+
+                              <div v-if="skillTab === 'attributes'" class="d-flex flex-column row-gap-2 px-2 modal-dialog-scrollable">
+                                <div v-for="affix in selectedSkill.skill_affix_list" class="d-flex justify-content-between bg-light bg-opacity-10 py-2 px-3 border border-secondary border-opacity-25">
+                                  <span class="fw-bold fs-5">{{ affix.name }}</span>
+                                  <span class="font-genshin">{{ affix.value }}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </template>
+                    </UiModal>
                   </div>
                 </div>
               </div>

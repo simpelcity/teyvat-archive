@@ -60,33 +60,6 @@
   border-radius: 2px;
 }
 
-.artifact-toggle {
-  padding: 0;
-  border: 0;
-  background: none;
-  cursor: pointer;
-}
-
-.artifact-popover {
-  position: absolute;
-  left: auto;
-  width: 360px;
-  max-width: calc(100vw - 16px);
-  z-index: 1070;
-}
-
-.artifact-open {
-  z-index: 1070;
-}
-
-.artifact-popover.placement-top {
-  bottom: calc(100% + 8px);
-}
-
-.artifact-popover.placement-bottom {
-  top: calc(40px + 8px);
-}
-
 .btn-outline {
   border-color: gray !important;
   &:hover {
@@ -101,4 +74,8 @@
 
 .test {
   transform: translate(30%, 30%);
+}
+
+.modal-dialog-scrollable {
+  overflow-y: scroll;
 }
