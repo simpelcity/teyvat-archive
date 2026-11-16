@@ -1,5 +1,6 @@
 @use 'sass:color';
 @use '../variables' as *;
+@import '../main.scss';
 
 .property-img {
   width: 20px;
@@ -11,4 +12,93 @@
   background-color: color.mix(white, $card-bg, 8%);
   // background-opacity: 50% !important;
   // background-position-x: 50%;
+}
+
+.constellation-card .constellation-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.constellation-item .constellation-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link.active {
+  border-bottom: 1px solid #171923 !important;
+}
+
+.card-body > .grid {
+  display: grid;
+  gap: 1rem;
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 992px) and (max-width: 1200px){
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.text-limit {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.badge-sm {
+  padding: 0 2px;
+  font-size: 10px;
+  line-height: 1;
+  border-radius: 2px;
+}
+
+.artifact-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.artifact-popover {
+  position: absolute;
+  left: auto;
+  width: 360px;
+  max-width: calc(100vw - 16px);
+  z-index: 1070;
+}
+
+.artifact-open {
+  z-index: 1070;
+}
+
+.artifact-popover.placement-top {
+  bottom: calc(100% + 8px);
+}
+
+.artifact-popover.placement-bottom {
+  top: calc(40px + 8px);
+}
+
+.btn-outline {
+  border-color: gray !important;
+  &:hover {
+    border-color: $primary !important;
+  }
+}
+
+.rounded-pill {
+  line-height: 12px;
+  height: 15.2px;
+}
+
+.test {
+  transform: translate(30%, 30%);
 }

@@ -32,6 +32,7 @@ console.log('Characters:', characters)
         <input
           v-model="query"
           type="search"
+          id="search-form"
           class="form-control mt-3 shadow-none border-secondary"
           placeholder="Search by name or element…"
           aria-label="Search characters"

@@ -6460,7 +6460,7 @@ export const character_detail: Character[] = [
       "fetter": 0,
       "level": 90,
       "rarity": 5,
-      "actived_constellation_num": 2,
+      "actived_constellation_num": 6,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
       "is_chosen": false,
       "side_icon": "https://webstatic.hoyoverse.com/upload/static-resource/2023/06/15/35263f63879cc4270098b4a03d4fd658_4063129471300368143.png",
@@ -6501,15 +6501,15 @@ export const character_detail: Character[] = [
     },
     "relics": [
       {
-        "id": 48543,
-        "name": "Foundryman's Conjecture",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/09729586ce0f78f5111f9ee8d25eb431.png",
+        "id": 46544,
+        "name": "Iridescence That Ceased Amidst Glory",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/06fa300aff19d3a5de4c4ce6048a5404.png",
         "pos": 1,
         "rarity": 5,
         "level": 12,
         "set": {
-          "id": 2150481,
-          "name": "Heart of the Furnace",
+          "id": 2150461,
+          "name": "Disenchantment in Deep Shadow",
           "affixes": [
             {
               "activation_number": 2,
@@ -6517,7 +6517,7 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+              "effect": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
             }
           ]
         },
@@ -6529,37 +6529,37 @@ export const character_detail: Character[] = [
         },
         "sub_property_list": [
           {
-            "property_type": 22,
-            "value": "6.2%",
-            "times": 0
-          },
-          {
-            "property_type": 6,
-            "value": "10.5%",
-            "times": 1
-          },
-          {
             "property_type": 3,
-            "value": "9.9%",
+            "value": "11.1%",
             "times": 1
           },
           {
-            "property_type": 23,
-            "value": "6.5%",
+            "property_type": 5,
+            "value": "19",
             "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "21",
+            "times": 0
+          },
+          {
+            "property_type": 20,
+            "value": "9.3%",
+            "times": 2
           }
         ]
       },
       {
-        "id": 48422,
-        "name": "Foundryman's Observation",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/6d43279928ae731e4199ff123ecd210e.png",
+        "id": 46523,
+        "name": "Sharpness That Ceased Upon Wondrous Creation",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/78cfacac47588a8472a40d5c411b4b6d.png",
         "pos": 2,
-        "rarity": 4,
+        "rarity": 5,
         "level": 12,
         "set": {
-          "id": 2150481,
-          "name": "Heart of the Furnace",
+          "id": 2150461,
+          "name": "Disenchantment in Deep Shadow",
           "affixes": [
             {
               "activation_number": 2,
@@ -6567,49 +6567,49 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+              "effect": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
             }
           ]
         },
         "pos_name": "Plume of Death",
         "main_property": {
           "property_type": 5,
-          "value": "185",
+          "value": "205",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 28,
-            "value": "34",
+            "property_type": 2,
+            "value": "209",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "9.1%",
             "times": 1
           },
           {
-            "property_type": 20,
-            "value": "2.2%",
+            "property_type": 22,
+            "value": "5.4%",
             "times": 0
           },
           {
-            "property_type": 2,
-            "value": "215",
-            "times": 0
-          },
-          {
-            "property_type": 8,
-            "value": "17",
-            "times": 0
+            "property_type": 3,
+            "value": "10.5%",
+            "times": 1
           }
         ]
       },
       {
-        "id": 48553,
-        "name": "Foundryman's Calculus",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/0119db4ca0f7c650686e2da11b9c6a1d.png",
+        "id": 46452,
+        "name": "Moment That Ceased Upon Waking From Grand Dreams",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/fb048f9cd39a2dcec3caf61eeba5da3a.png",
         "pos": 3,
-        "rarity": 5,
-        "level": 12,
+        "rarity": 4,
+        "level": 8,
         "set": {
-          "id": 2150481,
-          "name": "Heart of the Furnace",
+          "id": 2150461,
+          "name": "Disenchantment in Deep Shadow",
           "affixes": [
             {
               "activation_number": 2,
@@ -6617,35 +6617,35 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+              "effect": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
             }
           ]
         },
         "pos_name": "Sands of Eon",
         "main_property": {
           "property_type": 6,
-          "value": "30.8%",
+          "value": "20.6%",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 23,
-            "value": "5.2%",
+            "property_type": 28,
+            "value": "13",
             "times": 0
           },
           {
             "property_type": 5,
-            "value": "31",
-            "times": 1
+            "value": "11",
+            "times": 0
           },
           {
-            "property_type": 2,
-            "value": "448",
-            "times": 1
+            "property_type": 8,
+            "value": "19",
+            "times": 0
           },
           {
-            "property_type": 20,
-            "value": "3.5%",
+            "property_type": 3,
+            "value": "4.7%",
             "times": 0
           }
         ]
@@ -6701,15 +6701,15 @@ export const character_detail: Character[] = [
         ]
       },
       {
-        "id": 48432,
-        "name": "Foundryman's Legacy",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/2aece34359e0f99802feced2f25ee01b.png",
+        "id": 46433,
+        "name": "Pendulum That Ceased Amidst a Great Fall",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/96ccb9bdc03619c89825dd424fb8312e.png",
         "pos": 5,
         "rarity": 4,
         "level": 12,
         "set": {
-          "id": 2150481,
-          "name": "Heart of the Furnace",
+          "id": 2150461,
+          "name": "Disenchantment in Deep Shadow",
           "affixes": [
             {
               "activation_number": 2,
@@ -6717,7 +6717,7 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+              "effect": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
             }
           ]
         },
@@ -6729,24 +6729,24 @@ export const character_detail: Character[] = [
         },
         "sub_property_list": [
           {
-            "property_type": 8,
-            "value": "13",
-            "times": 0
-          },
-          {
-            "property_type": 6,
-            "value": "3.3%",
-            "times": 0
-          },
-          {
             "property_type": 3,
-            "value": "9.3%",
-            "times": 1
+            "value": "4.7%",
+            "times": 0
           },
           {
             "property_type": 23,
-            "value": "3.6%",
+            "value": "5.2%",
             "times": 0
+          },
+          {
+            "property_type": 9,
+            "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "550",
+            "times": 2
           }
         ]
       }
@@ -6779,7 +6779,7 @@ export const character_detail: Character[] = [
         "name": "Glacial Shard",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba982/4266bcbd36ee43010bfe62b106087916.png",
         "effect": "Increases the Level of the Elemental Burst <color=#FFD780FF>{LINK#S10128}Frostbound Javelin{/LINK}</color> by 3.\\nMaximum upgrade level is 15.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 3,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -6790,7 +6790,7 @@ export const character_detail: Character[] = [
         "name": "Enduring Ice",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba982/4dbf0d87f39b5de6b214353683062311.png",
         "effect": "The duration of the <color=#FFD780FF>Frostpierce Star</color> created by the Elemental Skill <color=#FFD780FF>{LINK#S10127}Ice Fog Piercer{/LINK}</color> is increased by 25%.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 4,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -6801,7 +6801,7 @@ export const character_detail: Character[] = [
         "name": "Bittercold Fog",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba982/3cd86a0303aaf2c90040712a98b2ecc0.png",
         "effect": "Increases the Level of the Elemental Skill <color=#FFD780FF>{LINK#S10127}Ice Fog Piercer{/LINK}</color> by 3.\\nMaximum upgrade level is 15.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 5,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -6812,7 +6812,7 @@ export const character_detail: Character[] = [
         "name": "Brumal Grimfrost",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba982/3086ff53c07143ce7deecf5bd973c4ab.png",
         "effect": "Every stack of {LINK#N10050002}<color=#FFD780FF>Frostglow</color>{/LINK} consumed when using the Elemental Burst <color=#FFD780FF>{LINK#S10128}Frostbound Javelin{/LINK}</color> increases Stellar Glimmer reaction DMG dealt by other party members by 5% for 15s. A maximum 40% increase can be obtained in this way.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 6,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -6830,32 +6830,32 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "10875",
-        "add": "5909",
-        "final": "16784"
+        "add": "7273",
+        "final": "18148"
       },
       {
         "property_type": 20,
-        "base": "43.8%",
+        "base": "47.4%",
         "add": "",
-        "final": "43.8%"
+        "final": "47.4%"
       },
       {
         "property_type": 2001,
         "base": "823",
-        "add": "1173",
-        "final": "1996"
+        "add": "994",
+        "final": "1818"
       },
       {
         "property_type": 22,
-        "base": "93.1%",
+        "base": "92.3%",
         "add": "",
-        "final": "93.1%"
+        "final": "92.3%"
       },
       {
         "property_type": 2002,
         "base": "683",
-        "add": "46",
-        "final": "729"
+        "add": "88",
+        "final": "770"
       },
       {
         "property_type": 26,
@@ -6865,9 +6865,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "67",
+        "base": "47",
         "add": "",
-        "final": "67"
+        "final": "47"
       },
       {
         "property_type": 27,
@@ -6883,55 +6883,55 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "124.1%",
+        "base": "123.1%",
         "add": "",
-        "final": "124.1%"
+        "final": "123.1%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
         "base": "10875",
-        "add": "5909",
-        "final": "16784"
+        "add": "7273",
+        "final": "18148"
       },
       {
         "property_type": 2001,
         "base": "823",
-        "add": "1173",
-        "final": "1996"
+        "add": "994",
+        "final": "1818"
       },
       {
         "property_type": 2002,
         "base": "683",
-        "add": "46",
-        "final": "729"
+        "add": "88",
+        "final": "770"
       },
       {
         "property_type": 28,
-        "base": "67",
+        "base": "47",
         "add": "",
-        "final": "67"
+        "final": "47"
       },
       {
         "property_type": 999999,
-        "base": "227",
+        "base": "240",
         "add": "",
-        "final": "227"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "43.8%",
+        "base": "47.4%",
         "add": "",
-        "final": "43.8%"
+        "final": "47.4%"
       },
       {
         "property_type": 22,
-        "base": "93.1%",
+        "base": "92.3%",
         "add": "",
-        "final": "93.1%"
+        "final": "92.3%"
       },
       {
         "property_type": 26,
@@ -6947,9 +6947,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "124.1%",
+        "base": "123.1%",
         "add": "",
-        "final": "124.1%"
+        "final": "123.1%"
       },
       {
         "property_type": 80,
@@ -7118,16 +7118,16 @@ export const character_detail: Character[] = [
       {
         "skill_id": 10127,
         "skill_type": 1,
-        "level": 4,
+        "level": 7,
         "desc": "Stabs at the opponent with the Traveler's weapon, which releases an ice-cold fog. This deals <color=#99FFFFFF>Cryo DMG</color> to opponents up ahead and forms a Frostpierce Star next to the Traveler.\\n\\n<color=#FFD780FF>Frostpierce Star</color>\\n· Follows your own party members around the field and periodically fires ice crystals at nearby opponents, dealing <color=#99FFFFFF>Cryo DMG</color>.\\n<color=#FFD780FF>Radiance: Stellar-Conduct</color>: The Frostpierce Star will no longer fire ice crystals at opponents at intervals but will instead fire an ice crystal at opponents in a coordinated attack when the Traveler hits an opponent with a Normal Attack, Charged Attack, or Plunging Attack. This effect can trigger once every 0.2s.\\n· When an opponent is hit with an ice crystal, the Traveler gains 1 stack of {LINK#N10050002}<color=#FFD780FF>Frostglow</color>{/LINK} (max 8 stacks).\\n· When not in combat, <color=#FFD780FF>Frostglow</color> expires after 30s.\\n\\n<i>You observed the formation of frost together with Paimon.</i>",
         "skill_affix_list": [
           {
             "name": "Skill DMG",
-            "value": "114.6%"
+            "value": "137.5%"
           },
           {
             "name": "Ice Crystal DMG",
-            "value": "26.7%"
+            "value": "32.1%"
           },
           {
             "name": "Frostpierce Star Duration",
@@ -7150,32 +7150,32 @@ export const character_detail: Character[] = [
       {
         "skill_id": 10128,
         "skill_type": 1,
-        "level": 4,
+        "level": 8,
         "desc": "Generates an ice javelin with the power of Cryo, then directs it at enemies to deal multiple instances of <color=#99FFFFFF>Cryo DMG</color>.\\nWhen cast, the Traveler consumes all existing stacks of <color=#FFD780FF>Frostglow</color>, which in turn increases the DMG dealt by this Elemental Burst. When 8 stacks of {LINK#N10050002}<color=#FFD780FF>Frostglow</color>{/LINK} are consumed, the number of DMG instances caused by the javelins is also increased.\\n\\n{LINK#N11500004}<color=#FFD780FF>Radiance: Stellar Glimmer</color>{/LINK}: DMG from the current Elemental Burst is changed to <color=#99FFFFFF>Cryo DMG</color> of the corresponding Stellar Glimmer reaction type.\\n\\n<i>You felt the keen edge of the icicles alongside Paimon.</i>",
         "skill_affix_list": [
           {
             "name": "Ice Javelin DMG",
-            "value": "68.9%/Strike"
+            "value": "88.2%/Strike"
           },
           {
             "name": "Frostglow DMG Bonus",
-            "value": "3.4%"
+            "value": "4.4%"
           },
           {
             "name": "Stellar-Conduct Ice Javelin Single Strike DMG",
-            "value": "45.9%"
+            "value": "58.8%"
           },
           {
             "name": "Stellar-Conduct Frostglow DMG Bonus",
-            "value": "2.3%"
+            "value": "2.9%"
           },
           {
             "name": "Stellar Swirl Ice Javelin Single Strike DMG",
-            "value": "68.9%"
+            "value": "88.2%"
           },
           {
             "name": "Stellar Swirl Frostglow DMG Bonus",
-            "value": "3.4%"
+            "value": "4.4%"
           },
           {
             "name": "No. of Strikes in Attack",

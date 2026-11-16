@@ -1,3 +1,5 @@
+
+
 .font-genshin {
   font-family: HYWenHei !important;
 }
@@ -10,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.grid {
+section > .grid {
   display: grid;
   gap: 1rem;
   @media (max-width: 576px) {
@@ -37,4 +39,8 @@ html {
 .weapon-icon {
   width: 90px;
   height: 90px;
+}
+
+a {
+  width: fit-content;
 }

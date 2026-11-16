@@ -3,7 +3,8 @@ import { character_detail } from '~/data/character_detail'
 import { property_map } from '~/data/property_map'
 import { getElementColors } from '~/constants/elements'
 import { getRarityBg } from '~/constants/weapons'
-import { Star, MoveLeft, LockKeyhole } from '@lucide/vue'
+import { Star, MoveLeft } from '@lucide/vue'
+import { RiLock2Fill } from '@remixicon/vue';
 import '@/assets/styles/pages/CharacterDetail.scss'
 
 const route = useRoute()
@@ -53,8 +54,6 @@ const properties = computed(() => [
   ...character.base_properties,
   ...character.extra_properties,
 ])
-
-console.log('constellations:', constellations.value)
 </script>
 
 <template>
@@ -71,22 +70,32 @@ console.log('constellations:', constellations.value)
       <section class="d-flex flex-column gap-3">
         <div class="row g-3">
           <div class="col col-md-4">
-            <div class="card h-100">
+            <div class="card">
               <div class="card-body text-center p-0 d-flex flex-column h-100">
                 <div class="bg-primary rounded-top">
                   <h5 class="font-genshin my-2">{{ character.base.name }}</h5>
                 </div>
-                <img
-                  class="w-100 h-100 object-fit-cover rounded-bottom"
-                  :src="character.base.image"
-                  :alt="`${displayName(character)} image`"
-                  :style="{
-                    aspectRatio: '4 / 5',
-                    background: `linear-gradient(to bottom,
-                      color-mix(in srgb, ${getElementColors(character.base.element).color} 55%, #1c1c28),
-                      color-mix(in srgb, ${getElementColors(character.base.element).color} 25%, #1c1c28))`
-                  }"
-                />
+
+                <div class="">
+                  <img
+                    class="w-100 h-100 object-fit-cover rounded-bottom"
+                    :src="character.base.image"
+                    :alt="`${displayName(character)} image`"
+                    :style="{
+                      aspectRatio: '4 / 5',
+                      background: `linear-gradient(to bottom,
+                        color-mix(in srgb, ${getElementColors(character.base.element).color} 55%, #1c1c28),
+                        color-mix(in srgb, ${getElementColors(character.base.element).color} 25%, #1c1c28))`
+                    }"
+                  />
+
+                  <div class="d-flex position-absolute bottom-0 start-0 bg-dark bg-opacity-25 w-100 d-flex justify-content-evenly py-2">
+                    <div v-for="skill in character.skills" class="bg-dark bg-opacity-50 rounded-circle border border-secondary position-relative">
+                      <img :src="skill.icon" alt="" width="35" height="35" class="" />
+                      <span class="position-absolute top-50 start-50 badge rounded-pill bg-dark d-flex justify-content-center align-items-center py-0 px-1 test">{{ skill.level }}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -104,7 +113,7 @@ console.log('constellations:', constellations.value)
                     <Star v-for="n in character.base.rarity" :key="n" class="text-warning" fill="#ffc107" :size="16" />
                   </div>
                   |
-                  <span class="">{{ character.weapon.type_name }}</span>
+                  <span class="text-muted">{{ character.weapon.type_name }}</span>
                 </div>
               </div>
             </div>
@@ -127,7 +136,7 @@ console.log('constellations:', constellations.value)
                               <img v-if="getProperty(p.property_type)?.icon" :src="getProperty(p.property_type)?.icon" class="w-100 h-100" />
                             </div>
   
-                            <span class="text-secondary fw-semibold">{{ getProperty(p.property_type)?.name }}</span>
+                            <span class="text-muted fw-semibold">{{ getProperty(p.property_type)?.name }}</span>
                           </div>
 
                           <div class="">
@@ -165,8 +174,8 @@ console.log('constellations:', constellations.value)
                       </div>
   
                       <span class="text-primary fw-bold small">Refinement Rank {{ character.weapon.affix_level }}</span>
-                      <span class="text-secondary small">{{ getProperty(character.weapon.main_property.property_type)?.name }}: {{ character.weapon.main_property.final }}</span>
-                      <span class="text-secondary small" v-if="character.weapon.sub_property">{{ getProperty(character.weapon.sub_property.property_type)?.name }}: {{ character.weapon.sub_property.final }}</span>
+                      <span class="text-muted small">{{ getProperty(character.weapon.main_property.property_type)?.name }}: {{ character.weapon.main_property.final }}</span>
+                      <span class="text-muted small" v-if="character.weapon.sub_property">{{ getProperty(character.weapon.sub_property.property_type)?.name }}: {{ character.weapon.sub_property.final }}</span>
                     </div>
                   </div>
                 </div>
@@ -179,12 +188,12 @@ console.log('constellations:', constellations.value)
           <div class="col col-12">
             <div class="card">
               <div class="card-header">
-                <h5 class="card-title font-genshin text-primary mb-0">Constellation</h5>
+                <h5 class="card-title font-genshin text-primary mb-0">Constellations</h5>
               </div>
     
-              <div class="card-body py-2">
+              <div class="card-body">
                 <ul class="nav nav-tabs mb-3" role="tablist">
-                  <li v-for="c in constellations" :key="c.id" class="nav-item" role="presentation">
+                  <li v-for="c in constellations" :key="c.id" class="nav-item constellation-item" role="presentation">
                     <button
                       type="button"
                       class="nav-link d-flex flex-column align-items-center gap-1"
@@ -196,36 +205,49 @@ console.log('constellations:', constellations.value)
                       :aria-selected="activeConstellationPos === c.pos"
                       @click="activeConstellationPos = c.pos"
                     >
-                      <div class="rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center"
-                        :style="``"
-                      >
-                        <img :src="c.icon" :alt="c.name" width="50" height="50" />
+                      <div class="rounded-circle border border-2" :style="{ backgroundColor: getElementColors(character.base.element).bg, boxShadow: `0px 0px 8px 2px ${getElementColors(character.base.element).color}` }">
+                        <div class="constellation-icon position-relative overflow-hidden rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
+                          <div class="constellation-icon_decor position-absolute w-100 h-100 start-0 top-0 d-flex justify-content-center align-items-center">
+                            <img :src="c.icon" :alt="c.name" width="30" height="30" class="" />
+                          </div>
+                          <div v-if="!c.is_actived" class="shell-icon_base position-absolute w-100 h-100 start-0 top-0 d-flex mw-100 align-items-center justify-content-center bg-black bg-opacity-50 rounded-circle">
+                            <RiLock2Fill size="15" class="text-light" />
+                          </div>
+                        </div>
                       </div>
                     </button>
                   </li>
                 </ul>
     
-                <div v-if="activeConstellation" class="card" role="tabpanel">
+                <div v-if="activeConstellation" class="card constellation-card" role="tabpanel">
                   <div class="card-body p-2 d-flex gap-3">
                     <div
-                      class="rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center"
+                      class="rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center border border-2 constellation-div"
                       :style="{
-                        width: '64px',
-                        height: '64px',
+                        width: '54px',
+                        height: '54px',
                         backgroundColor: getElementColors(character.base.element).bg,
+                        boxShadow: `0px 0px 8px 3px ${getElementColors(character.base.element).color}`
                       }"
                     >
-                      <img :src="activeConstellation.icon" :alt="activeConstellation.name" width="50" height="50" />
+                      <div class="constellation-icon position-relative overflow-hidden">
+                        <div class="constellation-icon_decor position-absolute w-100 h-100 start-0 top-0 d-flex justify-content-center align-items-center">
+                          <img :src="activeConstellation.icon" :alt="activeConstellation.name" width="50" height="50" class="" />
+                        </div>
+                        <div v-if="!activeConstellation.is_actived" class="shell-icon_base position-absolute w-100 h-100 start-0 top-0 d-flex mw-100 align-items-center justify-content-center bg-black bg-opacity-50 rounded-circle">
+                          <RiLock2Fill size="30" />
+                        </div>
+                      </div>
+                      
                     </div>
     
                     <div>
-                      <div class="d-flex align-items-center gap-2 mb-2">
-                        <span class="badge text-bg-secondary">C{{ activeConstellation.pos }}</span>
-                        <h5 class="mb-0 fw-bold">{{ activeConstellation.name }}</h5>
-                        <span v-if="!activeConstellation.is_actived" class="badge text-bg-dark"><LockKeyhole /> Locked</span>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h5 class="mb-0 fw-bold text-primary">{{ activeConstellation.name }}</h5>
+                        <p class="small mb-2 text-secondary">Constellation Lv. <span class="text-info">{{ activeConstellation.pos }}</span></p>
                       </div>
     
-                      <p class="mb-0 text-secondary" v-html="formatEffect(activeConstellation.effect)" />
+                      <p class="mb-0 text-muted" v-html="formatEffect(activeConstellation.effect)" />
     
                       <p
                         v-if="activeConstellation.is_enhanced && activeConstellation.enhanced_effect"
@@ -239,64 +261,27 @@ console.log('constellations:', constellations.value)
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col col-12">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="card-title font-genshin text-primary mb-0">Artifacts</h5>
+              </div>
+
+              <div class="card-body">
+                <div class="grid">
+                  <CharacterArtifactCard
+                    v-for="relic in character.relics"
+                    :key="relic.id"
+                    :relic="relic"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </main>
 </template>
-
-
-
-<!-- <div class="row align-items-center g-4">
-
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body text-center">
-                <h1 class="h3 mb-3">
-                  {{ character.base.name }}
-                </h1>
-
-                <p class="text-secondary">
-                  {{ character.base.element }}
-                </p>
-
-                <span class="badge bg-warning text-dark">
-                  {{ character.base.rarity }} Star
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-8">
-            <h2 class="display-5 fw-bold">
-              {{ character.base.name }}
-            </h2>
-
-            <p class="text-secondary">
-              {{ character.weapon.type_name }}
-            </p>
-
-            <hr />
-
-            <div class="row g-3">
-
-              <div class="col-6">
-                <div class="card">
-                  <div class="card-body">
-                    <small class="text-secondary">Level</small>
-                    <h3>{{ character.base.level }}</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6">
-                <div class="card">
-                  <div class="card-body">
-                    <small class="text-secondary">Constellation</small>
-                    <h3>C{{ character.base.actived_constellation_num }}</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div> -->
