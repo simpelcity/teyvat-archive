@@ -1,5 +1,6 @@
-import { wiki_map } from '~/data/wiki_map'
+import { useLookupsStore } from '~/stores/lookups'
 
+// Requires the lookups store to be loaded (callOnce('lookups', () => useLookupsStore().load()))
 export function getWikiUrl(id: number) {
-  return wiki_map[id]
+  return useLookupsStore().wikiMap[id]
 }

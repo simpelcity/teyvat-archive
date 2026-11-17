@@ -3,19 +3,27 @@ useHead({
   title: 'Home'
 })
 
-import { characters } from '~/data/characters'
+import type { Characters } from '~/types/character'
+
+const supabase = useSupabaseClient()
+
+const { data: characters } = await useAsyncData('characters', async () => {
+  const { data, error } = await supabase.from('characters').select('data').order('position')
+  if (error) throw createError({ statusCode: 500, statusMessage: error.message })
+  return data.map(row => row.data as Characters)
+}, { default: () => [] as Characters[] })
 
 const query = ref('')
 
-const isTraveler = (c: typeof characters[number]) => c.name.toLowerCase() === 'traveler'
+const isTraveler = (c: Characters) => c.name.toLowerCase() === 'traveler'
 
-const displayName = (c: typeof characters[number]) =>
+const displayName = (c: Characters) =>
   isTraveler(c) ? `${c.element} Traveler` : c.name
 
 const filteredCharacters = computed(() => {
   const q = query.value.trim().toLowerCase()
-  if (!q) return characters
-  return characters.filter(c =>
+  if (!q) return characters.value
+  return characters.value.filter(c =>
     displayName(c).toLowerCase().includes(q) ||
     c.element.toLowerCase().includes(q)
   )

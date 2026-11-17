@@ -12109,37 +12109,37 @@ export const character_detail: Character[] = [
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6851f3c2/e01c3f4178782c24eef631ac13d308ea.png",
       "weapon_type": 1,
       "weapon": {
-        "id": 11306,
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bc3f197fd37c0f92f0f253f578a1d266.png",
+        "id": 11427,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/137e6ee9d36a6af76d67718713859bbd.png",
         "type": 1,
-        "rarity": 3,
-        "level": 59,
-        "affix_level": 5,
-        "name": "Skyrider Sword"
+        "rarity": 4,
+        "level": 1,
+        "affix_level": 3,
+        "name": "The Dockhand's Assistant"
       }
     },
     "weapon": {
-      "id": 11306,
-      "name": "Skyrider Sword",
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bc3f197fd37c0f92f0f253f578a1d266.png",
+      "id": 11427,
+      "name": "The Dockhand's Assistant",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/137e6ee9d36a6af76d67718713859bbd.png",
       "type": 1,
-      "rarity": 3,
-      "level": 59,
-      "promote_level": 3,
+      "rarity": 4,
+      "level": 1,
+      "promote_level": 0,
       "type_name": "Sword",
-      "desc": "A reliable steel sword. The legendary Skyrider once tried to ride it as a flying sword...",
-      "affix_level": 5,
+      "desc": "A convenient cutting tool that you can rarely find nowadays. You can replace the blades as they are dulled by usage.",
+      "affix_level": 3,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "232"
+        "final": "42"
       },
       "sub_property": {
-        "property_type": 23,
+        "property_type": 3,
         "base": "",
         "add": "",
-        "final": "36.1%"
+        "final": "9.0%"
       }
     },
     "relics": [
@@ -12442,8 +12442,8 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "6631",
-        "add": "4802",
-        "final": "11433"
+        "add": "5399",
+        "final": "12030"
       },
       {
         "property_type": 20,
@@ -12453,9 +12453,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 2001,
-        "base": "332",
-        "add": "191",
-        "final": "523"
+        "base": "143",
+        "add": "183",
+        "final": "325"
       },
       {
         "property_type": 22,
@@ -12495,23 +12495,23 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "156.1%",
+        "base": "120.0%",
         "add": "",
-        "final": "156.1%"
+        "final": "120.0%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
         "base": "6631",
-        "add": "4802",
-        "final": "11433"
+        "add": "5399",
+        "final": "12030"
       },
       {
         "property_type": 2001,
-        "base": "332",
-        "add": "191",
-        "final": "523"
+        "base": "143",
+        "add": "183",
+        "final": "325"
       },
       {
         "property_type": 2002,
@@ -12527,9 +12527,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
@@ -12559,9 +12559,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "156.1%",
+        "base": "120.0%",
         "add": "",
-        "final": "156.1%"
+        "final": "120.0%"
       },
       {
         "property_type": 80,
@@ -12865,37 +12865,37 @@ export const character_detail: Character[] = [
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/0c63018b6beced753116e3d7c9447188.png",
       "weapon_type": 1,
       "weapon": {
-        "id": 11406,
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d859d175bb85b6add3dc3df1fb8abc5a.png",
+        "id": 11403,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/8d40dcb0e8e25ad6c5940095fa6984ab.png",
         "type": 1,
         "rarity": 4,
         "level": 70,
-        "affix_level": 2,
-        "name": "Prototype Rancour"
+        "affix_level": 1,
+        "name": "Sacrificial Sword"
       }
     },
     "weapon": {
-      "id": 11406,
-      "name": "Prototype Rancour",
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d859d175bb85b6add3dc3df1fb8abc5a.png",
+      "id": 11403,
+      "name": "Sacrificial Sword",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/8d40dcb0e8e25ad6c5940095fa6984ab.png",
       "type": 1,
       "rarity": 4,
       "level": 70,
       "promote_level": 4,
       "type_name": "Sword",
-      "desc": "An ancient longsword discovered in the Blackcliff Forge that cuts through rocks like a hot knife through butter.",
-      "affix_level": 2,
+      "desc": "A ceremonial sword that has become petrified over time. The trinkets on it are still visible. It grants the wielder the power to withstand the winds of time.",
+      "affix_level": 1,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "429"
+        "final": "347"
       },
       "sub_property": {
-        "property_type": 30,
+        "property_type": 23,
         "base": "",
         "add": "",
-        "final": "28.4%"
+        "final": "50.5%"
       }
     },
     "relics": [
@@ -13214,9 +13214,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 2001,
-        "base": "536",
-        "add": "489",
-        "final": "1025"
+        "base": "454",
+        "add": "446",
+        "final": "899"
       },
       {
         "property_type": 22,
@@ -13256,9 +13256,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "139.0%",
+        "base": "189.5%",
         "add": "",
-        "final": "139.0%"
+        "final": "189.5%"
       }
     ],
     "base_properties": [
@@ -13270,9 +13270,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 2001,
-        "base": "536",
-        "add": "489",
-        "final": "1025"
+        "base": "454",
+        "add": "446",
+        "final": "899"
       },
       {
         "property_type": 2002,
@@ -13288,9 +13288,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
@@ -13320,9 +13320,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "139.0%",
+        "base": "189.5%",
         "add": "",
-        "final": "139.0%"
+        "final": "189.5%"
       },
       {
         "property_type": 80,
@@ -13424,9 +13424,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 30,
-        "base": "28.4%",
+        "base": "0.0%",
         "add": "",
-        "final": "28.4%"
+        "final": "0.0%"
       },
       {
         "property_type": 29,
@@ -13630,43 +13630,43 @@ export const character_detail: Character[] = [
       "fetter": 3,
       "level": 50,
       "rarity": 4,
-      "actived_constellation_num": 0,
+      "actived_constellation_num": 1,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/c57fd813ced89f1f01b5bc68ab78c53b.png",
       "is_chosen": false,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/8120c3760d0ef7553024fc402d3d7a2f.png",
       "weapon_type": 10,
       "weapon": {
-        "id": 14302,
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/aff08755a2149ffb6c0fa7d1d189a222.png",
+        "id": 14402,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/22d2b64c9fd0ab81ef934c8387f72d0c.png",
         "type": 10,
-        "rarity": 3,
+        "rarity": 4,
         "level": 50,
         "affix_level": 5,
-        "name": "Thrilling Tales of Dragon Slayers"
+        "name": "The Widsith"
       }
     },
     "weapon": {
-      "id": 14302,
-      "name": "Thrilling Tales of Dragon Slayers",
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/aff08755a2149ffb6c0fa7d1d189a222.png",
+      "id": 14402,
+      "name": "The Widsith",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/22d2b64c9fd0ab81ef934c8387f72d0c.png",
       "type": 10,
-      "rarity": 3,
+      "rarity": 4,
       "level": 50,
       "promote_level": 2,
       "type_name": "Catalyst",
-      "desc": "A fictional story of a band of five heroes who go off on a dragon hunt. It is poorly written and structurally incoherent. Its value lies in the many lessons that can be learned from failure.",
+      "desc": "A heavy notebook filled with musical scores. Though suffering from moth damage and heavy wear-and-tear, there is still much power to be found among the hand-written words within.",
       "affix_level": 5,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "216"
+        "final": "266"
       },
       "sub_property": {
-        "property_type": 3,
+        "property_type": 22,
         "base": "",
         "add": "",
-        "final": "22.8%"
+        "final": "35.7%"
       }
     },
     "relics": [
@@ -13917,7 +13917,7 @@ export const character_detail: Character[] = [
         "name": "Infinite Circuit",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/5879369c4e579e11601e5f9f72ad5578.png",
         "effect": "Lisa regenerates 2 Energy for every opponent hit while holding <color=#FFD780FF>Violet Arc</color>.\\nA maximum of 10 Energy can be regenerated in this manner at any one time.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 1,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -13984,8 +13984,8 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "5074",
-        "add": "3700",
-        "final": "8774"
+        "add": "2542",
+        "final": "7616"
       },
       {
         "property_type": 20,
@@ -13995,15 +13995,15 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 2001,
-        "base": "339",
-        "add": "271",
-        "final": "610"
+        "base": "389",
+        "add": "300",
+        "final": "688"
       },
       {
         "property_type": 22,
-        "base": "61.2%",
+        "base": "96.9%",
         "add": "",
-        "final": "61.2%"
+        "final": "96.9%"
       },
       {
         "property_type": 2002,
@@ -14046,14 +14046,14 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "5074",
-        "add": "3700",
-        "final": "8774"
+        "add": "2542",
+        "final": "7616"
       },
       {
         "property_type": 2001,
-        "base": "339",
-        "add": "271",
-        "final": "610"
+        "base": "389",
+        "add": "300",
+        "final": "688"
       },
       {
         "property_type": 2002,
@@ -14069,9 +14069,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
@@ -14083,9 +14083,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 22,
-        "base": "61.2%",
+        "base": "96.9%",
         "add": "",
-        "final": "61.2%"
+        "final": "96.9%"
       },
       {
         "property_type": 26,
@@ -14430,7 +14430,7 @@ export const character_detail: Character[] = [
         "type": 11,
         "rarity": 4,
         "level": 40,
-        "affix_level": 1,
+        "affix_level": 2,
         "name": "The Bell"
       }
     },

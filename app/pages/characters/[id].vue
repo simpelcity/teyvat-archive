@@ -1,20 +1,35 @@
 <script setup lang="ts">
-import { character_detail } from '~/data/character_detail'
-import { property_map } from '~/data/property_map'
 import { getElementColors } from '~/constants/elements'
 import { getRarityBg } from '~/constants/weapons'
-import type { Skills } from '~/types/character'
+import { useLookupsStore } from '~/stores/lookups'
+import type { Character, Skills } from '~/types/character'
 import { Star, MoveLeft } from '@lucide/vue'
 import { RiLock2Fill } from '@remixicon/vue';
 import '@/assets/styles/pages/CharacterDetail.scss'
 
 const route = useRoute()
+const supabase = useSupabaseClient()
+const lookups = useLookupsStore()
 
-const characterComputed = computed(() =>
-  character_detail.find(c => c.base.name.toLowerCase() === route.params.id || `${c.base.name.toLowerCase()}-${c.base.element.toLowerCase()}` === route.params.id)
-)
+// URL is /characters/<name> or /characters/<name>-<element>
+const slug = String(route.params.id).replace(/["\\]/g, '')
 
-const character = characterComputed.value
+const [{ data: characterData }] = await Promise.all([
+  useAsyncData(`character-${slug}`, async () => {
+    const { data, error } = await supabase
+      .from('character_details')
+      .select('data')
+      .or(`name_slug.eq."${slug}",name_element_slug.eq."${slug}"`)
+      .order('id')
+      .limit(1)
+      .maybeSingle()
+    if (error) throw createError({ statusCode: 500, statusMessage: error.message })
+    return (data?.data as Character | undefined) ?? null
+  }),
+  callOnce('lookups', () => lookups.load()),
+])
+
+const character = characterData.value
 
 if (!character) {
   throw createError({
@@ -36,10 +51,7 @@ const isTraveler = (c: typeof character) => c.base.name.toLowerCase() === 'trave
 const displayName = (c: typeof character) =>
   isTraveler(c) ? `${c.base.element} Traveler` : c.base.name
 
-function getProperty(id: number) {
-  const property = property_map.find(p => p.property_type === id)
-  return property
-}
+const getProperty = (id: number) => lookups.getProperty(id)
 
 const constellations = computed(() =>
   [...character.constellations].sort((a, b) => a.pos - b.pos)
@@ -58,12 +70,6 @@ const showSkillModal = ref(false)
 function openSkill(skill: Skills) {
   selectedSkill.value = skill
   showSkillModal.value = true
-}
-
-const skill_map: Record<number, string> = {
-  1: "Combat",
-  2: "Passive",
-  3: "Additional"
 }
 
 const skillTabIndex = ref(0)
@@ -121,7 +127,7 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
   
                             <div class="d-flex flex-column justify-content-center text-start">
                               <span class="text-primary fs-5">{{ selectedSkill.name }}</span>
-                              <span class="text-muted">{{ skill_map[selectedSkill.skill_type] }} Talent  | Lv. {{ selectedSkill.level }}</span>
+                              <span class="text-muted">{{ lookups.skillMap[selectedSkill.skill_type] }} Talent  | Lv. {{ selectedSkill.level }}</span>
                             </div>
                           </div>
   

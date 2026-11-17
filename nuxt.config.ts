@@ -4,8 +4,17 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@pinia/nuxt',
-    '@bootstrap-vue-next/nuxt'
+    '@bootstrap-vue-next/nuxt',
+    '@nuxtjs/supabase'
   ],
+  build: {
+    transpile: ['@lucide/vue']
+  },
+  supabase: {
+    // Public read-only data, no login required
+    redirect: false,
+    types: '~/types/database.types.ts'
+  },
   css: [
     '~/assets/styles/main.scss',
   ],

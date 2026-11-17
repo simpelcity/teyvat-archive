@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import { property_map } from '~/data/property_map'
 import type { Relics } from '~/types/character'
 import { getRarityBg } from '~/constants/weapons'
 import { Star, ChevronRight } from '@lucide/vue'
-import { wiki_map } from "~/data/wiki_map"
+import { useLookupsStore } from '~/stores/lookups'
 
 const props = defineProps<{
   relic: Relics
 }>()
 
-function getProperty(id: number) {
-  const property = property_map.find(p => p.property_type === id)
-  return property
-}
+// Loaded by the parent page (callOnce('lookups', ...))
+const lookups = useLookupsStore()
+const getProperty = (id: number) => lookups.getProperty(id)
 </script>
 
 <template>
@@ -51,7 +49,7 @@ function getProperty(id: number) {
                     <span class="badge text-bg-secondary rounded-1 mb-1 text-align-center fw-medium">{{ relic.pos_name }}</span>
                   </div>
                   <NuxtLink
-                    :to="wiki_map[relic.set.id]"
+                    :to="lookups.wikiMap[relic.set.id]"
                     target="_blank"
                     class="btn btn-outline border rounded-1 text-primary py-0 ps-2 pe-1 fw-semibold text-decoration-none align-self-end"
                   >
