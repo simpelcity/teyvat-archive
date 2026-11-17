@@ -5,5 +5,7 @@ useHead({
 </script>
 
 <template>
-  <NuxtPage />
+  <BApp>
+    <NuxtPage />
+  </BApp>
 </template>

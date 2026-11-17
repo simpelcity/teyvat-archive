@@ -20,34 +20,30 @@ const filteredCharacters = computed(() => {
     c.element.toLowerCase().includes(q)
   )
 })
-
-console.log('Characters:', characters)
 </script>
 
 <template>
   <main>
-    <div class="container p-3 py-md-4">
+    <BContainer class="p-3 py-md-4">
       <section class="mb-4 text-center">
         <h1 class="text-primary font-genshin">Teyvat Archive</h1>
         <input
           v-model="query"
           type="search"
           id="search-form"
-          class="form-control mt-3 shadow-none border-secondary"
+          class="form-control mt-3 shadow-none border-secondary font-nunito fw-bold"
           placeholder="Search by name or element…"
           aria-label="Search characters"
         />
       </section>
 
       <section>
-        <div v-if="filteredCharacters.length" class="grid">
-          <CharacterIndexCard
-            v-for="character in filteredCharacters"
-            :key="character.id"
-            :character="character"
-          />
-        </div>
+        <BRow v-if="filteredCharacters.length"  cols="2" cols-md="3" cols-lg="4" cols-xl="5" cols-xxl="6" class="g-3">
+          <BCol v-for="character in filteredCharacters" :key="character.id">
+            <CharacterIndexCard :character="character" />
+          </BCol>
+        </BRow>
       </section>
-    </div>
+    </BContainer>
   </main>
 </template>

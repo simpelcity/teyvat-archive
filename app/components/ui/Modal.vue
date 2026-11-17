@@ -85,11 +85,11 @@ onBeforeUnmount(() => { document.body.style.overflow = '' })
 .ui-modal-xl { max-width: 1140px; }
 
 .ui-modal .modal-content {
-  max-height: 620px;
-  overflow: hidden;
+  height: 620px;
 }
+
 .ui-modal .modal-body {
-  overflow-y: visible;
+  overflow-y: auto;
 }
 
 .ui-modal::backdrop {

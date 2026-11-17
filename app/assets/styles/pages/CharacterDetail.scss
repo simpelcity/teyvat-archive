@@ -28,23 +28,6 @@
   border-bottom: 1px solid #171923 !important;
 }
 
-.card-body > .grid {
-  display: grid;
-  gap: 1rem;
-  @media (max-width: 576px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (min-width: 768px) and (max-width: 992px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (min-width: 992px) and (max-width: 1200px){
-    grid-template-columns: repeat(4, 1fr);
-  }
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
 .text-limit {
   overflow: hidden;
   display: -webkit-box;
@@ -55,6 +38,7 @@
 
 .badge-sm {
   padding: 0 2px;
+  padding-top: 1px;
   font-size: 10px;
   line-height: 1;
   border-radius: 2px;
@@ -76,6 +60,29 @@
   transform: translate(30%, 30%);
 }
 
-.modal-dialog-scrollable {
-  overflow-y: scroll;
+.skill-table-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.modal-content {
+  height: 620px;
+}
+
+.artifact-times {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 10px;
+  font-size: 9px;
+  border: solid 1px #ffffff29;
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  padding-top: 1px;
+}
+
+.text-align-center {
+  text-box: trim-both cap alphabetic; // center text vertically
 }

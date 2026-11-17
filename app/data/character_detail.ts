@@ -849,7 +849,7 @@ export const character_detail: Character[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/681a947b/6c4f7f722b0226a1171ec265485de61c.png",
       "name": "Escoffier",
       "element": "Cryo",
-      "fetter": 5,
+      "fetter": 7,
       "level": 80,
       "rarity": 5,
       "actived_constellation_num": 0,
@@ -874,7 +874,7 @@ export const character_detail: Character[] = [
       "type": 13,
       "rarity": 5,
       "level": 80,
-      "promote_level": 5,
+      "promote_level": 6,
       "type_name": "Polearm",
       "desc": "An elegantly built polearm, said to have been a conductor's baton wielded by a great musician to bridge tune and taste.",
       "affix_level": 1,
@@ -882,7 +882,7 @@ export const character_detail: Character[] = [
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "532"
+        "final": "563"
       },
       "sub_property": {
         "property_type": 22,
@@ -893,51 +893,51 @@ export const character_detail: Character[] = [
     },
     "relics": [
       {
-        "id": 57442,
-        "name": "Instructor's Brooch",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ab213bb1abd2a5467d680d5ea9890417.png",
+        "id": 32543,
+        "name": "Golden Song's Variation",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0387d4668712fff33d58fb63596cc4df.png",
         "pos": 1,
-        "rarity": 4,
+        "rarity": 5,
         "level": 8,
         "set": {
-          "id": 2100071,
-          "name": "Instructor",
+          "id": 2150321,
+          "name": "Golden Troupe",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Increases Elemental Mastery by 80."
+              "effect": "Increases Elemental Skill DMG by 20%."
             },
             {
               "activation_number": 4,
-              "effect": "Upon triggering an Elemental Reaction, increases all party members' Elemental Mastery by 120 for 8s."
+              "effect": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
             }
           ]
         },
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "2108",
+          "value": "2342",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 20,
-            "value": "3.1%",
+            "property_type": 8,
+            "value": "21",
             "times": 0
           },
           {
             "property_type": 28,
-            "value": "13",
-            "times": 0
+            "value": "47",
+            "times": 1
           },
           {
             "property_type": 23,
-            "value": "4.7%",
+            "value": "4.5%",
             "times": 0
           },
           {
-            "property_type": 5,
-            "value": "11",
+            "property_type": 22,
+            "value": "5.4%",
             "times": 0
           }
         ]
@@ -993,47 +993,52 @@ export const character_detail: Character[] = [
         ]
       },
       {
-        "id": 59351,
-        "name": "Exile's Pocket Watch",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f9dd8d807eaa9ec5997b9c0e6f7cd48c.png",
+        "id": 32553,
+        "name": "Golden Era's Prelude",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/623e4ec8f219b8ba5c198444a61ca224.png",
         "pos": 3,
-        "rarity": 3,
+        "rarity": 5,
         "level": 8,
         "set": {
-          "id": 2100091,
-          "name": "The Exile",
+          "id": 2150321,
+          "name": "Golden Troupe",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Energy Recharge +20%"
+              "effect": "Increases Elemental Skill DMG by 20%."
             },
             {
               "activation_number": 4,
-              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+              "effect": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
             }
           ]
         },
         "pos_name": "Sands of Eon",
         "main_property": {
           "property_type": 6,
-          "value": "17.1%",
+          "value": "22.8%",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 22,
-            "value": "4.7%",
+            "property_type": 3,
+            "value": "5.8%",
+            "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "19",
+            "times": 0
+          },
+          {
+            "property_type": 9,
+            "value": "5.1%",
             "times": 0
           },
           {
             "property_type": 5,
-            "value": "7",
-            "times": 0
-          },
-          {
-            "property_type": 2,
-            "value": "115",
-            "times": 0
+            "value": "33",
+            "times": 1
           }
         ]
       },
@@ -1088,52 +1093,52 @@ export const character_detail: Character[] = [
         ]
       },
       {
-        "id": 59432,
-        "name": "Exile's Circlet",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/22faf0f5c42ac3652ea2c4a1ca38ac05.png",
+        "id": 45534,
+        "name": "Heavensent Crown",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/9ddda9f5ce2a9b32318a2040598cc8f1.png",
         "pos": 5,
-        "rarity": 4,
+        "rarity": 5,
         "level": 8,
         "set": {
-          "id": 2100091,
-          "name": "The Exile",
+          "id": 2150451,
+          "name": "Celestial Gift",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Energy Recharge +20%"
+              "effect": "Energy Recharge +20%."
             },
             {
               "activation_number": 4,
-              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+              "effect": "If the equipping character has completed Witch's Homework, after they use an Elemental Skill, they gain \"Light's Guidance\" for 20s: All nearby party members gain a 20% Elemental DMG Bonus corresponding to the equipping character's Elemental Type. The equipping character can trigger this effect while off-field. DMG Bonuses provided by Artifact Sets with the same name do not stack.\\n· When your party has the Hexerei: Secret Rite effect, Light's Guidance is upgraded to \"Mortal Hymn\": All nearby party members gain a 40% Elemental DMG Bonus corresponding to both the equipping character and the current active party member's Elemental Type instead. If both characters have the same Elemental Type, these bonuses will not stack."
             }
           ]
         },
         "pos_name": "Circlet of Logos",
         "main_property": {
-          "property_type": 22,
-          "value": "27.4%",
+          "property_type": 20,
+          "value": "15.2%",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 20,
-            "value": "2.5%",
+            "property_type": 28,
+            "value": "42",
+            "times": 1
+          },
+          {
+            "property_type": 22,
+            "value": "6.2%",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "209",
             "times": 0
           },
           {
             "property_type": 23,
-            "value": "3.6%",
-            "times": 0
-          },
-          {
-            "property_type": 5,
-            "value": "16",
-            "times": 0
-          },
-          {
-            "property_type": 8,
-            "value": "17",
-            "times": 0
+            "value": "12.3%",
+            "times": 1
           }
         ]
       }
@@ -1211,32 +1216,32 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "11777",
-        "add": "2629",
-        "final": "14406"
+        "add": "3644",
+        "final": "15421"
       },
       {
         "property_type": 20,
-        "base": "30.9%",
+        "base": "40.5%",
         "add": "",
-        "final": "30.9%"
+        "final": "40.5%"
       },
       {
         "property_type": 2001,
-        "base": "838",
-        "add": "415",
-        "final": "1253"
+        "base": "869",
+        "add": "473",
+        "final": "1342"
       },
       {
         "property_type": 22,
-        "base": "157.3%",
+        "base": "136.9%",
         "add": "",
-        "final": "157.3%"
+        "final": "136.9%"
       },
       {
         "property_type": 2002,
         "base": "646",
-        "add": "57",
-        "final": "703"
+        "add": "113",
+        "final": "759"
       },
       {
         "property_type": 26,
@@ -1246,9 +1251,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "13",
+        "base": "89",
         "add": "",
-        "final": "13"
+        "final": "89"
       },
       {
         "property_type": 27,
@@ -1264,55 +1269,55 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "128.3%",
+        "base": "136.8%",
         "add": "",
-        "final": "128.3%"
+        "final": "136.8%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
         "base": "11777",
-        "add": "2629",
-        "final": "14406"
+        "add": "3644",
+        "final": "15421"
       },
       {
         "property_type": 2001,
-        "base": "838",
-        "add": "415",
-        "final": "1253"
+        "base": "869",
+        "add": "473",
+        "final": "1342"
       },
       {
         "property_type": 2002,
         "base": "646",
-        "add": "57",
-        "final": "703"
+        "add": "113",
+        "final": "759"
       },
       {
         "property_type": 28,
-        "base": "13",
+        "base": "89",
         "add": "",
-        "final": "13"
+        "final": "89"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "30.9%",
+        "base": "40.5%",
         "add": "",
-        "final": "30.9%"
+        "final": "40.5%"
       },
       {
         "property_type": 22,
-        "base": "157.3%",
+        "base": "136.9%",
         "add": "",
-        "final": "157.3%"
+        "final": "136.9%"
       },
       {
         "property_type": 26,
@@ -1328,9 +1333,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "128.3%",
+        "base": "136.8%",
         "add": "",
-        "final": "128.3%"
+        "final": "136.8%"
       },
       {
         "property_type": 80,
@@ -24002,59 +24007,59 @@ export const character_detail: Character[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6776/a024f93489bf998b23dd8a41746bbc17.png",
       "name": "Mitya",
       "element": "Electro",
-      "fetter": 1,
-      "level": 1,
+      "fetter": 4,
+      "level": 70,
       "rarity": 5,
-      "actived_constellation_num": 0,
+      "actived_constellation_num": 1,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/3737799e7624da61da147e5727774470.png",
       "is_chosen": false,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6782/3c0a0dabc8a92dd8b3a3ac227f1eba39.png",
       "weapon_type": 10,
       "weapon": {
-        "id": 14401,
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bb4ff947d3649e393b6ca2e117b072d6.png",
+        "id": 14525,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6776/ec4643eca7890833b5b415f7ad5dc79b.png",
         "type": 10,
-        "rarity": 4,
-        "level": 29,
+        "rarity": 5,
+        "level": 70,
         "affix_level": 1,
-        "name": "Favonius Codex"
+        "name": "Starsealed Edict"
       }
     },
     "weapon": {
-      "id": 14401,
-      "name": "Favonius Codex",
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bb4ff947d3649e393b6ca2e117b072d6.png",
+      "id": 14525,
+      "name": "Starsealed Edict",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6776/ec4643eca7890833b5b415f7ad5dc79b.png",
       "type": 10,
-      "rarity": 4,
-      "level": 29,
-      "promote_level": 1,
+      "rarity": 5,
+      "level": 70,
+      "promote_level": 4,
       "type_name": "Catalyst",
-      "desc": "A secret tome that belonged to the scholars of the Knights of Favonius. It describes the logic and power of elements and matter.",
+      "desc": "A hefty tome containing the Royal Energy Commission's internal rules and procedures, with numerous entries dating back many years.",
       "affix_level": 1,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "166"
+        "final": "408"
       },
       "sub_property": {
-        "property_type": 23,
+        "property_type": 22,
         "base": "",
         "add": "",
-        "final": "19.7%"
+        "final": "72.7%"
       }
     },
     "relics": [
       {
-        "id": 48443,
-        "name": "Foundryman's Conjecture",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/09729586ce0f78f5111f9ee8d25eb431.png",
+        "id": 46543,
+        "name": "Iridescence That Ceased Amidst Glory",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/06fa300aff19d3a5de4c4ce6048a5404.png",
         "pos": 1,
-        "rarity": 4,
+        "rarity": 5,
         "level": 4,
         "set": {
-          "id": 2150481,
-          "name": "Heart of the Furnace",
+          "id": 2150461,
+          "name": "Disenchantment in Deep Shadow",
           "affixes": [
             {
               "activation_number": 2,
@@ -24062,49 +24067,49 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
+              "effect": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
             }
           ]
         },
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "1377",
+          "value": "1530",
           "times": 0
         },
         "sub_property_list": [
           {
+            "property_type": 9,
+            "value": "5.1%",
+            "times": 0
+          },
+          {
+            "property_type": 3,
+            "value": "4.1%",
+            "times": 0
+          },
+          {
+            "property_type": 22,
+            "value": "5.4%",
+            "times": 0
+          },
+          {
             "property_type": 8,
-            "value": "17",
-            "times": 0
-          },
-          {
-            "property_type": 6,
-            "value": "4.7%",
-            "times": 0
-          },
-          {
-            "property_type": 23,
-            "value": "5.2%",
-            "times": 0
-          },
-          {
-            "property_type": 28,
-            "value": "19",
+            "value": "21",
             "times": 0
           }
         ]
       },
       {
-        "id": 47422,
-        "name": "Glory to Your Legacy",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/f60c04735c5a36d349a2802b51e9b6fc.png",
+        "id": 46422,
+        "name": "Sharpness That Ceased Upon Wondrous Creation",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/78cfacac47588a8472a40d5c411b4b6d.png",
         "pos": 2,
         "rarity": 4,
-        "level": 4,
+        "level": 8,
         "set": {
-          "id": 2150471,
-          "name": "Scarlet Proof",
+          "id": 2150461,
+          "name": "Disenchantment in Deep Shadow",
           "affixes": [
             {
               "activation_number": 2,
@@ -24112,30 +24117,35 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
+              "effect": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%."
             }
           ]
         },
         "pos_name": "Plume of Death",
         "main_property": {
           "property_type": 5,
-          "value": "90",
+          "value": "137",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 23,
-            "value": "5.2%",
+            "property_type": 20,
+            "value": "2.5%",
             "times": 0
           },
           {
-            "property_type": 8,
+            "property_type": 28,
             "value": "15",
             "times": 0
           },
           {
-            "property_type": 2,
-            "value": "167",
+            "property_type": 8,
+            "value": "19",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "4.7%",
             "times": 0
           }
         ]
@@ -24146,7 +24156,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/0119db4ca0f7c650686e2da11b9c6a1d.png",
         "pos": 3,
         "rarity": 5,
-        "level": 0,
+        "level": 8,
         "set": {
           "id": 2150481,
           "name": "Heart of the Furnace",
@@ -24164,7 +24174,7 @@ export const character_detail: Character[] = [
         "pos_name": "Sands of Eon",
         "main_property": {
           "property_type": 28,
-          "value": "28",
+          "value": "91",
           "times": 0
         },
         "sub_property_list": [
@@ -24182,48 +24192,24 @@ export const character_detail: Character[] = [
             "property_type": 22,
             "value": "6.2%",
             "times": 0
+          },
+          {
+            "property_type": 3,
+            "value": "11.1%",
+            "times": 1
           }
         ]
       },
       {
-        "id": 63210,
-        "name": "Traveling Doctor's Medicine Pot",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/aea9c1751e0e454042c67703102cb0d8.png",
+        "id": 75514,
+        "name": "Gladiator's Intoxication",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0c3a5868f5b77bf7bf8ae6c56e016557.png",
         "pos": 4,
-        "rarity": 2,
-        "level": 0,
+        "rarity": 5,
+        "level": 4,
         "set": {
-          "id": 2100131,
-          "name": "Traveling Doctor",
-          "affixes": [
-            {
-              "activation_number": 2,
-              "effect": "Increases incoming healing by 20%."
-            },
-            {
-              "activation_number": 4,
-              "effect": "Using Elemental Burst restores 20% HP."
-            }
-          ]
-        },
-        "pos_name": "Goblet of Eonothem",
-        "main_property": {
-          "property_type": 28,
-          "value": "17",
-          "times": 0
-        },
-        "sub_property_list": []
-      },
-      {
-        "id": 47432,
-        "name": "Testament to Your Faith",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/11eeed27d2d7fbb0ab34f03c87325688.png",
-        "pos": 5,
-        "rarity": 4,
-        "level": 0,
-        "set": {
-          "id": 2150471,
-          "name": "Scarlet Proof",
+          "id": 2150011,
+          "name": "Gladiator's Finale",
           "affixes": [
             {
               "activation_number": 2,
@@ -24231,25 +24217,85 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
+              "effect": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%."
+            }
+          ]
+        },
+        "pos_name": "Goblet of Eonothem",
+        "main_property": {
+          "property_type": 28,
+          "value": "60",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 9,
+            "value": "7.3%",
+            "times": 0
+          },
+          {
+            "property_type": 3,
+            "value": "5.8%",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 5,
+            "value": "33",
+            "times": 1
+          }
+        ]
+      },
+      {
+        "id": 77533,
+        "name": "Conductor's Top Hat",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/83903a2b1f0da3e6aeab6328089c9595.png",
+        "pos": 5,
+        "rarity": 5,
+        "level": 4,
+        "set": {
+          "id": 2150031,
+          "name": "Wanderer's Troupe",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "Increases Elemental Mastery by 80."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow."
             }
           ]
         },
         "pos_name": "Circlet of Logos",
         "main_property": {
           "property_type": 22,
-          "value": "8.4%",
+          "value": "19.9%",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 23,
-            "value": "4.7%",
+            "property_type": 9,
+            "value": "5.8%",
             "times": 0
           },
           {
             "property_type": 28,
-            "value": "13",
+            "value": "23",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "4.1%",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "209",
             "times": 0
           }
         ]
@@ -24261,7 +24307,7 @@ export const character_detail: Character[] = [
         "name": "The Observer Seeking What Is Missing",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6781/48861d3a1c49b6b8ee042d1f596d7de9.png",
         "effect": "The maximum number of <color=#FFD780FF>{LINK#N11360001}Gradient Beacons{/LINK}</color> Mitya can carry is increased to 5. Using the Elemental Skill <color=#FFD780FF>Principle: Variable Detection</color> additionally creates 1 <color=#FFD780FF>Gradient Beacon</color>.\\nWhile the <color=#FFD780FF>{LINK#N11360002}Detection Core{/LINK}</color> is present, your own active character's CRIT DMG is increased by 40%.\\nAdditionally, Mitya regenerates 10 Elemental Energy when a <color=#FFD780FF>Gradient Beacon</color> is created. This effect can be triggered once every 8s.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 1,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -24327,33 +24373,33 @@ export const character_detail: Character[] = [
     "selected_properties": [
       {
         "property_type": 2000,
-        "base": "906",
-        "add": "1544",
-        "final": "2450"
+        "base": "8901",
+        "add": "3607",
+        "final": "12508"
       },
       {
         "property_type": 20,
-        "base": "5.0%",
+        "base": "7.5%",
         "add": "",
-        "final": "5.0%"
+        "final": "7.5%"
       },
       {
         "property_type": 2001,
-        "base": "187",
-        "add": "177",
-        "final": "364"
+        "base": "609",
+        "add": "397",
+        "final": "1006"
       },
       {
         "property_type": 22,
-        "base": "64.6%",
+        "base": "197.5%",
         "add": "",
-        "final": "64.6%"
+        "final": "197.5%"
       },
       {
         "property_type": 2002,
-        "base": "62",
-        "add": "36",
-        "final": "97"
+        "base": "606",
+        "add": "189",
+        "final": "795"
       },
       {
         "property_type": 26,
@@ -24363,9 +24409,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "177",
+        "base": "289",
         "add": "",
-        "final": "177"
+        "final": "289"
       },
       {
         "property_type": 27,
@@ -24381,55 +24427,55 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "134.7%",
+        "base": "100.0%",
         "add": "",
-        "final": "134.7%"
+        "final": "100.0%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
-        "base": "906",
-        "add": "1544",
-        "final": "2450"
+        "base": "8901",
+        "add": "3607",
+        "final": "12508"
       },
       {
         "property_type": 2001,
-        "base": "187",
-        "add": "177",
-        "final": "364"
+        "base": "609",
+        "add": "397",
+        "final": "1006"
       },
       {
         "property_type": 2002,
-        "base": "62",
-        "add": "36",
-        "final": "97"
+        "base": "606",
+        "add": "189",
+        "final": "795"
       },
       {
         "property_type": 28,
-        "base": "177",
+        "base": "289",
         "add": "",
-        "final": "177"
+        "final": "289"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "5.0%",
+        "base": "7.5%",
         "add": "",
-        "final": "5.0%"
+        "final": "7.5%"
       },
       {
         "property_type": 22,
-        "base": "64.6%",
+        "base": "197.5%",
         "add": "",
-        "final": "64.6%"
+        "final": "197.5%"
       },
       {
         "property_type": 26,
@@ -24445,9 +24491,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "134.7%",
+        "base": "100.0%",
         "add": "",
-        "final": "134.7%"
+        "final": "100.0%"
       },
       {
         "property_type": 80,
@@ -24564,24 +24610,24 @@ export const character_detail: Character[] = [
       {
         "skill_id": 11361,
         "skill_type": 1,
-        "level": 1,
+        "level": 3,
         "desc": "<color=#FFD780FF>Normal Attack</color>\\nPerforms a maximum of 3 attacks that deal <color=#FFACFFFF>Electro DMG</color>.\\n\\n<color=#FFD780FF>Charged Attack</color>\\nConsumes a certain amount of Stamina to deal <color=#FFACFFFF>AoE Electro DMG</color> to the area in front after a short casting time.\\nMitya will instead perform the special Charged Attack <color=#FFD780FF>Gradient Detonation</color>, which consumes no Stamina, if a <color=#FFD780FF>{LINK#N11360002}Detection Core: Overload{/LINK}</color> created by Mitya himself is currently on the field and he has at least 1 <color=#FFD780FF>{LINK#N11360001}Gradient Beacon{/LINK}</color>: Deals 1 instance of <color=#FFACFFFF>AoE Electro DMG</color> to the area in front and continuously consumes <color=#FFD780FF>Gradient Beacons</color> while held. Each <color=#FFD780FF>Gradient Beacon</color> consumed deals 1 instance of <color=#FFACFFFF>AoE Electro DMG</color> to the area in front that is considered Stellar-Conduct reaction DMG.\\n\\n<color=#FFD780FF>Plunging Attack</color>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing <color=#FFACFFFF>AoE Electro DMG</color> upon impact.",
         "skill_affix_list": [
           {
             "name": "1-Hit DMG",
-            "value": "58.8%"
+            "value": "67.6%"
           },
           {
             "name": "2-Hit DMG",
-            "value": "48.3%"
+            "value": "55.5%"
           },
           {
             "name": "3-Hit DMG",
-            "value": "69.0%"
+            "value": "79.4%"
           },
           {
             "name": "Charged Attack DMG",
-            "value": "136.9%"
+            "value": "157.4%"
           },
           {
             "name": "Charged Attack Stamina Cost",
@@ -24589,19 +24635,19 @@ export const character_detail: Character[] = [
           },
           {
             "name": "Plunge DMG",
-            "value": "56.8%"
+            "value": "66.1%"
           },
           {
             "name": "Low/High Plunge DMG",
-            "value": "113.6%/141.9%"
+            "value": "132.1%/165.0%"
           },
           {
             "name": "Gradient Detonation DMG",
-            "value": "168.0%"
+            "value": "193.2%"
           },
           {
             "name": "Gradient Detonation Stellar-Conduct DMG",
-            "value": "224.0% Elemental Mastery"
+            "value": "257.6% Elemental Mastery"
           }
         ],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/2c014e6053c4f0d032e1d1ff0c6de0e1.png",
@@ -24616,28 +24662,28 @@ export const character_detail: Character[] = [
       {
         "skill_id": 11362,
         "skill_type": 1,
-        "level": 1,
+        "level": 5,
         "desc": "Conducts a theoretically relatively safe experiment at a theoretically relatively safe yield, dealing <color=#FFACFFFF>AoE Electro DMG</color> and creating a <color=#FFD780FF>{LINK#N11360002}Detection Core{/LINK}</color> in different ways depending on whether the Skill is tapped or held.\\n\\nTapping the Elemental Skill <color=#FFD780FF>Principle: Variable Detection</color> again within 6s after using it changes the <color=#FFD780FF>Detection Core</color>'s state. The Detection Core's state can be changed in this way every 1.5s.",
         "skill_affix_list": [
           {
             "name": "Tap Skill DMG",
-            "value": "90.7%"
+            "value": "120.2%"
           },
           {
             "name": "Hold Skill DMG",
-            "value": "129.6%"
+            "value": "171.7%"
           },
           {
             "name": "Steady State Core DMG",
-            "value": "72.0%"
+            "value": "95.4%"
           },
           {
             "name": "Steady State Core Gradient Beacon Consumption DMG",
-            "value": "80.0% Elemental Mastery"
+            "value": "106.0% Elemental Mastery"
           },
           {
             "name": "Steady State Core Detonation DMG",
-            "value": "92.0% Elemental Mastery/Beacon"
+            "value": "121.9% Elemental Mastery/Beacon"
           },
           {
             "name": "Detection Core Duration",
@@ -24660,12 +24706,12 @@ export const character_detail: Character[] = [
       {
         "skill_id": 11364,
         "skill_type": 1,
-        "level": 1,
+        "level": 2,
         "desc": "Let the elements burst forth like inspiration itself! Deals <color=#FFACFFFF>AoE Electro DMG</color> and creates 3 <color=#FFD780FF>{LINK#N11360001}Gradient Beacons{/LINK}</color>.",
         "skill_affix_list": [
           {
             "name": "Skill DMG",
-            "value": "333.6% ATK+667.2% Elemental Mastery"
+            "value": "358.6% ATK+717.2% Elemental Mastery"
           },
           {
             "name": "Gradient Beacons Generated",
@@ -24696,7 +24742,7 @@ export const character_detail: Character[] = [
         "desc": "The <color=#FFD780FF>{LINK#N11360002}Detection Core{/LINK}</color> created by the Elemental Skill <color=#FFD780FF>Principle: Variable Detection</color> is enhanced. Depending on the state of the <color=#FFD780FF>Detection Core</color> created:\\n·Steady State: All nearby party members gain 30 Elemental Mastery for each <color=#FFD780FF>{LINK#N11360001}Gradient Beacon{/LINK}</color> Mitya has;\\n·Overloaded: After nearby party members trigger Stellar-Conduct reactions, instead obtain 1 <color=#FFD780FF>Gradient Beacon</color> every 1.5s for 6s.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6781/9982ba92dcbbb6aecff60bd663bdc1c4.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Baseline Stress Test",
         "is_enhanced": false,
         "enhanced_desc": "",
@@ -24711,7 +24757,7 @@ export const character_detail: Character[] = [
         "desc": "The duration of <color=#FFD780FF>{LINK#N11360001}Gradient Beacons{/LINK}</color> is increased to 10s. Additionally, Mitya's CRIT Rate increases by 5% for 15s after creating a <color=#FFD780FF>Gradient Beacon</color>. This effect can stack up to 4 times.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6781/73d6f0a8f460d63b8d16aaa9aa0345a3.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Explosive Reagent: Safe Limits Exceeded",
         "is_enhanced": false,
         "enhanced_desc": "",
@@ -24752,10 +24798,20 @@ export const character_detail: Character[] = [
     ],
     "recommend_relic_property": {
       "recommend_properties": {
-        "sand_main_property_list": [],
-        "goblet_main_property_list": [],
-        "circlet_main_property_list": [],
-        "sub_property_list": []
+        "sand_main_property_list": [
+          28
+        ],
+        "goblet_main_property_list": [
+          28
+        ],
+        "circlet_main_property_list": [
+          20
+        ],
+        "sub_property_list": [
+          20,
+          22,
+          28
+        ]
       },
       "custom_properties": null,
       "has_set_recommend_prop": false
