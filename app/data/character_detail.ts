@@ -7,12 +7,12 @@ export const character_detail: Character[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31686/88e4654b892a5ada8d0fd21301c07518.png",
       "name": "Vesna",
       "element": "Anemo",
-      "fetter": 6,
+      "fetter": 7,
       "level": 80,
       "rarity": 5,
       "actived_constellation_num": 0,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/e1817f5bbeed3c7b882da7bdf736d15b.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31696/29b50cdb9288163fc60662473ecf44d5.png",
       "weapon_type": 1,
       "weapon": {
@@ -32,7 +32,7 @@ export const character_detail: Character[] = [
       "type": 1,
       "rarity": 4,
       "level": 80,
-      "promote_level": 5,
+      "promote_level": 6,
       "type_name": "Sword",
       "desc": "A longsword left behind by Wind Reader, one of the Three Hermits of Guizang in Liyue. Legend has it that it was forged out of sacred silver descended from the heavens, and that it once cleaved flowing sea water into two.",
       "affix_level": 5,
@@ -40,7 +40,7 @@ export const character_detail: Character[] = [
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "449"
+        "final": "475"
       },
       "sub_property": {
         "property_type": 6,
@@ -256,7 +256,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/11eeed27d2d7fbb0ab34f03c87325688.png",
         "pos": 5,
         "rarity": 4,
-        "level": 12,
+        "level": 8,
         "set": {
           "id": 2150471,
           "name": "Scarlet Proof",
@@ -273,30 +273,30 @@ export const character_detail: Character[] = [
         },
         "pos_name": "Circlet of Logos",
         "main_property": {
-          "property_type": 20,
-          "value": "18.5%",
+          "property_type": 22,
+          "value": "27.4%",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 8,
-            "value": "17",
+            "property_type": 23,
+            "value": "4.7%",
             "times": 0
           },
           {
-            "property_type": 22,
-            "value": "5.6%",
-            "times": 0
-          },
-          {
-            "property_type": 9,
-            "value": "5.8%",
+            "property_type": 28,
+            "value": "13",
             "times": 0
           },
           {
             "property_type": 2,
-            "value": "406",
-            "times": 1
+            "value": "215",
+            "times": 0
+          },
+          {
+            "property_type": 20,
+            "value": "2.8%",
+            "times": 0
           }
         ]
       }
@@ -374,32 +374,32 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "11701",
-        "add": "3598",
-        "final": "15299"
+        "add": "3407",
+        "final": "15108"
       },
       {
         "property_type": 20,
-        "base": "40.4%",
+        "base": "24.7%",
         "add": "",
-        "final": "40.4%"
+        "final": "24.7%"
       },
       {
         "property_type": 2001,
-        "base": "761",
-        "add": "1053",
-        "final": "1814"
+        "base": "787",
+        "add": "1081",
+        "final": "1868"
       },
       {
         "property_type": 22,
-        "base": "66.5%",
+        "base": "88.3%",
         "add": "",
-        "final": "66.5%"
+        "final": "88.3%"
       },
       {
         "property_type": 2002,
         "base": "644",
-        "add": "198",
-        "final": "842"
+        "add": "144",
+        "final": "788"
       },
       {
         "property_type": 26,
@@ -409,9 +409,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "21",
+        "base": "34",
         "add": "",
-        "final": "21"
+        "final": "34"
       },
       {
         "property_type": 27,
@@ -427,55 +427,55 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "118.1%",
+        "base": "122.8%",
         "add": "",
-        "final": "118.1%"
+        "final": "122.8%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
         "base": "11701",
-        "add": "3598",
-        "final": "15299"
+        "add": "3407",
+        "final": "15108"
       },
       {
         "property_type": 2001,
-        "base": "761",
-        "add": "1053",
-        "final": "1814"
+        "base": "787",
+        "add": "1081",
+        "final": "1868"
       },
       {
         "property_type": 2002,
         "base": "644",
-        "add": "198",
-        "final": "842"
+        "add": "144",
+        "final": "788"
       },
       {
         "property_type": 28,
-        "base": "21",
+        "base": "34",
         "add": "",
-        "final": "21"
+        "final": "34"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "40.4%",
+        "base": "24.7%",
         "add": "",
-        "final": "40.4%"
+        "final": "24.7%"
       },
       {
         "property_type": 22,
-        "base": "66.5%",
+        "base": "88.3%",
         "add": "",
-        "final": "66.5%"
+        "final": "88.3%"
       },
       {
         "property_type": 26,
@@ -491,9 +491,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "118.1%",
+        "base": "122.8%",
         "add": "",
-        "final": "118.1%"
+        "final": "122.8%"
       },
       {
         "property_type": 80,
@@ -854,7 +854,7 @@ export const character_detail: Character[] = [
       "rarity": 5,
       "actived_constellation_num": 0,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/4df737e56e4e119855259d06ca68b802.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/681a94b6/5f9648398c922adad4b39f7721fe17c4.png",
       "weapon_type": 13,
       "weapon": {
@@ -1645,7 +1645,7 @@ export const character_detail: Character[] = [
       "name": "Traveler",
       "element": "Anemo",
       "fetter": 0,
-      "level": 80,
+      "level": 90,
       "rarity": 5,
       "actived_constellation_num": 5,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
@@ -2454,7 +2454,7 @@ export const character_detail: Character[] = [
       "name": "Traveler",
       "element": "Geo",
       "fetter": 0,
-      "level": 80,
+      "level": 90,
       "rarity": 5,
       "actived_constellation_num": 2,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
@@ -2466,8 +2466,8 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
         "type": 1,
         "rarity": 5,
-        "level": 80,
-        "affix_level": 3,
+        "level": 90,
+        "affix_level": 5,
         "name": "Exaiphanes Blade"
       }
     },
@@ -3247,7 +3247,7 @@ export const character_detail: Character[] = [
       "name": "Traveler",
       "element": "Electro",
       "fetter": 0,
-      "level": 80,
+      "level": 90,
       "rarity": 5,
       "actived_constellation_num": 2,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
@@ -3259,8 +3259,8 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
         "type": 1,
         "rarity": 5,
-        "level": 80,
-        "affix_level": 3,
+        "level": 90,
+        "affix_level": 5,
         "name": "Exaiphanes Blade"
       }
     },
@@ -4060,7 +4060,7 @@ export const character_detail: Character[] = [
       "name": "Traveler",
       "element": "Dendro",
       "fetter": 0,
-      "level": 80,
+      "level": 90,
       "rarity": 5,
       "actived_constellation_num": 3,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
@@ -4072,8 +4072,8 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
         "type": 1,
         "rarity": 5,
-        "level": 80,
-        "affix_level": 3,
+        "level": 90,
+        "affix_level": 5,
         "name": "Exaiphanes Blade"
       }
     },
@@ -4853,7 +4853,7 @@ export const character_detail: Character[] = [
       "name": "Traveler",
       "element": "Hydro",
       "fetter": 0,
-      "level": 80,
+      "level": 90,
       "rarity": 5,
       "actived_constellation_num": 3,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
@@ -4865,8 +4865,8 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
         "type": 1,
         "rarity": 5,
-        "level": 80,
-        "affix_level": 3,
+        "level": 90,
+        "affix_level": 5,
         "name": "Exaiphanes Blade"
       }
     },
@@ -5666,7 +5666,7 @@ export const character_detail: Character[] = [
       "name": "Traveler",
       "element": "Pyro",
       "fetter": 0,
-      "level": 80,
+      "level": 90,
       "rarity": 5,
       "actived_constellation_num": 6,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/10fcbb4bb21456b3d7b9590543bf3891.png",
@@ -5678,8 +5678,8 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
         "type": 1,
         "rarity": 5,
-        "level": 80,
-        "affix_level": 3,
+        "level": 90,
+        "affix_level": 5,
         "name": "Exaiphanes Blade"
       }
     },
@@ -7303,7 +7303,7 @@ export const character_detail: Character[] = [
       "rarity": 5,
       "actived_constellation_num": 0,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/673d0b8c4578936ace905c344d828f45.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6851f3c2/0fa95a8f72a1bae43275808caaf298c0.png",
       "weapon_type": 1,
       "weapon": {
@@ -7750,9 +7750,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
@@ -8130,7 +8130,7 @@ export const character_detail: Character[] = [
       "rarity": 5,
       "actived_constellation_num": 0,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/909badef56b2f351ec9c9f01bb4bbc81.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/2b3f14df19a146efe4295b2f0a55db8b.png",
       "weapon_type": 1,
       "weapon": {
@@ -8583,9 +8583,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
@@ -8786,12 +8786,12 @@ export const character_detail: Character[] = [
       {
         "skill_id": 10033,
         "skill_type": 1,
-        "level": 2,
+        "level": 3,
         "desc": "Focusing the might of the formless wind around her blade, Jean releases a miniature storm, launching opponents in the direction she aims at, dealing massive <color=#80FFD7FF>Anemo DMG</color>.\\n\\n<color=#FFD780FF>Hold</color>\\nAt the cost of continued stamina consumption, Jean can command the whirlwind to pull surrounding opponents and objects towards her front.\\nDirection can be adjusted.\\nCharacter is immobile during skill duration.\\n\\n<i>That which follows Jean, the wholehearted defender, is a guardian wind that can banish danger from her comrades' presence.</i>",
         "skill_affix_list": [
           {
             "name": "Skill DMG",
-            "value": "314%"
+            "value": "336%"
           },
           {
             "name": "Stamina Consumption",
@@ -8944,7 +8944,7 @@ export const character_detail: Character[] = [
         "type": 1,
         "rarity": 4,
         "level": 60,
-        "affix_level": 2,
+        "affix_level": 3,
         "name": "Lion's Roar"
       }
     },
@@ -8958,7 +8958,7 @@ export const character_detail: Character[] = [
       "promote_level": 3,
       "type_name": "Sword",
       "desc": "A sharp blade with extravagant carvings that somehow does not compromise on durability and sharpness. It roars like a lion as it cuts through the air.",
-      "affix_level": 2,
+      "affix_level": 3,
       "main_property": {
         "property_type": 4,
         "base": "",
@@ -8974,51 +8974,46 @@ export const character_detail: Character[] = [
     },
     "relics": [
       {
-        "id": 32543,
-        "name": "Golden Song's Variation",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0387d4668712fff33d58fb63596cc4df.png",
+        "id": 31543,
+        "name": "Hunter's Brooch",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/6951d1c3be4a5a7ed69b0a3509f68b03.png",
         "pos": 1,
         "rarity": 5,
-        "level": 8,
+        "level": 0,
         "set": {
-          "id": 2150321,
-          "name": "Golden Troupe",
+          "id": 2150311,
+          "name": "Marechaussee Hunter",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Increases Elemental Skill DMG by 20%."
+              "effect": "Normal and Charged Attack DMG +15%"
             },
             {
               "activation_number": 4,
-              "effect": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
+              "effect": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks."
             }
           ]
         },
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "2342",
+          "value": "717",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 6,
-            "value": "4.7%",
+            "property_type": 8,
+            "value": "21",
             "times": 0
           },
           {
             "property_type": 28,
-            "value": "44",
-            "times": 1
-          },
-          {
-            "property_type": 22,
-            "value": "6.2%",
+            "value": "21",
             "times": 0
           },
           {
-            "property_type": 5,
-            "value": "18",
+            "property_type": 3,
+            "value": "4.7%",
             "times": 0
           }
         ]
@@ -9297,8 +9292,8 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "8500",
-        "add": "3867",
-        "final": "12367"
+        "add": "2638",
+        "final": "11138"
       },
       {
         "property_type": 20,
@@ -9309,20 +9304,20 @@ export const character_detail: Character[] = [
       {
         "property_type": 2001,
         "base": "536",
-        "add": "692",
-        "final": "1228"
+        "add": "649",
+        "final": "1185"
       },
       {
         "property_type": 22,
-        "base": "86.0%",
+        "base": "79.8%",
         "add": "",
-        "final": "86.0%"
+        "final": "79.8%"
       },
       {
         "property_type": 2002,
         "base": "519",
-        "add": "58",
-        "final": "576"
+        "add": "78",
+        "final": "597"
       },
       {
         "property_type": 26,
@@ -9332,9 +9327,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "63",
+        "base": "40",
         "add": "",
-        "final": "63"
+        "final": "40"
       },
       {
         "property_type": 27,
@@ -9359,32 +9354,32 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "8500",
-        "add": "3867",
-        "final": "12367"
+        "add": "2638",
+        "final": "11138"
       },
       {
         "property_type": 2001,
         "base": "536",
-        "add": "692",
-        "final": "1228"
+        "add": "649",
+        "final": "1185"
       },
       {
         "property_type": 2002,
         "base": "519",
-        "add": "58",
-        "final": "576"
+        "add": "78",
+        "final": "597"
       },
       {
         "property_type": 28,
-        "base": "63",
+        "base": "40",
         "add": "",
-        "final": "63"
+        "final": "40"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
@@ -9396,9 +9391,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 22,
-        "base": "86.0%",
+        "base": "79.8%",
         "add": "",
-        "final": "86.0%"
+        "final": "79.8%"
       },
       {
         "property_type": 26,
@@ -9728,7 +9723,7 @@ export const character_detail: Character[] = [
       "fetter": 1,
       "level": 60,
       "rarity": 4,
-      "actived_constellation_num": 0,
+      "actived_constellation_num": 1,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/ea2fee72f722bdb49324ec6335f4bc8e.png",
       "is_chosen": false,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba983/7b99f01a4934a5ea2d386e8afa4dcf01.png",
@@ -9769,11 +9764,11 @@ export const character_detail: Character[] = [
     },
     "relics": [
       {
-        "id": 48442,
+        "id": 48543,
         "name": "Foundryman's Conjecture",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/09729586ce0f78f5111f9ee8d25eb431.png",
         "pos": 1,
-        "rarity": 4,
+        "rarity": 5,
         "level": 8,
         "set": {
           "id": 2150481,
@@ -9792,28 +9787,28 @@ export const character_detail: Character[] = [
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "2108",
+          "value": "2342",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 5,
-            "value": "14",
-            "times": 0
-          },
-          {
             "property_type": 22,
-            "value": "5.0%",
+            "value": "6.2%",
             "times": 0
           },
           {
-            "property_type": 20,
-            "value": "3.1%",
+            "property_type": 23,
+            "value": "13.0%",
+            "times": 1
+          },
+          {
+            "property_type": 3,
+            "value": "4.1%",
             "times": 0
           },
           {
-            "property_type": 6,
-            "value": "4.2%",
+            "property_type": 5,
+            "value": "19",
             "times": 0
           }
         ]
@@ -10020,7 +10015,7 @@ export const character_detail: Character[] = [
         "name": "Frostvale Thunderclap",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba982/e9479f666d2843e97e2b3861610510fd.png",
         "effect": "Alyosha regenerates 15 Elemental Energy when nearby party members trigger an <color=#FFACFFFF>Electro-related reaction</color> on an opponent. This effect can trigger once every 18s.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 1,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -10087,26 +10082,26 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "7881",
-        "add": "3681",
-        "final": "11562"
+        "add": "4237",
+        "final": "12118"
       },
       {
         "property_type": 20,
-        "base": "18.6%",
+        "base": "15.5%",
         "add": "",
-        "final": "18.6%"
+        "final": "15.5%"
       },
       {
         "property_type": 2001,
         "base": "630",
-        "add": "604",
-        "final": "1234"
+        "add": "583",
+        "final": "1213"
       },
       {
         "property_type": 22,
-        "base": "60.6%",
+        "base": "61.8%",
         "add": "",
-        "final": "60.6%"
+        "final": "61.8%"
       },
       {
         "property_type": 2002,
@@ -10140,23 +10135,23 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "161.4%",
+        "base": "174.3%",
         "add": "",
-        "final": "161.4%"
+        "final": "174.3%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
         "base": "7881",
-        "add": "3681",
-        "final": "11562"
+        "add": "4237",
+        "final": "12118"
       },
       {
         "property_type": 2001,
         "base": "630",
-        "add": "604",
-        "final": "1234"
+        "add": "583",
+        "final": "1213"
       },
       {
         "property_type": 2002,
@@ -10172,23 +10167,23 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "18.6%",
+        "base": "15.5%",
         "add": "",
-        "final": "18.6%"
+        "final": "15.5%"
       },
       {
         "property_type": 22,
-        "base": "60.6%",
+        "base": "61.8%",
         "add": "",
-        "final": "60.6%"
+        "final": "61.8%"
       },
       {
         "property_type": 26,
@@ -10204,9 +10199,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "161.4%",
+        "base": "174.3%",
         "add": "",
-        "final": "161.4%"
+        "final": "174.3%"
       },
       {
         "property_type": 80,
@@ -10577,51 +10572,51 @@ export const character_detail: Character[] = [
     },
     "relics": [
       {
-        "id": 32543,
-        "name": "Golden Song's Variation",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0387d4668712fff33d58fb63596cc4df.png",
+        "id": 57442,
+        "name": "Instructor's Brooch",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ab213bb1abd2a5467d680d5ea9890417.png",
         "pos": 1,
-        "rarity": 5,
+        "rarity": 4,
         "level": 8,
         "set": {
-          "id": 2150321,
-          "name": "Golden Troupe",
+          "id": 2100071,
+          "name": "Instructor",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Increases Elemental Skill DMG by 20%."
+              "effect": "Increases Elemental Mastery by 80."
             },
             {
               "activation_number": 4,
-              "effect": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
+              "effect": "Upon triggering an Elemental Reaction, increases all party members' Elemental Mastery by 120 for 8s."
             }
           ]
         },
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "2342",
+          "value": "2108",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 8,
-            "value": "21",
+            "property_type": 20,
+            "value": "3.1%",
             "times": 0
           },
           {
             "property_type": 28,
-            "value": "47",
-            "times": 1
-          },
-          {
-            "property_type": 23,
-            "value": "4.5%",
+            "value": "13",
             "times": 0
           },
           {
-            "property_type": 22,
-            "value": "5.4%",
+            "property_type": 23,
+            "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 5,
+            "value": "11",
             "times": 0
           }
         ]
@@ -10890,32 +10885,32 @@ export const character_detail: Character[] = [
       {
         "property_type": 2000,
         "base": "6090",
-        "add": "4220",
-        "final": "10309"
+        "add": "3986",
+        "final": "10075"
       },
       {
         "property_type": 20,
-        "base": "9.1%",
+        "base": "12.2%",
         "add": "",
-        "final": "9.1%"
+        "final": "12.2%"
       },
       {
         "property_type": 2001,
         "base": "281",
-        "add": "159",
-        "final": "440"
+        "add": "170",
+        "final": "451"
       },
       {
         "property_type": 22,
-        "base": "55.4%",
+        "base": "50.0%",
         "add": "",
-        "final": "55.4%"
+        "final": "50.0%"
       },
       {
         "property_type": 2002,
         "base": "463",
-        "add": "97",
-        "final": "560"
+        "add": "76",
+        "final": "539"
       },
       {
         "property_type": 26,
@@ -10925,9 +10920,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "266",
+        "base": "312",
         "add": "",
-        "final": "266"
+        "final": "312"
       },
       {
         "property_type": 27,
@@ -10943,55 +10938,55 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "129.2%",
+        "base": "129.3%",
         "add": "",
-        "final": "129.2%"
+        "final": "129.3%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
         "base": "6090",
-        "add": "4220",
-        "final": "10309"
+        "add": "3986",
+        "final": "10075"
       },
       {
         "property_type": 2001,
         "base": "281",
-        "add": "159",
-        "final": "440"
+        "add": "170",
+        "final": "451"
       },
       {
         "property_type": 2002,
         "base": "463",
-        "add": "97",
-        "final": "560"
+        "add": "76",
+        "final": "539"
       },
       {
         "property_type": 28,
-        "base": "266",
+        "base": "312",
         "add": "",
-        "final": "266"
+        "final": "312"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "9.1%",
+        "base": "12.2%",
         "add": "",
-        "final": "9.1%"
+        "final": "12.2%"
       },
       {
         "property_type": 22,
-        "base": "55.4%",
+        "base": "50.0%",
         "add": "",
-        "final": "55.4%"
+        "final": "50.0%"
       },
       {
         "property_type": 26,
@@ -11007,9 +11002,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "129.2%",
+        "base": "129.3%",
         "add": "",
-        "final": "129.2%"
+        "final": "129.3%"
       },
       {
         "property_type": 80,
@@ -11333,7 +11328,7 @@ export const character_detail: Character[] = [
         "type": 11,
         "rarity": 4,
         "level": 40,
-        "affix_level": 3,
+        "affix_level": 4,
         "name": "Sacrificial Greatsword"
       }
     },
@@ -11347,7 +11342,7 @@ export const character_detail: Character[] = [
       "promote_level": 1,
       "type_name": "Claymore",
       "desc": "A ceremonial greatsword that has become petrified over time. The trinkets on it are still visible. It grants the wielder the power to withstand the winds of time.",
-      "affix_level": 3,
+      "affix_level": 4,
       "main_property": {
         "property_type": 4,
         "base": "",
@@ -11766,9 +11761,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
@@ -24012,7 +24007,7 @@ export const character_detail: Character[] = [
       "rarity": 5,
       "actived_constellation_num": 1,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/3737799e7624da61da147e5727774470.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6782/3c0a0dabc8a92dd8b3a3ac227f1eba39.png",
       "weapon_type": 10,
       "weapon": {
@@ -24826,84 +24821,94 @@ export const character_detail: Character[] = [
       "name": "Furina",
       "element": "Hydro",
       "fetter": 1,
-      "level": 1,
+      "level": 70,
       "rarity": 5,
       "actived_constellation_num": 0,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/58caba691327772ae49b7b008f1802d4.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/1111b471573254806ab26b00445c887c.png",
       "weapon_type": 1,
       "weapon": {
-        "id": 11101,
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+        "id": 11513,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a0c785ee7bcfa4e7dd19032b8c28c7fa.png",
         "type": 1,
-        "rarity": 1,
-        "level": 1,
+        "rarity": 5,
+        "level": 70,
         "affix_level": 1,
-        "name": "Dull Blade"
+        "name": "Splendor of Tranquil Waters"
       }
     },
     "weapon": {
-      "id": 11101,
-      "name": "Dull Blade",
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+      "id": 11513,
+      "name": "Splendor of Tranquil Waters",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a0c785ee7bcfa4e7dd19032b8c28c7fa.png",
       "type": 1,
-      "rarity": 1,
-      "level": 1,
-      "promote_level": 0,
+      "rarity": 5,
+      "level": 70,
+      "promote_level": 4,
       "type_name": "Sword",
-      "desc": "Youthful dreams and the thrill of adventure. If this isn't enough, then make it up with valiance.",
+      "desc": "A scepter around which swirls pure water. In days long past, it once symbolized the highest authority over the seas.",
       "affix_level": 1,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "23"
+        "final": "408"
       },
-      "sub_property": null
+      "sub_property": {
+        "property_type": 22,
+        "base": "",
+        "add": "",
+        "final": "72.7%"
+      }
     },
     "relics": [
       {
-        "id": 77543,
-        "name": "Troupe's Dawnlight",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/5ff2da2140ec40936c57a7e3c00368c8.png",
+        "id": 32543,
+        "name": "Golden Song's Variation",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0387d4668712fff33d58fb63596cc4df.png",
         "pos": 1,
         "rarity": 5,
-        "level": 0,
+        "level": 8,
         "set": {
-          "id": 2150031,
-          "name": "Wanderer's Troupe",
+          "id": 2150321,
+          "name": "Golden Troupe",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Increases Elemental Mastery by 80."
+              "effect": "Increases Elemental Skill DMG by 20%."
             },
             {
               "activation_number": 4,
-              "effect": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow."
+              "effect": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
             }
           ]
         },
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "717",
+          "value": "2342",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 23,
-            "value": "5.8%",
-            "times": 0
-          },
-          {
-            "property_type": 9,
-            "value": "6.6%",
-            "times": 0
-          },
-          {
-            "property_type": 3,
+            "property_type": 6,
             "value": "4.7%",
+            "times": 0
+          },
+          {
+            "property_type": 28,
+            "value": "44",
+            "times": 1
+          },
+          {
+            "property_type": 22,
+            "value": "6.2%",
+            "times": 0
+          },
+          {
+            "property_type": 5,
+            "value": "18",
             "times": 0
           }
         ]
@@ -24914,7 +24919,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1738ca88f6afa4f1d645e8afb214a7ed.png",
         "pos": 2,
         "rarity": 4,
-        "level": 0,
+        "level": 8,
         "set": {
           "id": 2100091,
           "name": "The Exile",
@@ -24932,79 +24937,139 @@ export const character_detail: Character[] = [
         "pos_name": "Plume of Death",
         "main_property": {
           "property_type": 5,
-          "value": "42",
+          "value": "137",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 28,
-            "value": "15",
+            "property_type": 8,
+            "value": "13",
             "times": 0
           },
           {
-            "property_type": 22,
-            "value": "6.2%",
-            "times": 0
-          }
-        ]
-      },
-      {
-        "id": 55452,
-        "name": "Berserker's Timepiece",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/72514ea9341bf0db03079d0c02ef78b2.png",
-        "pos": 3,
-        "rarity": 4,
-        "level": 8,
-        "set": {
-          "id": 2100051,
-          "name": "Berserker",
-          "affixes": [
-            {
-              "activation_number": 2,
-              "effect": "CRIT Rate +12%"
-            },
-            {
-              "activation_number": 4,
-              "effect": "When HP is below 70%, CRIT Rate increases by an additional 24%."
-            }
-          ]
-        },
-        "pos_name": "Sands of Eon",
-        "main_property": {
-          "property_type": 23,
-          "value": "22.8%",
-          "times": 0
-        },
-        "sub_property_list": [
-          {
-            "property_type": 9,
+            "property_type": 23,
             "value": "4.7%",
             "times": 0
           },
           {
             "property_type": 3,
-            "value": "3.7%",
+            "value": "4.2%",
             "times": 0
           },
           {
-            "property_type": 5,
-            "value": "16",
-            "times": 0
-          },
-          {
-            "property_type": 20,
-            "value": "3.1%",
+            "property_type": 9,
+            "value": "4.7%",
             "times": 0
           }
         ]
       },
       {
-        "id": 59412,
-        "name": "Exile's Goblet",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7847bfdeab60c072ec09b17462505cdc.png",
+        "id": 32553,
+        "name": "Golden Era's Prelude",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/623e4ec8f219b8ba5c198444a61ca224.png",
+        "pos": 3,
+        "rarity": 5,
+        "level": 8,
+        "set": {
+          "id": 2150321,
+          "name": "Golden Troupe",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "Increases Elemental Skill DMG by 20%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases Elemental Skill DMG by 25%. Additionally, when not on the field, Elemental Skill DMG will be further increased by 25%. This effect will be cleared 2s after taking the field."
+            }
+          ]
+        },
+        "pos_name": "Sands of Eon",
+        "main_property": {
+          "property_type": 3,
+          "value": "22.8%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 23,
+            "value": "5.2%",
+            "times": 0
+          },
+          {
+            "property_type": 22,
+            "value": "5.4%",
+            "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "39",
+            "times": 1
+          },
+          {
+            "property_type": 2,
+            "value": "269",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 47513,
+        "name": "Chalice of Your Blood and Sorrow",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/d653c3aa684c882bbf09757f695ab533.png",
         "pos": 4,
+        "rarity": 5,
+        "level": 8,
+        "set": {
+          "id": 2150471,
+          "name": "Scarlet Proof",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
+            }
+          ]
+        },
+        "pos_name": "Goblet of Eonothem",
+        "main_property": {
+          "property_type": 3,
+          "value": "22.8%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 6,
+            "value": "4.1%",
+            "times": 0
+          },
+          {
+            "property_type": 28,
+            "value": "16",
+            "times": 0
+          },
+          {
+            "property_type": 22,
+            "value": "10.9%",
+            "times": 1
+          },
+          {
+            "property_type": 23,
+            "value": "4.5%",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 59432,
+        "name": "Exile's Circlet",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/22faf0f5c42ac3652ea2c4a1ca38ac05.png",
+        "pos": 5,
         "rarity": 4,
-        "level": 0,
+        "level": 8,
         "set": {
           "id": 2100091,
           "name": "The Exile",
@@ -25019,10 +25084,10 @@ export const character_detail: Character[] = [
             }
           ]
         },
-        "pos_name": "Goblet of Eonothem",
+        "pos_name": "Circlet of Logos",
         "main_property": {
-          "property_type": 3,
-          "value": "6.3%",
+          "property_type": 22,
+          "value": "27.4%",
           "times": 0
         },
         "sub_property_list": [
@@ -25032,48 +25097,18 @@ export const character_detail: Character[] = [
             "times": 0
           },
           {
-            "property_type": 28,
-            "value": "15",
-            "times": 0
-          }
-        ]
-      },
-      {
-        "id": 55432,
-        "name": "Berserker's Battle Mask",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ab750706998dc9d99ed2067a722f9c52.png",
-        "pos": 5,
-        "rarity": 4,
-        "level": 0,
-        "set": {
-          "id": 2100051,
-          "name": "Berserker",
-          "affixes": [
-            {
-              "activation_number": 2,
-              "effect": "CRIT Rate +12%"
-            },
-            {
-              "activation_number": 4,
-              "effect": "When HP is below 70%, CRIT Rate increases by an additional 24%."
-            }
-          ]
-        },
-        "pos_name": "Circlet of Logos",
-        "main_property": {
-          "property_type": 22,
-          "value": "8.4%",
-          "times": 0
-        },
-        "sub_property_list": [
-          {
-            "property_type": 8,
-            "value": "17",
+            "property_type": 23,
+            "value": "3.6%",
             "times": 0
           },
           {
-            "property_type": 6,
-            "value": "3.3%",
+            "property_type": 5,
+            "value": "16",
+            "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "17",
             "times": 0
           }
         ]
@@ -25151,33 +25186,33 @@ export const character_detail: Character[] = [
     "selected_properties": [
       {
         "property_type": 2000,
-        "base": "1192",
-        "add": "892",
-        "final": "2084"
+        "base": "11712",
+        "add": "8443",
+        "final": "20155"
       },
       {
         "property_type": 20,
-        "base": "22.6%",
+        "base": "17.1%",
         "add": "",
-        "final": "22.6%"
+        "final": "17.1%"
       },
       {
         "property_type": 2001,
-        "base": "42",
-        "add": "59",
-        "final": "101"
+        "base": "594",
+        "add": "222",
+        "final": "816"
       },
       {
         "property_type": 22,
-        "base": "64.6%",
+        "base": "172.6%",
         "add": "",
-        "final": "64.6%"
+        "final": "172.6%"
       },
       {
         "property_type": 2002,
-        "base": "54",
-        "add": "23",
-        "final": "77"
+        "base": "532",
+        "add": "94",
+        "final": "626"
       },
       {
         "property_type": 26,
@@ -25187,9 +25222,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "30",
+        "base": "61",
         "add": "",
-        "final": "30"
+        "final": "61"
       },
       {
         "property_type": 27,
@@ -25205,55 +25240,55 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "148.6%",
+        "base": "138.0%",
         "add": "",
-        "final": "148.6%"
+        "final": "138.0%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
-        "base": "1192",
-        "add": "892",
-        "final": "2084"
+        "base": "11712",
+        "add": "8443",
+        "final": "20155"
       },
       {
         "property_type": 2001,
-        "base": "42",
-        "add": "59",
-        "final": "101"
+        "base": "594",
+        "add": "222",
+        "final": "816"
       },
       {
         "property_type": 2002,
-        "base": "54",
-        "add": "23",
-        "final": "77"
+        "base": "532",
+        "add": "94",
+        "final": "626"
       },
       {
         "property_type": 28,
-        "base": "30",
+        "base": "61",
         "add": "",
-        "final": "30"
+        "final": "61"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "22.6%",
+        "base": "17.1%",
         "add": "",
-        "final": "22.6%"
+        "final": "17.1%"
       },
       {
         "property_type": 22,
-        "base": "64.6%",
+        "base": "172.6%",
         "add": "",
-        "final": "64.6%"
+        "final": "172.6%"
       },
       {
         "property_type": 26,
@@ -25269,9 +25304,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "148.6%",
+        "base": "138.0%",
         "add": "",
-        "final": "148.6%"
+        "final": "138.0%"
       },
       {
         "property_type": 80,
@@ -25548,7 +25583,7 @@ export const character_detail: Character[] = [
         "desc": "When the active character in your party receives healing, if the source of the healing is not Furina herself and the healing overflows, then Furina will heal nearby party members for 2% of their Max HP once every 2s for the next 4s.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/59dfd1bd7560dc2168740d0dc3852266.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Endless Waltz",
         "is_enhanced": false,
         "enhanced_desc": "",
@@ -25563,7 +25598,7 @@ export const character_detail: Character[] = [
         "desc": "Every 1,000 points of Furina's Max HP can buff the different Arkhe-aligned <color=#FFD780FF>Salon Solitaire</color> in the following ways:\\nWill increase Salon Members' DMG dealt by 0.7%, up to a maximum of 28%.\\nWill decrease the Singer of Many Waters' healing interval for nearby active characters by 0.4%, up to a maximum of 16%.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/481251fd1a7a1fed715c48c88e5181f8.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Unheard Confession",
         "is_enhanced": false,
         "enhanced_desc": "",
@@ -26452,51 +26487,56 @@ export const character_detail: Character[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6776/2cd496faf46d4727430723b840e61881.png",
       "name": "Valeriy",
       "element": "Electro",
-      "fetter": 1,
-      "level": 1,
+      "fetter": 4,
+      "level": 70,
       "rarity": 4,
-      "actived_constellation_num": 5,
+      "actived_constellation_num": 6,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/db2897ea4bb1116cc37252bf2b25dabe.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6782/0486b11cf20a958e13748693f418f5e5.png",
       "weapon_type": 1,
       "weapon": {
-        "id": 11101,
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+        "id": 11425,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/3d55aea4fa30254d868ad4fa4720c6b2.png",
         "type": 1,
-        "rarity": 1,
-        "level": 1,
+        "rarity": 4,
+        "level": 60,
         "affix_level": 1,
-        "name": "Dull Blade"
+        "name": "Finale of the Deep"
       }
     },
     "weapon": {
-      "id": 11101,
-      "name": "Dull Blade",
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+      "id": 11425,
+      "name": "Finale of the Deep",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/3d55aea4fa30254d868ad4fa4720c6b2.png",
       "type": 1,
-      "rarity": 1,
-      "level": 1,
-      "promote_level": 0,
+      "rarity": 4,
+      "level": 60,
+      "promote_level": 3,
       "type_name": "Sword",
-      "desc": "Youthful dreams and the thrill of adventure. If this isn't enough, then make it up with valiance.",
+      "desc": "This longsword is as silent as the mysterious ocean depths. It is even more ancient than its stylings might imply.",
       "affix_level": 1,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "23"
+        "final": "361"
       },
-      "sub_property": null
+      "sub_property": {
+        "property_type": 6,
+        "base": "",
+        "add": "",
+        "final": "20.3%"
+      }
     },
     "relics": [
       {
-        "id": 48442,
+        "id": 48443,
         "name": "Foundryman's Conjecture",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/09729586ce0f78f5111f9ee8d25eb431.png",
         "pos": 1,
         "rarity": 4,
-        "level": 0,
+        "level": 8,
         "set": {
           "id": 2150481,
           "name": "Heart of the Furnace",
@@ -26514,18 +26554,28 @@ export const character_detail: Character[] = [
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "645",
+          "value": "2108",
           "times": 0
         },
         "sub_property_list": [
+          {
+            "property_type": 8,
+            "value": "17",
+            "times": 0
+          },
+          {
+            "property_type": 6,
+            "value": "8.9%",
+            "times": 1
+          },
           {
             "property_type": 23,
             "value": "5.2%",
             "times": 0
           },
           {
-            "property_type": 8,
-            "value": "15",
+            "property_type": 28,
+            "value": "19",
             "times": 0
           }
         ]
@@ -26571,46 +26621,51 @@ export const character_detail: Character[] = [
         ]
       },
       {
-        "id": 77553,
-        "name": "Concert's Final Hour",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/00cfc809485c04ff1092838901c8c413.png",
+        "id": 48553,
+        "name": "Foundryman's Calculus",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/0119db4ca0f7c650686e2da11b9c6a1d.png",
         "pos": 3,
         "rarity": 5,
-        "level": 0,
+        "level": 12,
         "set": {
-          "id": 2150031,
-          "name": "Wanderer's Troupe",
+          "id": 2150481,
+          "name": "Heart of the Furnace",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Increases Elemental Mastery by 80."
+              "effect": "ATK +18%."
             },
             {
               "activation_number": 4,
-              "effect": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or a Bow."
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
             }
           ]
         },
         "pos_name": "Sands of Eon",
         "main_property": {
           "property_type": 6,
-          "value": "7.0%",
+          "value": "30.8%",
           "times": 0
         },
         "sub_property_list": [
           {
+            "property_type": 23,
+            "value": "5.2%",
+            "times": 0
+          },
+          {
             "property_type": 5,
-            "value": "18",
-            "times": 0
+            "value": "31",
+            "times": 1
           },
           {
-            "property_type": 3,
-            "value": "4.7%",
-            "times": 0
+            "property_type": 2,
+            "value": "448",
+            "times": 1
           },
           {
-            "property_type": 8,
-            "value": "23",
+            "property_type": 20,
+            "value": "3.5%",
             "times": 0
           }
         ]
@@ -26621,7 +26676,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/d653c3aa684c882bbf09757f695ab533.png",
         "pos": 4,
         "rarity": 4,
-        "level": 0,
+        "level": 8,
         "set": {
           "id": 2150471,
           "name": "Scarlet Proof",
@@ -26639,7 +26694,7 @@ export const character_detail: Character[] = [
         "pos_name": "Goblet of Eonothem",
         "main_property": {
           "property_type": 6,
-          "value": "6.3%",
+          "value": "20.6%",
           "times": 0
         },
         "sub_property_list": [
@@ -26652,19 +26707,29 @@ export const character_detail: Character[] = [
             "property_type": 9,
             "value": "5.3%",
             "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "13",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "215",
+            "times": 0
           }
         ]
       },
       {
-        "id": 47432,
-        "name": "Testament to Your Faith",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/11eeed27d2d7fbb0ab34f03c87325688.png",
+        "id": 48432,
+        "name": "Foundryman's Legacy",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/2aece34359e0f99802feced2f25ee01b.png",
         "pos": 5,
         "rarity": 4,
-        "level": 0,
+        "level": 4,
         "set": {
-          "id": 2150471,
-          "name": "Scarlet Proof",
+          "id": 2150481,
+          "name": "Heart of the Furnace",
           "affixes": [
             {
               "activation_number": 2,
@@ -26672,25 +26737,30 @@ export const character_detail: Character[] = [
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
+              "effect": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack."
             }
           ]
         },
         "pos_name": "Circlet of Logos",
         "main_property": {
           "property_type": 6,
-          "value": "6.3%",
+          "value": "13.4%",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 23,
-            "value": "4.1%",
+            "property_type": 9,
+            "value": "4.7%",
             "times": 0
           },
           {
             "property_type": 2,
-            "value": "167",
+            "value": "239",
+            "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "13",
             "times": 0
           }
         ]
@@ -26757,7 +26827,7 @@ export const character_detail: Character[] = [
         "name": "The Strength to Breach Enemy Lines",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6781/f46fbaa8f6b2eebef2b9bf8a014d1ec9.png",
         "effect": "The special Charged Attack <color=#FFD780FF>{LINK#N11370001}Direct-Fire Mortar: Point-Blank Bombardment{/LINK}</color> and <color=#FFD780FF>Thunderburst Shells</color> from Elemental Burst <color=#FFD780FF>{LINK#S30605}Focused Fire: Lightning Salvo{/LINK}</color> are enhanced: Their DMG is increased by 100%, and opponents they hit have the CRIT Rate of <color=#FFACFFFF>Electro DMG</color> they take increased by 10% for 7s. If the <color=#FFACFFFF>Electro DMG</color> taken is Stellar-Conduct reaction DMG, that DMG instance's CRIT DMG is also increased by 40%.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 6,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -26768,21 +26838,21 @@ export const character_detail: Character[] = [
     "selected_properties": [
       {
         "property_type": 2000,
-        "base": "839",
-        "add": "1122",
-        "final": "1961"
+        "base": "7729",
+        "add": "3538",
+        "final": "11266"
       },
       {
         "property_type": 20,
-        "base": "5.0%",
+        "base": "8.5%",
         "add": "",
-        "final": "5.0%"
+        "final": "8.5%"
       },
       {
         "property_type": 2001,
-        "base": "45",
-        "add": "86",
-        "final": "131"
+        "base": "558",
+        "add": "791",
+        "final": "1348"
       },
       {
         "property_type": 22,
@@ -26792,9 +26862,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 2002,
-        "base": "59",
-        "add": "41",
-        "final": "100"
+        "base": "543",
+        "add": "96",
+        "final": "639"
       },
       {
         "property_type": 26,
@@ -26804,9 +26874,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "0",
+        "base": "19",
         "add": "",
-        "final": "0"
+        "final": "19"
       },
       {
         "property_type": 27,
@@ -26822,49 +26892,49 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "109.3%",
+        "base": "110.4%",
         "add": "",
-        "final": "109.3%"
+        "final": "110.4%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
-        "base": "839",
-        "add": "1122",
-        "final": "1961"
+        "base": "7729",
+        "add": "3538",
+        "final": "11266"
       },
       {
         "property_type": 2001,
-        "base": "45",
-        "add": "86",
-        "final": "131"
+        "base": "558",
+        "add": "791",
+        "final": "1348"
       },
       {
         "property_type": 2002,
-        "base": "59",
-        "add": "41",
-        "final": "100"
+        "base": "543",
+        "add": "96",
+        "final": "639"
       },
       {
         "property_type": 28,
-        "base": "0",
+        "base": "19",
         "add": "",
-        "final": "0"
+        "final": "19"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "5.0%",
+        "base": "8.5%",
         "add": "",
-        "final": "5.0%"
+        "final": "8.5%"
       },
       {
         "property_type": 22,
@@ -26886,9 +26956,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "109.3%",
+        "base": "110.4%",
         "add": "",
-        "final": "109.3%"
+        "final": "110.4%"
       },
       {
         "property_type": 80,
@@ -27005,28 +27075,28 @@ export const character_detail: Character[] = [
       {
         "skill_id": 30601,
         "skill_type": 1,
-        "level": 4,
+        "level": 6,
         "desc": "<color=#FFD780FF>Normal Attack</color>\\nPerforms up to 3 consecutive sword strikes.\\n\\n<color=#FFD780FF>Charged Attack</color>\\nConsumes a certain amount of Stamina to leap forward and slam the ground, dealing Physical DMG to nearby opponents.\\nWhen Valeriy has at least 40 <color=#FFD780FF>{LINK#N11370003}Impact Momentum{/LINK}</color>, he will consume all <color=#FFD780FF>Impact Momentum</color> to instead perform the special Charged Attack <color=#FFD780FF>{LINK#N11370001}Direct-Fire Mortar: Point-Blank Bombardment{/LINK}</color>.\\n\\n<color=#FFD780FF>Plunging Attack</color>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.{LINK#N11370002}{/LINK}",
         "skill_affix_list": [
           {
             "name": "1-Hit DMG",
-            "value": "41.5%"
+            "value": "47.2%"
           },
           {
             "name": "2-Hit DMG",
-            "value": "37.5%"
+            "value": "42.6%"
           },
           {
             "name": "3-Hit DMG",
-            "value": "58.1%"
+            "value": "66.0%"
           },
           {
             "name": "Charged Attack DMG",
-            "value": "128.3%"
+            "value": "145.8%"
           },
           {
             "name": "Direct-Fire Mortar: Point-Blank Bombardment DMG",
-            "value": "286.5%"
+            "value": "320.9%"
           },
           {
             "name": "Charged Attack Stamina Cost",
@@ -27034,11 +27104,11 @@ export const character_detail: Character[] = [
           },
           {
             "name": "Electro DMG Bonus",
-            "value": "30.40% ATK"
+            "value": "34.05% ATK"
           },
           {
             "name": "Stellar-Conduct DMG Bonus",
-            "value": "91.20% ATK"
+            "value": "102.14% ATK"
           },
           {
             "name": "Offensive Directive Stacks",
@@ -27050,11 +27120,11 @@ export const character_detail: Character[] = [
           },
           {
             "name": "Plunge DMG",
-            "value": "81.8%"
+            "value": "92.9%"
           },
           {
             "name": "Low/High Plunge DMG",
-            "value": "163.5%/204.2%"
+            "value": "185.8%/232.1%"
           }
         ],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f71a/3f016e2d606ca39ea86e24d5245dfa5b.png",
@@ -27069,16 +27139,16 @@ export const character_detail: Character[] = [
       {
         "skill_id": 30602,
         "skill_type": 1,
-        "level": 4,
+        "level": 5,
         "desc": "Valeriy raises his shield cannon and charges forward, dealing <color=#FFACFFFF>AoE Electro DMG</color>, gaining 40 <color=#FFD780FF>{LINK#N11370003}Impact Momentum{/LINK}</color>, and deploying a Supercharged Shield.\\nThe Supercharged Shield's DMG Absorption scales with Valeriy's ATK, and has 250% absorption efficiency against <color=#FFACFFFF></color>Electro DMG<color=#FFACFFFF></color>.",
         "skill_affix_list": [
           {
             "name": "Skill DMG",
-            "value": "207.5%"
+            "value": "220.0%"
           },
           {
             "name": "Shield DMG Absorption",
-            "value": "261.1% ATK+1735"
+            "value": "276.8% ATK+1899"
           },
           {
             "name": "Shield Duration",
@@ -27141,7 +27211,7 @@ export const character_detail: Character[] = [
         "desc": "Valeriy gains 5 <color=#FFD780FF>{LINK#N11370003}Impact Momentum{/LINK}</color> whenever another nearby active character in the party hits an opponent with an <color=#FFACFFFF>Electro</color> attack while the <color=#FFD780FF>Thunderburst Shells</color> from his Elemental Burst <color=#FFD780FF>{LINK#S30605}Focused Fire: Lightning Salvo{/LINK}</color> are falling. He can gain up to 80 <color=#FFD780FF>Impact Momentum</color> in this way after each use of his Elemental Burst.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6781/ac2eef97b6d1c2a86d2551bef0815bc3.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Advance With the Creeping Barrage",
         "is_enhanced": false,
         "enhanced_desc": "",
@@ -27156,7 +27226,7 @@ export const character_detail: Character[] = [
         "desc": "<color=#FFD780FF>{LINK#N11370002}Offensive Directive{/LINK}</color> is enhanced based on the amount of <color=#FFD780FF>{LINK#N11370003}Impact Momentum{/LINK}</color> consumed when performing his special Charged Attack <color=#FFD780FF>{LINK#N11370001}Direct-Fire Mortar: Point-Blank Bombardment{/LINK}</color>. Each point consumed further increases the DMG Bonus granted by <color=#FFD780FF>Offensive Directive</color>. If Valeriy is:\\n·In the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state: Each point of <color=#FFD780FF>Impact Momentum</color> consumed increases this DMG Bonus by an amount equal to 0.9% of Valeriy's ATK;\\n·Not in the <color=#FFD780FF>Radiance: Stellar-Conduct</color> state: Each point of <color=#FFD780FF>Impact Momentum</color> consumed increases this DMG Bonus by an amount equal to 0.3% of Valeriy's ATK.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6aea6781/cf830137fcad4349040f4f795aafa150.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Into the Breach",
         "is_enhanced": false,
         "enhanced_desc": "",
@@ -27197,10 +27267,18 @@ export const character_detail: Character[] = [
     ],
     "recommend_relic_property": {
       "recommend_properties": {
-        "sand_main_property_list": [],
-        "goblet_main_property_list": [],
-        "circlet_main_property_list": [],
-        "sub_property_list": []
+        "sand_main_property_list": [
+          6
+        ],
+        "goblet_main_property_list": [
+          6
+        ],
+        "circlet_main_property_list": [
+          6
+        ],
+        "sub_property_list": [
+          6
+        ]
       },
       "custom_properties": null,
       "has_set_recommend_prop": false
@@ -29496,61 +29574,66 @@ export const character_detail: Character[] = [
       "name": "Charlotte",
       "element": "Cryo",
       "fetter": 1,
-      "level": 1,
+      "level": 50,
       "rarity": 4,
-      "actived_constellation_num": 1,
+      "actived_constellation_num": 3,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/1d3fd45b4793e3ac84b71f5495249332.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/bee59717b62a91c6863009a394ca7e4c.png",
       "weapon_type": 10,
       "weapon": {
-        "id": 14101,
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/852d232e46ddaacdfcb86b3f53413405.png",
+        "id": 14401,
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bb4ff947d3649e393b6ca2e117b072d6.png",
         "type": 10,
-        "rarity": 1,
-        "level": 1,
+        "rarity": 4,
+        "level": 60,
         "affix_level": 1,
-        "name": "Apprentice's Notes"
+        "name": "Favonius Codex"
       }
     },
     "weapon": {
-      "id": 14101,
-      "name": "Apprentice's Notes",
-      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/852d232e46ddaacdfcb86b3f53413405.png",
+      "id": 14401,
+      "name": "Favonius Codex",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bb4ff947d3649e393b6ca2e117b072d6.png",
       "type": 10,
-      "rarity": 1,
-      "level": 1,
-      "promote_level": 0,
+      "rarity": 4,
+      "level": 60,
+      "promote_level": 4,
       "type_name": "Catalyst",
-      "desc": "Notes left behind by a top student. Many useful spells are listed, and the handwriting is beautiful.",
+      "desc": "A secret tome that belonged to the scholars of the Knights of Favonius. It describes the logic and power of elements and matter.",
       "affix_level": 1,
       "main_property": {
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "23"
+        "final": "353"
       },
-      "sub_property": null
+      "sub_property": {
+        "property_type": 23,
+        "base": "",
+        "add": "",
+        "final": "33.8%"
+      }
     },
     "relics": [
       {
-        "id": 47442,
-        "name": "Honor to Your Devotion",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/80425abeeb96bfefbfcb2b49cd5339db.png",
+        "id": 59443,
+        "name": "Exile's Flower",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e8e8c17bd07ea125961b9d2d6f03b1ba.png",
         "pos": 1,
         "rarity": 4,
         "level": 0,
         "set": {
-          "id": 2150471,
-          "name": "Scarlet Proof",
+          "id": 2100091,
+          "name": "The Exile",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "ATK +18%."
+              "effect": "Energy Recharge +20%"
             },
             {
               "activation_number": 4,
-              "effect": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
+              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
             }
           ]
         },
@@ -29563,23 +29646,73 @@ export const character_detail: Character[] = [
         "sub_property_list": [
           {
             "property_type": 8,
-            "value": "13",
+            "value": "17",
             "times": 0
           },
           {
             "property_type": 22,
             "value": "6.2%",
             "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "4.1%",
+            "times": 0
           }
         ]
       },
       {
-        "id": 55422,
-        "name": "Berserker's Indigo Feather",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/92d2a9153a2f03e1249c17f8530a2aa3.png",
+        "id": 59423,
+        "name": "Exile's Feather",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1738ca88f6afa4f1d645e8afb214a7ed.png",
         "pos": 2,
         "rarity": 4,
         "level": 0,
+        "set": {
+          "id": 2100091,
+          "name": "The Exile",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "Energy Recharge +20%"
+            },
+            {
+              "activation_number": 4,
+              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+            }
+          ]
+        },
+        "pos_name": "Plume of Death",
+        "main_property": {
+          "property_type": 5,
+          "value": "42",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 20,
+            "value": "2.8%",
+            "times": 0
+          },
+          {
+            "property_type": 23,
+            "value": "3.6%",
+            "times": 0
+          },
+          {
+            "property_type": 28,
+            "value": "17",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 55452,
+        "name": "Berserker's Timepiece",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/72514ea9341bf0db03079d0c02ef78b2.png",
+        "pos": 3,
+        "rarity": 4,
+        "level": 8,
         "set": {
           "id": 2100051,
           "name": "Berserker",
@@ -29594,66 +29727,31 @@ export const character_detail: Character[] = [
             }
           ]
         },
-        "pos_name": "Plume of Death",
-        "main_property": {
-          "property_type": 5,
-          "value": "42",
-          "times": 0
-        },
-        "sub_property_list": [
-          {
-            "property_type": 6,
-            "value": "3.3%",
-            "times": 0
-          },
-          {
-            "property_type": 23,
-            "value": "4.7%",
-            "times": 0
-          }
-        ]
-      },
-      {
-        "id": 47452,
-        "name": "Time Gifted Unto You",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/f378887dafcdfd8b72457765732a0828.png",
-        "pos": 3,
-        "rarity": 4,
-        "level": 4,
-        "set": {
-          "id": 2150471,
-          "name": "Scarlet Proof",
-          "affixes": [
-            {
-              "activation_number": 2,
-              "effect": "ATK +18%."
-            },
-            {
-              "activation_number": 4,
-              "effect": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
-            }
-          ]
-        },
         "pos_name": "Sands of Eon",
         "main_property": {
           "property_type": 23,
-          "value": "14.9%",
+          "value": "22.8%",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 8,
-            "value": "19",
+            "property_type": 9,
+            "value": "4.7%",
             "times": 0
           },
           {
-            "property_type": 2,
-            "value": "167",
+            "property_type": 3,
+            "value": "3.7%",
             "times": 0
           },
           {
-            "property_type": 28,
-            "value": "17",
+            "property_type": 5,
+            "value": "16",
+            "times": 0
+          },
+          {
+            "property_type": 20,
+            "value": "3.1%",
             "times": 0
           }
         ]
@@ -29664,7 +29762,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a1c51bbf393862969fb15640d6a433bd.png",
         "pos": 4,
         "rarity": 4,
-        "level": 0,
+        "level": 4,
         "set": {
           "id": 2100051,
           "name": "Berserker",
@@ -29682,7 +29780,7 @@ export const character_detail: Character[] = [
         "pos_name": "Goblet of Eonothem",
         "main_property": {
           "property_type": 6,
-          "value": "6.3%",
+          "value": "13.4%",
           "times": 0
         },
         "sub_property_list": [
@@ -29695,6 +29793,11 @@ export const character_detail: Character[] = [
             "property_type": 23,
             "value": "5.2%",
             "times": 0
+          },
+          {
+            "property_type": 8,
+            "value": "19",
+            "times": 0
           }
         ]
       },
@@ -29704,7 +29807,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/69750e95511b6aed7919f73b1d568ccd.png",
         "pos": 5,
         "rarity": 5,
-        "level": 0,
+        "level": 4,
         "set": {
           "id": 2150011,
           "name": "Gladiator's Finale",
@@ -29722,7 +29825,7 @@ export const character_detail: Character[] = [
         "pos_name": "Circlet of Logos",
         "main_property": {
           "property_type": 26,
-          "value": "5.4%",
+          "value": "11.5%",
           "times": 0
         },
         "sub_property_list": [
@@ -29743,8 +29846,8 @@ export const character_detail: Character[] = [
           },
           {
             "property_type": 28,
-            "value": "23",
-            "times": 0
+            "value": "42",
+            "times": 1
           }
         ]
       }
@@ -29766,7 +29869,7 @@ export const character_detail: Character[] = [
         "name": "A Duty to Pursue Truth",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/eb61a7d3f016d263da2da6078b7079bb.png",
         "effect": "When using <color=#FFD780FF>Framing: Freezing Point Composition</color>, when Monsieur Verite hits 1/2/3 (or more) opponents, Charlotte's own ATK will be increased by 10%/20%/30% for 12s.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 2,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -29777,7 +29880,7 @@ export const character_detail: Character[] = [
         "name": "An Imperative to Independence",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/002b05b29749a159253c085e7f412939.png",
         "effect": "Increases the Level of <color=#FFD780FF>Still Photo: Comprehensive Confirmation</color> by 3.\\nMaximum upgrade level is 15.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 3,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -29821,21 +29924,21 @@ export const character_detail: Character[] = [
     "selected_properties": [
       {
         "property_type": 2000,
-        "base": "903",
-        "add": "812",
-        "final": "1715"
+        "base": "5708",
+        "add": "858",
+        "final": "6566"
       },
       {
         "property_type": 20,
-        "base": "17.0%",
+        "base": "22.9%",
         "add": "",
-        "final": "17.0%"
+        "final": "22.9%"
       },
       {
         "property_type": 2001,
-        "base": "38",
-        "add": "70",
-        "final": "108"
+        "base": "444",
+        "add": "161",
+        "final": "606"
       },
       {
         "property_type": 22,
@@ -29845,21 +29948,21 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 2002,
-        "base": "46",
-        "add": "35",
-        "final": "81"
+        "base": "290",
+        "add": "70",
+        "final": "359"
       },
       {
         "property_type": 26,
-        "base": "5.4%",
+        "base": "11.5%",
         "add": "",
-        "final": "5.4%"
+        "final": "11.5%"
       },
       {
         "property_type": 28,
-        "base": "53",
+        "base": "72",
         "add": "",
-        "final": "53"
+        "final": "72"
       },
       {
         "property_type": 27,
@@ -29875,49 +29978,49 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "129.9%",
+        "base": "194.8%",
         "add": "",
-        "final": "129.9%"
+        "final": "194.8%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
-        "base": "903",
-        "add": "812",
-        "final": "1715"
+        "base": "5708",
+        "add": "858",
+        "final": "6566"
       },
       {
         "property_type": 2001,
-        "base": "38",
-        "add": "70",
-        "final": "108"
+        "base": "444",
+        "add": "161",
+        "final": "606"
       },
       {
         "property_type": 2002,
-        "base": "46",
-        "add": "35",
-        "final": "81"
+        "base": "290",
+        "add": "70",
+        "final": "359"
       },
       {
         "property_type": 28,
-        "base": "53",
+        "base": "72",
         "add": "",
-        "final": "53"
+        "final": "72"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "17.0%",
+        "base": "22.9%",
         "add": "",
-        "final": "17.0%"
+        "final": "22.9%"
       },
       {
         "property_type": 22,
@@ -29927,9 +30030,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 26,
-        "base": "5.4%",
+        "base": "11.5%",
         "add": "",
-        "final": "5.4%"
+        "final": "11.5%"
       },
       {
         "property_type": 27,
@@ -29939,9 +30042,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "129.9%",
+        "base": "194.8%",
         "add": "",
-        "final": "129.9%"
+        "final": "194.8%"
       },
       {
         "property_type": 80,
@@ -30166,24 +30269,24 @@ export const character_detail: Character[] = [
       {
         "skill_id": 10885,
         "skill_type": 1,
-        "level": 1,
+        "level": 4,
         "desc": "Condensing ice to create The Steambird's signature, Charlotte creates a Newsflash Field that will deal <color=#99FFFFFF>AoE Cryo DMG</color> and restores HP for all nearby party members based on Charlotte's ATK.\\n<color=#FFD780FF>Newsflash Field</color>\\n·While the ability is active, Monsieur Verite will deal <color=#99FFFFFF>Cryo DMG</color> at intervals to opponents within its AoE.\\n·Will continuously restore HP to active character(s) within its AoE based on Charlotte's ATK.\\n\\n<i>\"Hearing stories from multiple perspectives to recreate what really happened is key to a good report... I mean, that's how you can pick the best angle for your article!\"</i>",
         "skill_affix_list": [
           {
             "name": "Cast Healing",
-            "value": "256.6% ATK+1608"
+            "value": "320.7% ATK+2131"
           },
           {
             "name": "Skill DMG",
-            "value": "77.6%"
+            "value": "97.0%"
           },
           {
             "name": "Kamera Continuous Regeneration",
-            "value": "9.2% ATK+57"
+            "value": "11.5% ATK+76"
           },
           {
             "name": "Kamera DMG",
-            "value": "6.5%"
+            "value": "8.1%"
           },
           {
             "name": "Newsflash Field Duration",
@@ -30214,7 +30317,7 @@ export const character_detail: Character[] = [
         "desc": "When opponents marked by \"Focused Impression\" are defeated, <color=#FFD780FF>Framing: Freezing Point Composition</color>'s CD will be decreased by 2s. This CD decrease can be triggered 4 times every 12s.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/37923cc19e7e12713b0ea5ca4423f2c5.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Moment of Impact",
         "is_enhanced": false,
         "enhanced_desc": "",
@@ -32490,11 +32593,11 @@ export const character_detail: Character[] = [
       "name": "Rosaria",
       "element": "Cryo",
       "fetter": 1,
-      "level": 1,
+      "level": 50,
       "rarity": 4,
-      "actived_constellation_num": 4,
+      "actived_constellation_num": 6,
       "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/1e36f82f68276f97b62e2fbe798ecdc4.png",
-      "is_chosen": false,
+      "is_chosen": true,
       "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/2964c67bb9181d96e02695a1fc4f5bf9.png",
       "weapon_type": 13,
       "weapon": {
@@ -32502,7 +32605,7 @@ export const character_detail: Character[] = [
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7db45b7a84bb80468aaf0f5f430e9bdc.png",
         "type": 13,
         "rarity": 4,
-        "level": 1,
+        "level": 50,
         "affix_level": 1,
         "name": "Favonius Lance"
       }
@@ -32513,8 +32616,8 @@ export const character_detail: Character[] = [
       "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7db45b7a84bb80468aaf0f5f430e9bdc.png",
       "type": 13,
       "rarity": 4,
-      "level": 1,
-      "promote_level": 0,
+      "level": 50,
+      "promote_level": 2,
       "type_name": "Polearm",
       "desc": "A polearm made in the style of the Knights of Favonius. Its shaft is straight, and its tip flows lightly like the wind.",
       "affix_level": 1,
@@ -32522,191 +32625,156 @@ export const character_detail: Character[] = [
         "property_type": 4,
         "base": "",
         "add": "",
-        "final": "44"
+        "final": "293"
       },
       "sub_property": {
         "property_type": 23,
         "base": "",
         "add": "",
-        "final": "6.7%"
+        "final": "19.9%"
       }
     },
     "relics": [
       {
-        "id": 59442,
-        "name": "Exile's Flower",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e8e8c17bd07ea125961b9d2d6f03b1ba.png",
+        "id": 81543,
+        "name": "Royal Flora",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bd80c45d24f484036927eda40339f730.png",
         "pos": 1,
-        "rarity": 4,
+        "rarity": 5,
         "level": 0,
         "set": {
-          "id": 2100091,
-          "name": "The Exile",
+          "id": 2150071,
+          "name": "Noblesse Oblige",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Energy Recharge +20%"
+              "effect": "Elemental Burst DMG +20%"
             },
             {
               "activation_number": 4,
-              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+              "effect": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack."
             }
           ]
         },
         "pos_name": "Flower of Life",
         "main_property": {
           "property_type": 2,
-          "value": "645",
+          "value": "717",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 5,
-            "value": "12",
+            "property_type": 3,
+            "value": "5.3%",
             "times": 0
           },
           {
-            "property_type": 23,
-            "value": "4.1%",
+            "property_type": 5,
+            "value": "18",
+            "times": 0
+          },
+          {
+            "property_type": 22,
+            "value": "5.4%",
             "times": 0
           }
         ]
       },
       {
-        "id": 59423,
-        "name": "Exile's Feather",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1738ca88f6afa4f1d645e8afb214a7ed.png",
+        "id": 81523,
+        "name": "Royal Plume",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7a7f049517a93e3b317a5c5df8892e60.png",
         "pos": 2,
-        "rarity": 4,
+        "rarity": 5,
         "level": 0,
         "set": {
-          "id": 2100091,
-          "name": "The Exile",
+          "id": 2150071,
+          "name": "Noblesse Oblige",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "Energy Recharge +20%"
+              "effect": "Elemental Burst DMG +20%"
             },
             {
               "activation_number": 4,
-              "effect": "Using an Elemental Burst regenerates 2 Energy for all party members (excluding the wearer) every 2s for 6s. This effect cannot stack."
+              "effect": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack."
             }
           ]
         },
         "pos_name": "Plume of Death",
         "main_property": {
           "property_type": 5,
-          "value": "42",
+          "value": "47",
           "times": 0
         },
         "sub_property_list": [
           {
-            "property_type": 8,
-            "value": "19",
+            "property_type": 2,
+            "value": "299",
             "times": 0
           },
           {
-            "property_type": 28,
-            "value": "15",
+            "property_type": 23,
+            "value": "6.5%",
             "times": 0
           },
           {
             "property_type": 9,
-            "value": "5.8%",
+            "value": "6.6%",
             "times": 0
           }
         ]
       },
       {
-        "id": 55351,
-        "name": "Berserker's Timepiece",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/72514ea9341bf0db03079d0c02ef78b2.png",
+        "id": 45553,
+        "name": "Heavensent Decree",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/565e8c41da8461607ffa137dfcbd6904.png",
         "pos": 3,
-        "rarity": 3,
-        "level": 4,
+        "rarity": 5,
+        "level": 0,
         "set": {
-          "id": 2100051,
-          "name": "Berserker",
+          "id": 2150451,
+          "name": "Celestial Gift",
           "affixes": [
             {
               "activation_number": 2,
-              "effect": "CRIT Rate +12%"
+              "effect": "Energy Recharge +20%."
             },
             {
               "activation_number": 4,
-              "effect": "When HP is below 70%, CRIT Rate increases by an additional 24%."
+              "effect": "If the equipping character has completed Witch's Homework, after they use an Elemental Skill, they gain \"Light's Guidance\" for 20s: All nearby party members gain a 20% Elemental DMG Bonus corresponding to the equipping character's Elemental Type. The equipping character can trigger this effect while off-field. DMG Bonuses provided by Artifact Sets with the same name do not stack.\\n· When your party has the Hexerei: Secret Rite effect, Light's Guidance is upgraded to \"Mortal Hymn\": All nearby party members gain a 40% Elemental DMG Bonus corresponding to both the equipping character and the current active party member's Elemental Type instead. If both characters have the same Elemental Type, these bonuses will not stack."
             }
           ]
         },
         "pos_name": "Sands of Eon",
         "main_property": {
           "property_type": 6,
-          "value": "11.2%",
+          "value": "7.0%",
           "times": 0
         },
         "sub_property_list": [
+          {
+            "property_type": 5,
+            "value": "19",
+            "times": 0
+          },
+          {
+            "property_type": 9,
+            "value": "7.3%",
+            "times": 0
+          },
           {
             "property_type": 22,
-            "value": "3.7%",
-            "times": 0
-          },
-          {
-            "property_type": 3,
-            "value": "3.5%",
+            "value": "7.8%",
             "times": 0
           }
         ]
       },
       {
-        "id": 55413,
-        "name": "Berserker's Bone Goblet",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a1c51bbf393862969fb15640d6a433bd.png",
+        "id": 77513,
+        "name": "Wanderer's String-Kettle",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/00068fbfdac5602f0ebd3d6a2b85d0bc.png",
         "pos": 4,
-        "rarity": 4,
-        "level": 0,
-        "set": {
-          "id": 2100051,
-          "name": "Berserker",
-          "affixes": [
-            {
-              "activation_number": 2,
-              "effect": "CRIT Rate +12%"
-            },
-            {
-              "activation_number": 4,
-              "effect": "When HP is below 70%, CRIT Rate increases by an additional 24%."
-            }
-          ]
-        },
-        "pos_name": "Goblet of Eonothem",
-        "main_property": {
-          "property_type": 46,
-          "value": "6.3%",
-          "times": 0
-        },
-        "sub_property_list": [
-          {
-            "property_type": 28,
-            "value": "13",
-            "times": 0
-          },
-          {
-            "property_type": 2,
-            "value": "191",
-            "times": 0
-          },
-          {
-            "property_type": 3,
-            "value": "4.7%",
-            "times": 0
-          }
-        ]
-      },
-      {
-        "id": 77533,
-        "name": "Conductor's Top Hat",
-        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/83903a2b1f0da3e6aeab6328089c9595.png",
-        "pos": 5,
         "rarity": 5,
         "level": 0,
         "set": {
@@ -32723,27 +32791,77 @@ export const character_detail: Character[] = [
             }
           ]
         },
-        "pos_name": "Circlet of Logos",
+        "pos_name": "Goblet of Eonothem",
         "main_property": {
-          "property_type": 22,
-          "value": "9.3%",
+          "property_type": 46,
+          "value": "7.0%",
           "times": 0
         },
         "sub_property_list": [
-          {
-            "property_type": 9,
-            "value": "5.8%",
-            "times": 0
-          },
           {
             "property_type": 28,
             "value": "23",
             "times": 0
           },
           {
-            "property_type": 6,
+            "property_type": 3,
             "value": "4.1%",
             "times": 0
+          },
+          {
+            "property_type": 5,
+            "value": "18",
+            "times": 0
+          }
+        ]
+      },
+      {
+        "id": 47432,
+        "name": "Testament to Your Faith",
+        "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/11eeed27d2d7fbb0ab34f03c87325688.png",
+        "pos": 5,
+        "rarity": 4,
+        "level": 12,
+        "set": {
+          "id": 2150471,
+          "name": "Scarlet Proof",
+          "affixes": [
+            {
+              "activation_number": 2,
+              "effect": "ATK +18%."
+            },
+            {
+              "activation_number": 4,
+              "effect": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction."
+            }
+          ]
+        },
+        "pos_name": "Circlet of Logos",
+        "main_property": {
+          "property_type": 20,
+          "value": "18.5%",
+          "times": 0
+        },
+        "sub_property_list": [
+          {
+            "property_type": 8,
+            "value": "17",
+            "times": 0
+          },
+          {
+            "property_type": 22,
+            "value": "5.6%",
+            "times": 0
+          },
+          {
+            "property_type": 9,
+            "value": "5.8%",
+            "times": 0
+          },
+          {
+            "property_type": 2,
+            "value": "406",
+            "times": 1
           }
         ]
       }
@@ -32798,7 +32916,7 @@ export const character_detail: Character[] = [
         "name": "Last Rites",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/986cc8a781df3697b1a8c4a95b57ecb4.png",
         "effect": "Increases the Level of <color=#FFD780FF>Rites of Termination</color> by 3.\\nMaximum upgrade level is 15.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 5,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -32809,7 +32927,7 @@ export const character_detail: Character[] = [
         "name": "Divine Retribution",
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/9366b8745d43b2db4e66e03542b97464.png",
         "effect": "<color=#FFD780FF>Rites of Termination</color>'s attack decreases opponents' Physical RES by 20% for 10s.",
-        "is_actived": false,
+        "is_actived": true,
         "pos": 6,
         "is_enhanced": false,
         "enhanced_effect": "",
@@ -32826,33 +32944,33 @@ export const character_detail: Character[] = [
     "selected_properties": [
       {
         "property_type": 2000,
-        "base": "1030",
-        "add": "920",
-        "final": "1951"
+        "base": "7245",
+        "add": "2098",
+        "final": "9343"
       },
       {
         "property_type": 20,
-        "base": "17.0%",
+        "base": "23.5%",
         "add": "",
-        "final": "17.0%"
+        "final": "23.5%"
       },
       {
         "property_type": 2001,
-        "base": "64",
-        "add": "64",
-        "final": "128"
+        "base": "435",
+        "add": "184",
+        "final": "619"
       },
       {
         "property_type": 22,
-        "base": "63.0%",
+        "base": "68.8%",
         "add": "",
-        "final": "63.0%"
+        "final": "68.8%"
       },
       {
         "property_type": 2002,
-        "base": "60",
-        "add": "25",
-        "final": "85"
+        "base": "418",
+        "add": "99",
+        "final": "518"
       },
       {
         "property_type": 26,
@@ -32862,9 +32980,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 28,
-        "base": "51",
+        "base": "23",
         "add": "",
-        "final": "51"
+        "final": "23"
       },
       {
         "property_type": 27,
@@ -32874,61 +32992,61 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 46,
-        "base": "6.3%",
+        "base": "7.0%",
         "add": "",
-        "final": "6.3%"
+        "final": "7.0%"
       },
       {
         "property_type": 23,
-        "base": "130.8%",
+        "base": "126.3%",
         "add": "",
-        "final": "130.8%"
+        "final": "126.3%"
       }
     ],
     "base_properties": [
       {
         "property_type": 2000,
-        "base": "1030",
-        "add": "920",
-        "final": "1951"
+        "base": "7245",
+        "add": "2098",
+        "final": "9343"
       },
       {
         "property_type": 2001,
-        "base": "64",
-        "add": "64",
-        "final": "128"
+        "base": "435",
+        "add": "184",
+        "final": "619"
       },
       {
         "property_type": 2002,
-        "base": "60",
-        "add": "25",
-        "final": "85"
+        "base": "418",
+        "add": "99",
+        "final": "518"
       },
       {
         "property_type": 28,
-        "base": "51",
+        "base": "23",
         "add": "",
-        "final": "51"
+        "final": "23"
       },
       {
         "property_type": 999999,
-        "base": "220",
+        "base": "240",
         "add": "",
-        "final": "220"
+        "final": "240"
       }
     ],
     "extra_properties": [
       {
         "property_type": 20,
-        "base": "17.0%",
+        "base": "23.5%",
         "add": "",
-        "final": "17.0%"
+        "final": "23.5%"
       },
       {
         "property_type": 22,
-        "base": "63.0%",
+        "base": "68.8%",
         "add": "",
-        "final": "63.0%"
+        "final": "68.8%"
       },
       {
         "property_type": 26,
@@ -32944,9 +33062,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 23,
-        "base": "130.8%",
+        "base": "126.3%",
         "add": "",
-        "final": "130.8%"
+        "final": "126.3%"
       },
       {
         "property_type": 80,
@@ -33024,9 +33142,9 @@ export const character_detail: Character[] = [
       },
       {
         "property_type": 46,
-        "base": "6.3%",
+        "base": "7.0%",
         "add": "",
-        "final": "6.3%"
+        "final": "7.0%"
       },
       {
         "property_type": 56,
@@ -33139,16 +33257,16 @@ export const character_detail: Character[] = [
       {
         "skill_id": 10453,
         "skill_type": 1,
-        "level": 1,
+        "level": 4,
         "desc": "Rosaria's unique take on this prayer ritual: First, she swings her weapon to slash surrounding opponents; then, she summons a frigid Ice Lance that strikes the ground. Both actions deal <color=#99FFFFFF>Cryo DMG</color>.\\nWhile active, the Ice Lance periodically releases a blast of cold air, dealing <color=#99FFFFFF>Cryo DMG</color> to surrounding opponents.\\n\\n<i>Judgment is such a tedious ordeal — much easier to skip that phase and get straight to the last rites. Rosaria was never very devoted to the Anemo God anyway, which makes performing them all too easy.</i>",
         "skill_affix_list": [
           {
             "name": "Skill DMG",
-            "value": "104%+152%"
+            "value": "130%+190%"
           },
           {
             "name": "Ice Lance DoT",
-            "value": "132%"
+            "value": "165%"
           },
           {
             "name": "Duration",
@@ -33179,7 +33297,7 @@ export const character_detail: Character[] = [
         "desc": "When Rosaria strikes an opponent from behind using <color=#FFD780FF>Ravaging Confession</color>, Rosaria's CRIT Rate increases by 12% for 5s.",
         "skill_affix_list": [],
         "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f721/faac01fa094f4000bc73cc037556eaed.png",
-        "is_unlock": false,
+        "is_unlock": true,
         "name": "Regina Probationum",
         "is_enhanced": false,
         "enhanced_desc": "",
