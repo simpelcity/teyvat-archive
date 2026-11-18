@@ -2,59 +2,130 @@
 import { getElementColors } from '~/constants/elements'
 import { getRarityBg } from '~/constants/weapons'
 import { useLookupsStore } from '~/stores/lookups'
-import type { Character, Skills } from '~/types/character'
+import type { BaseCharacter, Skills, Element } from '~/types/character'
 import { Star, MoveLeft } from '@lucide/vue'
 import { RiLock2Fill } from '@remixicon/vue';
 import '@/assets/styles/pages/CharacterDetail.scss'
 
 const route = useRoute()
+const supabase = useSupabaseClient()
 const lookups = useLookupsStore()
 
-// URL is /characters/<name> or /characters/<name>-<element>
-const slug = String(route.params.id).replace(/["\\]/g, '')
+// URL is /characters/<name> (e.g. vesna) or /characters/<element>-traveler (e.g. anemo-traveler)
+// const slug = String(route.params.id).replace(/["\\]/g, '')
+const slug = decodeURIComponent(String(route.params.id)).toLowerCase()
 
-// const characterName = character.base.name === "Traveler" ? `${character.base.element} Traveler` : character.base.name
+const travelerMatch = slug.match(/^(\w+)-traveler$/)
+const name = travelerMatch ? 'traveler' : slug
+const element = travelerMatch ? travelerMatch[1] : null
 
-// useHead({
-//   title: characterName
-// })
+const { data } = await useAsyncData(`character-${slug}`, async () => {
+  let query = supabase
+    .from('character_builds')
+    .select(`
+      *,
+      character:characters!inner(*),
 
-// console.log('Character:', character)
+      build_weapons(
+        *,
+        weapon:weapons(*),
+        properties:build_weapon_properties(
+          *,
+          property_types(*)
+        )
+      ),
 
-// const isTraveler = (c: typeof character) => c.base.name.toLowerCase() === 'traveler'
+      build_relics(
+        *,
+        relic:relics(*),
+        relic_set:relic_sets(
+          *,
+          affixes:relic_set_affixes(*)
+        ),
+        substats:build_relic_substats(*)
+      ),
 
-// const displayName = (c: typeof character) =>
-//   isTraveler(c) ? `${c.base.element} Traveler` : c.base.name
+      build_constellations(
+        *,
+        constellation:constellations(*)
+      ),
 
-// const getProperty = (id: number) => lookups.getProperty(id)
+      build_skills(
+        *,
+        skill:skills(
+          *,
+          affixes:skill_affixes(*)
+        )
+      ),
 
-// const constellations = computed(() =>
-//   [...character.constellations].sort((a, b) => a.pos - b.pos)
-// )
+      build_properties(
+        *,
+        property:property_types(*)
+      ),
 
-// const activeConstellationIndex = ref(0)
+      build_costumes(
+        *,
+        costume:costumes(*)
+      )
+    `)
+    .ilike('character.name', name)
+
+  if (element) query = query.ilike('character.element', element)
+
+  const { data, error } = await query.limit(1).maybeSingle()
+  if (error) throw error
+
+  return data
+})
+
+if (!data.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Character not found' })
+}
+
+const character = data.value
+
+const characterName = character.character.name === "Traveler" ? `${character.character.element} Traveler` : character.character.name
+
+useHead({
+  title: characterName
+})
+
+console.log('Character:', character)
+
+const isTraveler = (c: typeof character) => c.character.name.toLowerCase() === 'traveler'
+
+const displayName = (c: typeof character) =>
+  isTraveler(c) ? `${c.character.element} Traveler` : c.character.name
+
+const getProperty = (id: number) => lookups.getProperty(id)
+
+const constellations = computed(() =>
+  [...character.build_constellations].sort((a, b) => a.constellation.position - b.constellation.position)
+)
+
+const activeConstellationIndex = ref(0)
 
 // const properties = computed(() => [
 //   ...character.base_properties,
 //   ...character.extra_properties,
 // ])
 
-// const selectedSkill = ref<Skills | null>(null)
-// const showSkillModal = ref(false)
+const selectedSkill = ref<Skills | null>(null)
+const showSkillModal = ref(false)
 
-// function openSkill(skill: Skills) {
-//   selectedSkill.value = skill
-//   showSkillModal.value = true
-// }
+function openSkill(skill: Skills) {
+  selectedSkill.value = skill
+  showSkillModal.value = true
+}
 
-// const skillTabIndex = ref(0)
+const skillTabIndex = ref(0)
 
-// // Start on "Talent Info" each time a different skill is opened
-// watch(selectedSkill, () => { skillTabIndex.value = 0 })
+// Start on "Talent Info" each time a different skill is opened
+watch(selectedSkill, () => { skillTabIndex.value = 0 })
 </script>
 
 <template>
-  <!--<main v-if="character">
+  <main v-if="character">
     <div class="container p-3 py-md-4">
       <NuxtLink
         to="/"
@@ -70,27 +141,27 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
             <BCard no-body>
               <BCardBody class="text-center p-0 d-flex flex-column h-100">
                 <div class="bg-primary rounded-top-2">
-                  <h5 class="my-2">{{ character.base.name }}</h5>
+                  <h5 class="my-2">{{ character.character.name }}</h5>
                 </div>
   
                 <div>
                   <img
                     class="w-100 h-100 object-fit-cover rounded-bottom"
-                    :src="character.base.image"
+                    :src="character.character.image ?? ''"
                     :alt="`${displayName(character)} image`"
                     :style="{
                       aspectRatio: '4 / 5',
                       background: `linear-gradient(to bottom,
-                        color-mix(in srgb, ${getElementColors(character.base.element).color} 55%, #1c1c28),
-                        color-mix(in srgb, ${getElementColors(character.base.element).color} 25%, #1c1c28))`
+                        color-mix(in srgb, ${getElementColors(character.character.element as Element).color} 55%, #1c1c28),
+                        color-mix(in srgb, ${getElementColors(character.character.element as Element).color} 25%, #1c1c28))`
                     }"
                   />
   
                   <div class="d-flex position-absolute bottom-0 start-0 bg-dark bg-opacity-25 w-100 d-flex justify-content-evenly py-2">
-                    <div role="button" @click="openSkill(skill)" v-for="skill in character.skills" class="bg-dark bg-opacity-50 rounded-circle border border-secondary position-relative">
+                    <!--<div role="button" @click="openSkill(skill)" v-for="skill in character.build_skills" class="bg-dark bg-opacity-50 rounded-circle border border-secondary position-relative">
                       <img :src="skill.icon" alt="" width="35" height="35" class="" />
                       <span class="position-absolute top-50 start-50 badge rounded-pill bg-dark d-flex justify-content-center align-items-center py-0 px-1 test">{{ skill.level }}</span>
-                    </div>
+                    </div>-->
                     
                     <BModal v-model="showSkillModal" title="Details" centered no-footer data-bs-theme="dark">
                       <template v-if="selectedSkill">
@@ -152,18 +223,18 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
 
           <BCol md="8">
             <div class="d-flex align-items-center gap-2">
-              <img class="" width="50" height="50" :src="getElementColors(character.base.element).icon" />
+              <img class="" width="50" height="50" :src="getElementColors(character.character.element as Element).icon" />
               <div>
                 <div class="d-flex align-items-center gap-2">
                   <h4 class="font-genshin mb-0">{{ displayName(character) }}</h4>
-                  <div class="badge text-bg-primary">Lv. {{ character.base.level }}</div>
+                  <div class="badge text-bg-primary">Lv. {{ character.level }}</div>
                 </div>
                 <div class="d-flex align-items-center gap-2 text-muted">
                   <div class="d-flex">
-                    <Star v-for="n in character.base.rarity" :key="n" class="text-warning" fill="#ffc107" :size="16" />
+                    <Star v-for="n in character.character.rarity" :key="n" class="text-warning" fill="#ffc107" :size="16" />
                   </div>
                   |
-                  <span class="text-muted">{{ character.weapon.type_name }}</span>
+                  <span class="text-muted">{{ character.build_weapons?.weapon.type_name }}</span>
                 </div>
               </div>
             </div>
@@ -179,7 +250,7 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
 
                   <BCardBody class="p-0">
                     <BRow cols="2" gutter-x="2">
-                      <BCol v-for="p in properties" class="prop-div">
+                      <!--<BCol v-for="p in properties" class="prop-div">
                         <div class="d-flex align-items-center justify-content-between py-1 px-2">
                           <div class="d-flex gap-1">
                             <div class="property-img d-flex">
@@ -193,7 +264,7 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
                             <span class="font-genshin">{{ p.final }}</span>
                           </div>
                         </div>
-                      </BCol>
+                      </BCol>-->
                     </BRow>
                   </BCardBody>
                 </BCard>
@@ -209,23 +280,23 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
                     <div
                       class="rounded flex-shrink-0 align-self-center"
                       :style="{
-                        background: `url(${getRarityBg(character.weapon.rarity)}) no-repeat center / cover`,
+                        background: `url(${getRarityBg(character.build_weapons?.weapon.rarity ?? 1)}) no-repeat center / cover`,
                         width: '80px',
                         height: '80px',
                       }"
                     >
-                      <img class="d-block w-100 h-100" :src="character.weapon.icon" :alt="character.weapon.name" />
+                      <img class="d-block w-100 h-100" :src="character.build_weapons?.weapon.icon ?? ''" :alt="character.build_weapons?.weapon.name" />
                     </div>
   
                     <div class="d-flex flex-column">
                       <div class="d-flex align-items-center gap-2">
-                        <h5 class="mb-0">{{ character.weapon.name }}</h5>
-                        <div class="badge text-bg-secondary rounded-1">Lv. {{ character.weapon.level }}</div>
+                        <h5 class="mb-0">{{ character.build_weapons?.weapon.name }}</h5>
+                        <div class="badge text-bg-secondary rounded-1">Lv. {{ character.build_weapons?.level }}</div>
                       </div>
   
-                      <span class="text-primary small">Refinement Rank {{ character.weapon.affix_level }}</span>
-                      <span class="text-muted small">{{ getProperty(character.weapon.main_property.property_type)?.name }}: {{ character.weapon.main_property.final }}</span>
-                      <span class="text-muted small" v-if="character.weapon.sub_property">{{ getProperty(character.weapon.sub_property.property_type)?.name }}: {{ character.weapon.sub_property.final }}</span>
+                      <span class="text-primary small">Refinement Rank {{ character.build_weapons?.affix_level }}</span>
+                      <span class="text-muted small">{{ getProperty(character.build_weapons?.properties.find(p => p.property_slot === 'main')?.property_type_id ?? 1)?.name }}: {{  }}</span><!--
+                      <span class="text-muted small" v-if="character.build_weapons?.weapon.sub_property">{{ getProperty(character.weapon.sub_property.property_type)?.name }}: {{ character.weapon.sub_property.final }}</span>-->
                     </div>
                   </BCardBody>
                 </BCard>
@@ -243,7 +314,7 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
     
               <BCardBody>
                 <BTabs v-model:index="activeConstellationIndex" nav-class="mb-3">
-                  <BTab
+                  <!--<BTab
                     v-for="c in constellations"
                     :key="c.id"
                     :title-item-class="['constellation-item', { 'constellation-locked': !c.is_actived }]"
@@ -302,7 +373,7 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
                         </div>
                       </BCardBody>
                     </BCard>
-                  </BTab>
+                  </BTab>-->
                 </BTabs>
     
               </BCardBody>
@@ -319,9 +390,9 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
 
               <BCardBody>
                 <BRow cols="5" class="artifact-cards" gutter-x="3">
-                  <BCol v-for="relic in character.relics" :key="relic.id">
+                  <!--<BCol v-for="relic in character.relics" :key="relic.id">
                     <CharacterArtifactCard :relic="relic" />
-                  </BCol>
+                  </BCol>-->
                 </BRow>
               </BCardBody>
             </BCard>
@@ -329,5 +400,5 @@ const slug = String(route.params.id).replace(/["\\]/g, '')
         </BRow>
       </section>
     </div>
-  </main>-->
+  </main>
 </template>

@@ -15,7 +15,7 @@ const displayName = computed(() =>
 
 const slug = computed(() =>
   isTraveler.value
-    ? `traveler-${props.character.element.toLowerCase()}`
+    ? `${props.character.element.toLowerCase()}-traveler`
     : props.character.name.toLowerCase()
 )
 </script>
