@@ -56,3 +56,16 @@ create policy "public read" on character_details for select using (true);
 create policy "public read" on property_map      for select using (true);
 create policy "public read" on skill_map         for select using (true);
 create policy "public read" on wiki_map          for select using (true);
+
+alter table character_builds enable row level security;
+alter table build_weapons    enable row level security;
+alter table weapons          enable row level security;
+
+drop policy if exists "public read" on character_builds;
+drop policy if exists "public read" on build_weapons;
+drop policy if exists "public read" on weapons;
+
+create policy "public read" on character_builds for select using (true);
+create policy "public read" on build_weapons    for select using (true);
+create policy "public read" on weapons          for select using (true);
+

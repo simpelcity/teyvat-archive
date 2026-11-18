@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { BaseCharacter } from '~/types/character'
+import type { Characters } from '~/types/character'
 import { getElementColors } from '~/constants/elements'
 import { Star } from '@lucide/vue'
 
 const props = defineProps<{
-  character: BaseCharacter
+  character: Characters
 }>()
 
 const isTraveler = computed(() => props.character.name.toLowerCase() === 'traveler')

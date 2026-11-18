@@ -1,3 +1,5 @@
+import process from 'node:process'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2026-11-03',
@@ -14,6 +16,12 @@ export default defineNuxtConfig({
     // Public read-only data, no login required
     redirect: false,
     types: '~/types/database.types.ts'
+  },
+  runtimeConfig: {
+    public: {
+      supabaseUrl: process.env.SUPABASE_URL,
+      supabaseKey: process.env.SUPABASE_KEY
+    }
   },
   css: [
     '~/assets/styles/main.scss',

@@ -1669,10 +1669,10 @@ export const character_detail: Character[] = [
       "type": 1,
       "rarity": 5,
       "level": 90,
-      "promote_level": 5,
+      "promote_level": 6,
       "type_name": "Sword",
       "desc": "A longsword that once shone with the Pale Star's light. In the voyager's hand, it becomes a brand-new light that has nothing to do with any past era.",
-      "affix_level": 3,
+      "affix_level": 5,
       "main_property": {
         "property_type": 4,
         "base": "",

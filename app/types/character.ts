@@ -181,7 +181,7 @@ export interface Characters {
   name: string
   rarity: 4 | 5
   side_icon: string
-  weapon: Weapon
+  weapon: Weapon | null
   weapon_type: number
 }
 

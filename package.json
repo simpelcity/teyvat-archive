@@ -33,6 +33,7 @@
   "devDependencies": {
     "@supabase/supabase-js": "^2.119.0",
     "@types/bootstrap": "^5.2.11",
+    "@types/node": "^26.6.6",
     "sass": "^1.107.1",
     "tsx": "^4.23.15"
   }

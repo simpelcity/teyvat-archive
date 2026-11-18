@@ -8,78 +8,53 @@ import { RiLock2Fill } from '@remixicon/vue';
 import '@/assets/styles/pages/CharacterDetail.scss'
 
 const route = useRoute()
-const supabase = useSupabaseClient()
 const lookups = useLookupsStore()
 
 // URL is /characters/<name> or /characters/<name>-<element>
 const slug = String(route.params.id).replace(/["\\]/g, '')
 
-const [{ data: characterData }] = await Promise.all([
-  useAsyncData(`character-${slug}`, async () => {
-    const { data, error } = await supabase
-      .from('character_details')
-      .select('data')
-      .or(`name_slug.eq."${slug}",name_element_slug.eq."${slug}"`)
-      .order('id')
-      .limit(1)
-      .maybeSingle()
-    if (error) throw createError({ statusCode: 500, statusMessage: error.message })
-    return (data?.data as Character | undefined) ?? null
-  }),
-  callOnce('lookups', () => lookups.load()),
-])
+// const characterName = character.base.name === "Traveler" ? `${character.base.element} Traveler` : character.base.name
 
-const character = characterData.value
+// useHead({
+//   title: characterName
+// })
 
-if (!character) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: 'Character not found',
-  })
-}
+// console.log('Character:', character)
 
-const characterName = character.base.name === "Traveler" ? `${character.base.element} Traveler` : character.base.name
+// const isTraveler = (c: typeof character) => c.base.name.toLowerCase() === 'traveler'
 
-useHead({
-  title: characterName
-})
+// const displayName = (c: typeof character) =>
+//   isTraveler(c) ? `${c.base.element} Traveler` : c.base.name
 
-console.log('Character:', character)
+// const getProperty = (id: number) => lookups.getProperty(id)
 
-const isTraveler = (c: typeof character) => c.base.name.toLowerCase() === 'traveler'
+// const constellations = computed(() =>
+//   [...character.constellations].sort((a, b) => a.pos - b.pos)
+// )
 
-const displayName = (c: typeof character) =>
-  isTraveler(c) ? `${c.base.element} Traveler` : c.base.name
+// const activeConstellationIndex = ref(0)
 
-const getProperty = (id: number) => lookups.getProperty(id)
+// const properties = computed(() => [
+//   ...character.base_properties,
+//   ...character.extra_properties,
+// ])
 
-const constellations = computed(() =>
-  [...character.constellations].sort((a, b) => a.pos - b.pos)
-)
+// const selectedSkill = ref<Skills | null>(null)
+// const showSkillModal = ref(false)
 
-const activeConstellationIndex = ref(0)
+// function openSkill(skill: Skills) {
+//   selectedSkill.value = skill
+//   showSkillModal.value = true
+// }
 
-const properties = computed(() => [
-  ...character.base_properties,
-  ...character.extra_properties,
-])
+// const skillTabIndex = ref(0)
 
-const selectedSkill = ref<Skills | null>(null)
-const showSkillModal = ref(false)
-
-function openSkill(skill: Skills) {
-  selectedSkill.value = skill
-  showSkillModal.value = true
-}
-
-const skillTabIndex = ref(0)
-
-// Start on "Talent Info" each time a different skill is opened
-watch(selectedSkill, () => { skillTabIndex.value = 0 })
+// // Start on "Talent Info" each time a different skill is opened
+// watch(selectedSkill, () => { skillTabIndex.value = 0 })
 </script>
 
 <template>
-  <main v-if="character">
+  <!--<main v-if="character">
     <div class="container p-3 py-md-4">
       <NuxtLink
         to="/"
@@ -354,5 +329,5 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
         </BRow>
       </section>
     </div>
-  </main>
+  </main>-->
 </template>
