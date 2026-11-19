@@ -94,29 +94,29 @@ export type Database = {
       }
       build_properties: {
         Row: {
-          add_value: number | null
-          base_value: number | null
+          add_value: string | null
+          base_value: string | null
           build_id: number
           category: string
-          final_value: number | null
+          final_value: string | null
           id: number
           property_type_id: number
         }
         Insert: {
-          add_value?: number | null
-          base_value?: number | null
+          add_value?: string | null
+          base_value?: string | null
           build_id: number
           category: string
-          final_value?: number | null
+          final_value?: string | null
           id?: never
           property_type_id: number
         }
         Update: {
-          add_value?: number | null
-          base_value?: number | null
+          add_value?: string | null
+          base_value?: string | null
           build_id?: number
           category?: string
-          final_value?: number | null
+          final_value?: string | null
           id?: never
           property_type_id?: number
         }
@@ -339,27 +339,27 @@ export type Database = {
       }
       build_weapons: {
         Row: {
-          affix_level: number | null
+          affix_level: number
           build_id: number
           id: number
           level: number
-          promote_level: number | null
+          promote_level: number
           weapon_id: number
         }
         Insert: {
-          affix_level?: number | null
+          affix_level?: number
           build_id: number
           id?: never
-          level: number
-          promote_level?: number | null
+          level?: number
+          promote_level?: number
           weapon_id: number
         }
         Update: {
-          affix_level?: number | null
+          affix_level?: number
           build_id?: number
           id?: never
           level?: number
-          promote_level?: number | null
+          promote_level?: number
           weapon_id?: number
         }
         Relationships: [
@@ -381,37 +381,37 @@ export type Database = {
       }
       character_builds: {
         Row: {
-          active_constellation_num: number | null
+          active_constellation_num: number
           build_name: string | null
           character_id: number
           created_at: string | null
-          fetter: number | null
+          fetter: number
           id: number
-          is_chosen: boolean | null
+          is_chosen: boolean
           level: number
           updated_at: string | null
           user_id: string | null
         }
         Insert: {
-          active_constellation_num?: number | null
+          active_constellation_num?: number
           build_name?: string | null
           character_id: number
           created_at?: string | null
-          fetter?: number | null
+          fetter?: number
           id?: never
-          is_chosen?: boolean | null
+          is_chosen?: boolean
           level: number
           updated_at?: string | null
           user_id?: string | null
         }
         Update: {
-          active_constellation_num?: number | null
+          active_constellation_num?: number
           build_name?: string | null
           character_id?: number
           created_at?: string | null
-          fetter?: number | null
+          fetter?: number
           id?: never
-          is_chosen?: boolean | null
+          is_chosen?: boolean
           level?: number
           updated_at?: string | null
           user_id?: string | null
@@ -533,34 +533,34 @@ export type Database = {
       }
       characters: {
         Row: {
-          element: string | null
-          icon: string | null
+          element: string
+          icon: string
           id: number
-          image: string | null
+          image: string
           name: string
-          rarity: number | null
-          side_icon: string | null
-          weapon_type: number | null
+          rarity: number
+          side_icon: string
+          weapon_type: number
         }
         Insert: {
-          element?: string | null
-          icon?: string | null
+          element: string
+          icon: string
           id: number
-          image?: string | null
+          image: string
           name: string
-          rarity?: number | null
-          side_icon?: string | null
-          weapon_type?: number | null
+          rarity: number
+          side_icon: string
+          weapon_type: number
         }
         Update: {
-          element?: string | null
-          icon?: string | null
+          element?: string
+          icon?: string
           id?: number
-          image?: string | null
+          image?: string
           name?: string
-          rarity?: number | null
-          side_icon?: string | null
-          weapon_type?: number | null
+          rarity?: number
+          side_icon?: string
+          weapon_type?: number
         }
         Relationships: []
       }
@@ -861,7 +861,7 @@ export type Database = {
           icon: string | null
           id: number
           name: string
-          skill_type: number
+          skill_type_id: number
         }
         Insert: {
           character_id: number
@@ -869,7 +869,7 @@ export type Database = {
           icon?: string | null
           id: number
           name: string
-          skill_type: number
+          skill_type_id: number
         }
         Update: {
           character_id?: number
@@ -877,7 +877,7 @@ export type Database = {
           icon?: string | null
           id?: number
           name?: string
-          skill_type?: number
+          skill_type_id?: number
         }
         Relationships: [
           {
@@ -887,35 +887,42 @@ export type Database = {
             referencedRelation: "characters"
             referencedColumns: ["id"]
           },
+          {
+            foreignKeyName: "skills_skill_type_id_fkey"
+            columns: ["skill_type_id"]
+            isOneToOne: false
+            referencedRelation: "skill_map"
+            referencedColumns: ["id"]
+          },
         ]
       }
       weapons: {
         Row: {
           description: string | null
-          icon: string | null
+          icon: string
           id: number
           name: string
-          rarity: number | null
-          type: number | null
-          type_name: string | null
+          rarity: number
+          type: number
+          type_name: string
         }
         Insert: {
           description?: string | null
-          icon?: string | null
+          icon: string
           id: number
           name: string
-          rarity?: number | null
-          type?: number | null
-          type_name?: string | null
+          rarity: number
+          type: number
+          type_name: string
         }
         Update: {
           description?: string | null
-          icon?: string | null
+          icon?: string
           id?: number
           name?: string
-          rarity?: number | null
-          type?: number | null
-          type_name?: string | null
+          rarity?: number
+          type?: number
+          type_name?: string
         }
         Relationships: []
       }
@@ -978,7 +985,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      character_rarity: "4" | "5"
+      weapon_rarity: "1" | "2" | "3" | "4" | "5"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -1105,6 +1113,9 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      character_rarity: ["4", "5"],
+      weapon_rarity: ["1", "2", "3", "4", "5"],
+    },
   },
 } as const

@@ -46,27 +46,27 @@ const { data: characters } = await useAsyncData('characters', async () => {
     return {
       id: build.character.id,
       name: build.character.name,
-      icon: build.character.icon ?? '',
-      image: build.character.image ?? '',
-      side_icon: build.character.side_icon ?? '',
+      icon: build.character.icon,
+      image: build.character.image,
+      side_icon: build.character.side_icon,
       // DB columns are plain text/int; narrow them to the app's union types
-      element: (build.character.element ?? 'Anemo') as ElementType,
+      element: (build.character.element) as ElementType,
       rarity: (build.character.rarity === 5 ? 5 : 4),
-      weapon_type: build.character.weapon_type ?? 0,
+      weapon_type: build.character.weapon_type,
 
-      fetter: build.fetter ?? 0,
+      fetter: build.fetter,
       level: build.level,
-      actived_constellation_num: build.active_constellation_num ?? 0,
-      is_chosen: build.is_chosen ?? false,
+      actived_constellation_num: build.active_constellation_num,
+      is_chosen: build.is_chosen,
 
       weapon: bw && {
         id: bw.weapon.id,
         name: bw.weapon.name,
-        icon: bw.weapon.icon ?? '',
-        type: bw.weapon.type ?? 0,
-        rarity: bw.weapon.rarity ?? 1,
+        icon: bw.weapon.icon,
+        type: bw.weapon.type,
+        rarity: bw.weapon.rarity,
         level: bw.level,
-        affix_level: bw.affix_level ?? 1,
+        affix_level: bw.affix_level,
       },
     }
   })

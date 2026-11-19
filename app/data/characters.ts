@@ -1058,5 +1058,28 @@ export const characters: Characters[] = [
       "affix_level": 1,
       "name": "Waster Greatsword"
     }
+  },
+  {
+    "id": 10000090,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/817f1d6da2a3ff6e6bfedeb39104ad71.png",
+    "name": "Chevreuse",
+    "element": "Pyro",
+    "fetter": 1,
+    "level": 1,
+    "rarity": 4,
+    "actived_constellation_num": 0,
+    "image": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/image_7/1c1c928d7a9757932c6bdbda89073f46.png",
+    "is_chosen": false,
+    "side_icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f727/e0186b49ed0d791ee6b1dc0b125f6613.png",
+    "weapon_type": 13,
+    "weapon": {
+      "id": 13401,
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/cf0f39f3f9fddd9fdcafe921ca8cff1a.png",
+      "type": 13,
+      "rarity": 4,
+      "level": 7,
+      "affix_level": 1,
+      "name": "Dragon's Bane"
+    }
   }
 ]

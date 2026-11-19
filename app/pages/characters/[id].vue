@@ -31,7 +31,7 @@ const { data } = await useAsyncData(`character-${slug}`, async () => {
         weapon:weapons(*),
         properties:build_weapon_properties(
           *,
-          property_types(*)
+          property_type:property_types(*)
         )
       ),
 
@@ -42,7 +42,11 @@ const { data } = await useAsyncData(`character-${slug}`, async () => {
           *,
           affixes:relic_set_affixes(*)
         ),
-        substats:build_relic_substats(*)
+        substats:build_relic_substats(
+          *,
+          property:property_types(*)
+        ),
+        main_property:property_types(*)
       ),
 
       build_constellations(
@@ -54,7 +58,8 @@ const { data } = await useAsyncData(`character-${slug}`, async () => {
         *,
         skill:skills(
           *,
-          affixes:skill_affixes(*)
+          affixes:skill_affixes(*),
+          skill_type:skill_map(*)
         )
       ),
 
@@ -105,10 +110,9 @@ const constellations = computed(() =>
 
 const activeConstellationIndex = ref(0)
 
-// const properties = computed(() => [
-//   ...character.base_properties,
-//   ...character.extra_properties,
-// ])
+const properties = character.build_properties
+
+const selectedProperties = properties.filter(p => p.category === "selected")
 
 const selectedSkill = ref<Skills | null>(null)
 const showSkillModal = ref(false)
@@ -250,21 +254,21 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
 
                   <BCardBody class="p-0">
                     <BRow cols="2" gutter-x="2">
-                      <!--<BCol v-for="p in properties" class="prop-div">
+                      <BCol v-for="p in selectedProperties" class="prop-div">
                         <div class="d-flex align-items-center justify-content-between py-1 px-2">
                           <div class="d-flex gap-1">
                             <div class="property-img d-flex">
-                              <BImg v-if="getProperty(p.property_type)?.icon" :src="getProperty(p.property_type)?.icon" />
+                              <BImg v-if="p.property.icon" :src="p.property.icon" />
                             </div>
   
-                            <span class="text-muted">{{ getProperty(p.property_type)?.name }}</span>
+                            <span class="text-muted">{{ p.property.name }}</span>
                           </div>
 
                           <div class="">
-                            <span class="font-genshin">{{ p.final }}</span>
+                            <span class="font-genshin">{{ p.final_value }}</span>
                           </div>
                         </div>
-                      </BCol>-->
+                      </BCol>
                     </BRow>
                   </BCardBody>
                 </BCard>
@@ -295,8 +299,8 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
                       </div>
   
                       <span class="text-primary small">Refinement Rank {{ character.build_weapons?.affix_level }}</span>
-                      <span class="text-muted small">{{ getProperty(character.build_weapons?.properties.find(p => p.property_slot === 'main')?.property_type_id ?? 1)?.name }}: {{  }}</span><!--
-                      <span class="text-muted small" v-if="character.build_weapons?.weapon.sub_property">{{ getProperty(character.weapon.sub_property.property_type)?.name }}: {{ character.weapon.sub_property.final }}</span>-->
+                      <span class="text-muted small">{{ character.build_weapons?.properties.find(p => p.property_slot === "main")?.property_type.name }}: {{ character.build_weapons?.properties.find(p => p.property_slot === "main")?.final_value }}</span>
+                      <span class="text-muted small" v-if="character.build_weapons?.properties.find(p => p.property_slot === 'sub')">{{ character.build_weapons?.properties.find(p => p.property_slot === "sub")?.property_type.name }}: {{ character.build_weapons?.properties.find(p => p.property_slot === "sub")?.final_value }}</span>
                     </div>
                   </BCardBody>
                 </BCard>

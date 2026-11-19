@@ -2,10 +2,13 @@
 import type { Characters } from '~/types/character'
 import { getElementColors } from '~/constants/elements'
 import { Star } from '@lucide/vue'
+import Rarity6 from '~/assets/images/rarity_bg/rarity_6.png'
 
 const props = defineProps<{
   character: Characters
 }>()
+
+const route = useRoute()
 
 const isTraveler = computed(() => props.character.name.toLowerCase() === 'traveler')
 
@@ -18,18 +21,24 @@ const slug = computed(() =>
     ? `${props.character.element.toLowerCase()}-traveler`
     : props.character.name.toLowerCase()
 )
+
+const slug_old = computed(() =>
+  isTraveler.value
+    ? `traveler-${props.character.element.toLowerCase()}`
+    : props.character.name.toLowerCase()
+)
 </script>
 
 <template>
-  <NuxtLink :to="`/characters/${slug}`" class="text-decoration-none">
+  <NuxtLink :to="route.path === '/old' ? `/old/characters/${slug_old}` : `/characters/${slug}`" class="text-decoration-none">
     <BCard class="h-100" no-body>
       <BCardImg
         :src="character.icon"
         :alt="`${displayName} icon`"
         :style="{
-          background: `linear-gradient(to bottom,
+          background: `${character.name !== 'Manekina' ? `linear-gradient(to bottom,
             color-mix(in srgb, ${getElementColors(character.element).color} 55%, #1c1c28),
-            color-mix(in srgb, ${getElementColors(character.element).color} 25%, #1c1c28))`
+            color-mix(in srgb, ${getElementColors(character.element).color} 25%, #1c1c28))` : `url(${Rarity6}) no-repeat center / cover`}`
         }"
       />
 
