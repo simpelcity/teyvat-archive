@@ -2,7 +2,7 @@
 import { getElementColors } from '~/constants/elements'
 import { getRarityBg } from '~/constants/weapons'
 import { useLookupsStore } from '~/stores/lookups'
-import type { BaseCharacter, Skills, Element } from '~/types/character'
+import type { BaseCharacter, BuildSkills, Element } from '~/types/character'
 import { Star, MoveLeft } from '@lucide/vue'
 import { RiLock2Fill } from '@remixicon/vue';
 import '@/assets/styles/pages/CharacterDetail.scss'
@@ -10,6 +10,8 @@ import '@/assets/styles/pages/CharacterDetail.scss'
 const route = useRoute()
 const supabase = useSupabaseClient()
 const lookups = useLookupsStore()
+
+await callOnce('lookups', () => lookups.load())
 
 // URL is /characters/<name> (e.g. vesna) or /characters/<element>-traveler (e.g. anemo-traveler)
 // const slug = String(route.params.id).replace(/["\\]/g, '')
@@ -114,10 +116,14 @@ const properties = character.build_properties
 
 const selectedProperties = properties.filter(p => p.category === "selected")
 
-const selectedSkill = ref<Skills | null>(null)
+const skills =computed(() =>
+  [...character.build_skills].sort((a, b) => a.id - b.id)
+)
+
+const selectedSkill = ref<BuildSkills | null>(null)
 const showSkillModal = ref(false)
 
-function openSkill(skill: Skills) {
+function openSkill(skill: BuildSkills) {
   selectedSkill.value = skill
   showSkillModal.value = true
 }
@@ -162,22 +168,22 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
                   />
   
                   <div class="d-flex position-absolute bottom-0 start-0 bg-dark bg-opacity-25 w-100 d-flex justify-content-evenly py-2">
-                    <!--<div role="button" @click="openSkill(skill)" v-for="skill in character.build_skills" class="bg-dark bg-opacity-50 rounded-circle border border-secondary position-relative">
-                      <img :src="skill.icon" alt="" width="35" height="35" class="" />
+                    <div role="button" @click="openSkill(skill)" v-for="skill in skills" class="bg-dark bg-opacity-50 rounded-circle border border-secondary position-relative">
+                      <img :src="skill.skill.icon" alt="" width="35" height="35" class="" />
                       <span class="position-absolute top-50 start-50 badge rounded-pill bg-dark d-flex justify-content-center align-items-center py-0 px-1 test">{{ skill.level }}</span>
-                    </div>-->
+                    </div>
                     
                     <BModal v-model="showSkillModal" title="Details" centered no-footer data-bs-theme="dark">
                       <template v-if="selectedSkill">
                         <div class="">
                           <div class="d-flex column-gap-2 mb-3">
                             <div class="bg-dark rounded-circle border border-2 border-secondary">
-                              <img :src="selectedSkill.icon" alt="" width="50" height="50" class="" />
+                              <img :src="selectedSkill.skill.icon" alt="" width="50" height="50" class="" />
                             </div>
   
                             <div class="d-flex flex-column justify-content-center text-start">
-                              <span class="text-primary fs-5">{{ selectedSkill.name }}</span>
-                              <span class="text-muted">{{ lookups.skillMap[selectedSkill.skill_type] }} Talent  | Lv. {{ selectedSkill.level }}</span>
+                              <span class="text-primary fs-5">{{ selectedSkill.skill.name }}</span>
+                              <span class="text-muted">{{ selectedSkill.skill.skill_type.name }} Talent  | Lv. {{ selectedSkill.level }}</span>
                             </div>
                           </div>
   
@@ -185,28 +191,26 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
                             v-model:index="skillTabIndex"
                             pills
                             fill
+                            justified
                             nav-class="mb-3"
                             content-class="text-start"
                             active-nav-item-class="text-dark"
                             inactive-nav-item-class="bg-light bg-opacity-25 text-light"
                           >
                             <BTab title="Talent Info" title-link-class="rounded-end-0 rounded-start-5">
-                              <p class="text-secondary mb-0" v-html="formatEffect(selectedSkill.desc)" />
-
-                              <div v-if="selectedSkill.is_enhanced && selectedSkill.enhanced_desc" class="alert alert-primary py-2 mt-3 mb-0">
-                                <span class="d-block mb-1">Enhanced</span>
-                                <span v-html="formatEffect(selectedSkill.enhanced_desc)" />
+                              <div class="skill-table-scroll">
+                                <p class="text-secondary mb-0" v-html="formatEffect(selectedSkill.skill.description)" />
                               </div>
                             </BTab>
 
                             <BTab
                               title="Skill Attributes"
-                              title-link-class="rounded-start-0 rounded-end-5"
-                              :disabled="!selectedSkill.skill_affix_list.length"
+                              :title-link-class="selectedSkill.skill.affixes.length ? 'rounded-start-0 rounded-end-5' : 'rounded-start-0 rounded-end-5 text-opacity-0'"
+                              :disabled="!selectedSkill.skill.affixes.length"
                             >
                               <div class="d-flex flex-column row-gap-2 px-2 skill-table-scroll">
                                 <div
-                                  v-for="affix in selectedSkill.skill_affix_list"
+                                  v-for="affix in selectedSkill.skill.affixes"
                                   :key="affix.name"
                                   class="d-flex justify-content-between bg-light bg-opacity-10 py-2 px-3 border border-secondary border-opacity-25"
                                 >
@@ -318,8 +322,8 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
     
               <BCardBody>
                 <BTabs v-model:index="activeConstellationIndex" nav-class="mb-3">
-                  <!--<BTab
-                    v-for="c in constellations"
+                  <BTab
+                    v-for="c in character.build_constellations"
                     :key="c.id"
                     :title-item-class="['constellation-item', { 'constellation-locked': !c.is_actived }]"
                     title-link-class="d-flex flex-column align-items-center gap-1"
@@ -328,13 +332,13 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
                       <div
                         class="rounded-circle border border-2"
                         :style="{
-                          backgroundColor: getElementColors(character.base.element).bg,
-                          boxShadow: `0px 0px 8px 2px ${getElementColors(character.base.element).color}`,
+                          backgroundColor: getElementColors(character.character.element as Element).bg,
+                          boxShadow: `0px 0px 8px 2px ${getElementColors(character.character.element as Element).color}`,
                         }"
                       >
                         <div class="constellation-icon position-relative overflow-hidden rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center">
                           <div class="constellation-icon_decor position-absolute w-100 h-100 start-0 top-0 d-flex justify-content-center align-items-center">
-                            <img :src="c.icon" :alt="c.name" width="30" height="30" />
+                            <img :src="c.constellation.icon" :alt="c.constellation.name" width="30" height="30" />
                           </div>
                           <div v-if="!c.is_actived" class="shell-icon_base position-absolute w-100 h-100 start-0 top-0 d-flex mw-100 align-items-center justify-content-center bg-black bg-opacity-50 rounded-circle">
                             <RiLock2Fill size="15" class="text-light" />
@@ -350,13 +354,13 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
                           :style="{
                             width: '54px',
                             height: '54px',
-                            backgroundColor: getElementColors(character.base.element).bg,
-                            boxShadow: `0px 0px 8px 3px ${getElementColors(character.base.element).color}`
+                            backgroundColor: getElementColors(character.character.element as Element).bg,
+                            boxShadow: `0px 0px 8px 3px ${getElementColors(character.character.element as Element).color}`
                           }"
                         >
                           <div class="constellation-icon position-relative overflow-hidden">
                             <div class="constellation-icon_decor position-absolute w-100 h-100 start-0 top-0 d-flex justify-content-center align-items-center">
-                              <img :src="c.icon" :alt="c.name" width="50" height="50" class="" />
+                              <img :src="c.constellation.icon" :alt="c.constellation.name" width="50" height="50" class="" />
                             </div>
                             <div v-if="!c.is_actived" class="shell-icon_base position-absolute w-100 h-100 start-0 top-0 d-flex mw-100 align-items-center justify-content-center bg-black bg-opacity-50 rounded-circle">
                               <RiLock2Fill size="30" />
@@ -367,17 +371,17 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
         
                         <div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h5 class="mb-0 text-primary">{{ c.name }}</h5>
-                            <p class="small mb-2 text-secondary">Constellation Lv. <span class="text-info">{{ c.pos }}</span></p>
+                            <h5 class="mb-0 text-primary">{{ c.constellation.name }}</h5>
+                            <p class="small mb-2 text-secondary">Constellation Lv. <span class="text-info">{{ c.constellation.position }}</span></p>
                           </div>
         
-                          <p class="mb-0 text-muted" v-html="formatEffect(c.effect)" />
+                          <p class="mb-0 text-muted" v-html="formatEffect(c.constellation.effect)" />
         
                           <p v-if="c.is_enhanced && c.enhanced_effect" class="mb-0 mt-2" v-html="formatEffect(c.enhanced_effect)" />
                         </div>
                       </BCardBody>
                     </BCard>
-                  </BTab>-->
+                  </BTab>
                 </BTabs>
     
               </BCardBody>
@@ -394,9 +398,9 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
 
               <BCardBody>
                 <BRow cols="5" class="artifact-cards" gutter-x="3">
-                  <!--<BCol v-for="relic in character.relics" :key="relic.id">
+                  <BCol v-for="relic in character.build_relics" :key="relic.id">
                     <CharacterArtifactCard :relic="relic" />
-                  </BCol>-->
+                  </BCol>
                 </BRow>
               </BCardBody>
             </BCard>

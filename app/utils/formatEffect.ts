@@ -16,4 +16,5 @@ export function formatEffect(text: string): string {
     )
     // literal "\n" (and real newlines) → <br>
     .replace(/\\n|\n/g, '<br>')
+    .replace(/&lt;(\/?)i&gt;/g, '<$1i>')
 }

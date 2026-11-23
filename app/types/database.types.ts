@@ -21,7 +21,7 @@ export type Database = {
           constellation_id: number
           enhanced_effect: string | null
           id: number
-          is_activated: boolean | null
+          is_actived: boolean | null
           is_enhanced: boolean | null
         }
         Insert: {
@@ -30,7 +30,7 @@ export type Database = {
           constellation_id: number
           enhanced_effect?: string | null
           id?: never
-          is_activated?: boolean | null
+          is_actived?: boolean | null
           is_enhanced?: boolean | null
         }
         Update: {
@@ -39,7 +39,7 @@ export type Database = {
           constellation_id?: number
           enhanced_effect?: string | null
           id?: never
-          is_activated?: boolean | null
+          is_actived?: boolean | null
           is_enhanced?: boolean | null
         }
         Relationships: [
@@ -142,21 +142,21 @@ export type Database = {
           build_relic_id: number
           id: number
           property_type_id: number
-          times: number | null
+          times: number
           value: string
         }
         Insert: {
           build_relic_id: number
           id?: never
           property_type_id: number
-          times?: number | null
+          times?: number
           value: string
         }
         Update: {
           build_relic_id?: number
           id?: never
           property_type_id?: number
-          times?: number | null
+          times?: number
           value?: string
         }
         Relationships: [
@@ -187,7 +187,7 @@ export type Database = {
           position: number
           rarity: number
           relic_id: number
-          set_id: number | null
+          set_id: number
         }
         Insert: {
           build_id: number
@@ -199,7 +199,7 @@ export type Database = {
           position: number
           rarity: number
           relic_id: number
-          set_id?: number | null
+          set_id: number
         }
         Update: {
           build_id?: number
@@ -211,7 +211,7 @@ export type Database = {
           position?: number
           rarity?: number
           relic_id?: number
-          set_id?: number | null
+          set_id?: number
         }
         Relationships: [
           {
@@ -297,7 +297,7 @@ export type Database = {
           add_value: number | null
           base_value: number | null
           build_weapon_id: number
-          final_value: number | null
+          final_value: string | null
           id: number
           property_slot: string
           property_type_id: number
@@ -306,7 +306,7 @@ export type Database = {
           add_value?: number | null
           base_value?: number | null
           build_weapon_id: number
-          final_value?: number | null
+          final_value?: string | null
           id?: never
           property_slot: string
           property_type_id: number
@@ -315,7 +315,7 @@ export type Database = {
           add_value?: number | null
           base_value?: number | null
           build_weapon_id?: number
-          final_value?: number | null
+          final_value?: string | null
           id?: never
           property_slot?: string
           property_type_id?: number
@@ -639,24 +639,24 @@ export type Database = {
       constellations: {
         Row: {
           character_id: number
-          effect: string | null
-          icon: string | null
+          effect: string
+          icon: string
           id: number
           name: string
           position: number
         }
         Insert: {
           character_id: number
-          effect?: string | null
-          icon?: string | null
+          effect: string
+          icon: string
           id: number
           name: string
           position: number
         }
         Update: {
           character_id?: number
-          effect?: string | null
-          icon?: string | null
+          effect?: string
+          icon?: string
           id?: number
           name?: string
           position?: number
@@ -788,22 +788,22 @@ export type Database = {
       }
       relics: {
         Row: {
-          icon: string | null
+          icon: string
           id: number
           name: string
-          pos_name: string | null
+          pos_name: string
         }
         Insert: {
-          icon?: string | null
+          icon: string
           id: number
           name: string
-          pos_name?: string | null
+          pos_name: string
         }
         Update: {
-          icon?: string | null
+          icon?: string
           id?: number
           name?: string
-          pos_name?: string | null
+          pos_name?: string
         }
         Relationships: []
       }
@@ -857,24 +857,24 @@ export type Database = {
       skills: {
         Row: {
           character_id: number
-          description: string | null
-          icon: string | null
+          description: string
+          icon: string
           id: number
           name: string
           skill_type_id: number
         }
         Insert: {
           character_id: number
-          description?: string | null
-          icon?: string | null
+          description: string
+          icon: string
           id: number
           name: string
           skill_type_id: number
         }
         Update: {
           character_id?: number
-          description?: string | null
-          icon?: string | null
+          description?: string
+          icon?: string
           id?: number
           name?: string
           skill_type_id?: number

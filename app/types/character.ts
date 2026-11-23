@@ -91,6 +91,54 @@ export interface RecommendRelicProperty {
 }
 
 export interface Relics {
+  build_id: number
+  id: number
+  level: number
+  main_property_type_id: number
+  main_times: number | null
+  main_value: string
+  position: number
+  rarity: number
+  relic_id: number
+  set_id: number
+  main_property: {
+    filter_name: string
+    icon: string | null
+    id: number
+    name: string
+  }
+  relic: {
+    icon: string
+    id: number
+    name: string
+    pos_name: string
+  }
+  relic_set: {
+    id: number
+    name: string
+    affixes: {
+      activation_number: number
+      effect: string
+      id: number
+      set_id: number
+    }[]
+  }
+  substats: {
+    build_relic_id: number
+    id: number
+    property_type_id: number
+    times: number
+    value: string
+    property: {
+      filter_name: string
+      icon: string | null
+      id: number
+      name: string
+    }
+  }[]
+}
+
+export interface JSONRelics {
   id: number
   name: string
   icon: string
@@ -125,7 +173,39 @@ export interface SelectedProperties {
   final: string
 }
 
+export interface BuildSkills {
+  build_id: number
+  can_enhanced: boolean | null
+  enhanced_desc: string | null
+  id: number
+  is_enhanced: boolean | null
+  is_unlock: boolean | null
+  level: number
+  skill_id: number
+  skill: Skills
+}
+
 export interface Skills {
+  character_id: number
+  description: string
+  icon: string
+  id: number
+  name: string
+  skill_type_id: number
+  skill_type: {
+    id: number
+    name: string
+  }
+  affixes: {
+    id: number
+    name: string
+    position: number
+    skill_id: number
+    value: string
+  }[]
+}
+
+export interface JSONSkills {
   skill_id: number
   skill_type: number
   level: number
@@ -193,9 +273,9 @@ export interface Character {
   element_properties: ElementProperties[]
   extra_properties: ExtraProperties[]
   recommend_relic_property: RecommendRelicProperty
-  relics: Relics[]
+  relics: JSONRelics[]
   selected_properties: SelectedProperties[]
-  skills: Skills[]
+  skills: JSONSkills[]
   unlock_tps: boolean
   weapon: WeaponDetails
   weapon_skin: null
