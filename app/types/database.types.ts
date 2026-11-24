@@ -447,21 +447,6 @@ export type Database = {
         }
         Relationships: []
       }
-      character_details_list: {
-        Row: {
-          created_at: string
-          id: number
-        }
-        Insert: {
-          created_at?: string
-          id?: number
-        }
-        Update: {
-          created_at?: string
-          id?: number
-        }
-        Relationships: []
-      }
       character_recommended_substats: {
         Row: {
           character_id: number
@@ -896,6 +881,57 @@ export type Database = {
           },
         ]
       }
+      team_members: {
+        Row: {
+          character_id: number
+          id: number
+          position: number
+          team_id: number
+        }
+        Insert: {
+          character_id: number
+          id?: number
+          position: number
+          team_id: number
+        }
+        Update: {
+          character_id?: number
+          id?: number
+          position?: number
+          team_id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "team_members_character_id_fkey"
+            columns: ["character_id"]
+            isOneToOne: false
+            referencedRelation: "characters"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "team_members_team_id_fkey"
+            columns: ["team_id"]
+            isOneToOne: false
+            referencedRelation: "teams"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      teams: {
+        Row: {
+          id: number
+          name: string
+        }
+        Insert: {
+          id?: number
+          name?: string
+        }
+        Update: {
+          id?: number
+          name?: string
+        }
+        Relationships: []
+      }
       weapons: {
         Row: {
           description: string | null
@@ -982,7 +1018,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      sync_characters: { Args: { payload: Json }; Returns: number }
     }
     Enums: {
       character_rarity: "4" | "5"

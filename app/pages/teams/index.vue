@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Characters, Element as ElementType } from '~/types/character'
+import type { Teams } from '~/types/team'
 
 useHead({
   title: 'Teams'
@@ -8,31 +8,32 @@ useHead({
 const supabase = useSupabaseClient()
 
 const { data: teams } = await useAsyncData('teams', async () => {
-  const { data, error } = await supabase
-    .from('team_members')
-    .select(`
-      *,
+  const [teamsResult, membersResult] = await Promise.all([
+    supabase.from('teams').select('id, name').order('id'),
+    supabase
+      .from('team_members')
+      .select('team_id, position, character:characters(*)')
+      .order('position')
+  ])
 
-      team:teams(*),
+  if (teamsResult.error) throw teamsResult.error
+  if (membersResult.error) throw membersResult.error
 
-      character:characters (*)
-    `)
-    .order('position')
-  if (error) throw error
-  return teams
-})
+  const membersByTeam = new Map<number, Teams['members']>()
+  for (const { team_id, ...member } of membersResult.data) {
+    const members = membersByTeam.get(team_id) ?? []
+    members.push(member)
+    membersByTeam.set(team_id, members)
+  }
 
-// const query = ref('')
+  return teamsResult.data.map(team => ({
+    ...team,
+    members: membersByTeam.get(team.id) ?? []
+  }))
+}, { default: () => [] as Teams[] })
 
-// const filteredCharacters = computed(() => {
-//   const q = query.value.trim().toLowerCase()
-//   if (!q) return characters.value
-//   return characters.value.filter(c =>
-//     c.name.toLowerCase().includes(q) || c.element.toLowerCase().includes(q)
-//   )
-// })
+console.log(teams.value)
 
-// console.log(characters.value)
 </script>
 
 <template>
@@ -40,23 +41,8 @@ const { data: teams } = await useAsyncData('teams', async () => {
     <BContainer class="p-3 py-md-4">
       <section class="mb-4 text-center">
         <h1 class="text-primary font-genshin">Teams</h1>
-        <!--<input
-          v-model="query"
-          type="search"
-          id="search-form"
-          class="form-control mt-3 shadow-none border-secondary font-nunito fw-bold"
-          placeholder="Search by team name"
-          aria-label="Search characters"
-        />-->
       </section>
 
-      <section>
-        <BRow v-if="filteredCharacters.length"  cols="2" cols-md="3" cols-lg="4" cols-xl="5" cols-xxl="6" class="g-3">
-          <BCol v-for="character in filteredCharacters" :key="character.id">
-            <CharacterIndexCard :character="character" />
-          </BCol>
-        </BRow>
-      </section>
     </BContainer>
   </main>
 </template>
