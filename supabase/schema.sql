@@ -38,24 +38,41 @@ create table if not exists wiki_map (
   url text   not null
 );
 
+create table if not exists teams (
+  id int primary key,
+  name text not null default 'Team Standing By'
+);
+
+create table if not exists team_members (
+  id int primary key,
+  team_id int not null,
+  character_id int not null
+);
+
 -- Public read-only access with the anon key. Writes need the service role key (seed script).
 alter table characters        enable row level security;
 alter table character_details enable row level security;
 alter table property_map      enable row level security;
 alter table skill_map         enable row level security;
 alter table wiki_map          enable row level security;
+alter table teams enable row level security;
+alter table team_members enable row level security;
 
 drop policy if exists "public read" on characters;
 drop policy if exists "public read" on character_details;
 drop policy if exists "public read" on property_map;
 drop policy if exists "public read" on skill_map;
 drop policy if exists "public read" on wiki_map;
+drop policy if exists "public read" on teams;
+drop policy if exists "public read" on team_members;
 
 create policy "public read" on characters        for select using (true);
 create policy "public read" on character_details for select using (true);
 create policy "public read" on property_map      for select using (true);
 create policy "public read" on skill_map         for select using (true);
 create policy "public read" on wiki_map          for select using (true);
+create policy "public read" on teams for select using (true);
+create policy "public read" on team_members for select using (true);
 
 alter table character_builds enable row level security;
 alter table build_weapons    enable row level security;
