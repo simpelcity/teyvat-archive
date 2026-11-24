@@ -79,7 +79,7 @@ const substats = computed(() =>
             <span class="small text-muted">{{ s.property.name }}</span>
             <span v-if="s.times > 0" class="artifact-times">{{ s.times }}</span>
           </div>
-          <span class="small text-muted">{{ s.value }}</span>
+          <span class="small text-muted">+{{ s.value }}</span>
         </li>
       </ul>
     </BCardBody>

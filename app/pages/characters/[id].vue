@@ -114,7 +114,7 @@ const activeConstellationIndex = ref(0)
 
 const properties = character.build_properties
 
-const selectedProperties = properties.filter(p => p.category === "selected")
+const selectedProperties = properties.filter(p => p.category === "selected").sort((a, b) => a.id - b.id)
 
 const skills =computed(() =>
   [...character.build_skills].sort((a, b) => a.id - b.id)
