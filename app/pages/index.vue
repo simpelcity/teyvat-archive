@@ -39,6 +39,7 @@ const { data: characters } = await useAsyncData('characters', async () => {
         affix_level
       )
     `)
+    .order('id')
   if (error) throw error
   return data.map((build): Characters => {
     const bw = build.build_weapons
