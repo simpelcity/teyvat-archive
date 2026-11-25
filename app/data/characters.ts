@@ -1,6 +1,6 @@
-import type { Characters } from "~/types/character"
+import type { JSONCharacter } from "~/types/character"
 
-export const characters: Characters[] = [
+export const characters: JSONCharacter[] = [
   {
     "id": 10000143,
     "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31686/88e4654b892a5ada8d0fd21301c07518.png",

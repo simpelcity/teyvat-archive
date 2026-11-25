@@ -391,6 +391,10 @@ export type Database = {
           level: number
           updated_at: string | null
           user_id: string | null
+          weapon_affix_level: number | null
+          weapon_id: number | null
+          weapon_level: number | null
+          weapon_promote_level: number | null
         }
         Insert: {
           active_constellation_num?: number
@@ -403,6 +407,10 @@ export type Database = {
           level: number
           updated_at?: string | null
           user_id?: string | null
+          weapon_affix_level?: number | null
+          weapon_id?: number | null
+          weapon_level?: number | null
+          weapon_promote_level?: number | null
         }
         Update: {
           active_constellation_num?: number
@@ -415,6 +423,10 @@ export type Database = {
           level?: number
           updated_at?: string | null
           user_id?: string | null
+          weapon_affix_level?: number | null
+          weapon_id?: number | null
+          weapon_level?: number | null
+          weapon_promote_level?: number | null
         }
         Relationships: [
           {
@@ -422,6 +434,13 @@ export type Database = {
             columns: ["character_id"]
             isOneToOne: false
             referencedRelation: "characters"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "character_builds_weapon_id_fkey"
+            columns: ["weapon_id"]
+            isOneToOne: false
+            referencedRelation: "weapons"
             referencedColumns: ["id"]
           },
         ]
@@ -934,7 +953,7 @@ export type Database = {
       }
       weapons: {
         Row: {
-          description: string | null
+          description: string
           icon: string
           id: number
           name: string
@@ -943,7 +962,7 @@ export type Database = {
           type_name: string
         }
         Insert: {
-          description?: string | null
+          description: string
           icon: string
           id: number
           name: string
@@ -952,7 +971,7 @@ export type Database = {
           type_name: string
         }
         Update: {
-          description?: string | null
+          description?: string
           icon?: string
           id?: number
           name?: string

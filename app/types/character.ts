@@ -249,7 +249,7 @@ export interface WeaponDetails {
   } | null
 }
 
-export interface Characters {
+export interface Character {
   actived_constellation_num: number
   element: Element
   fetter: number
@@ -265,7 +265,23 @@ export interface Characters {
   weapon_type: number
 }
 
-export interface Character {
+export interface JSONCharacter {
+  actived_constellation_num: number
+  element: Element
+  fetter: number
+  icon: string
+  id: number
+  image: string
+  is_chosen: boolean
+  level: number
+  name: string
+  rarity: 4 | 5
+  side_icon: string
+  weapon: Weapon | null
+  weapon_type: number
+}
+
+export interface JSONCharacterDetails {
   base: BaseCharacter
   base_properties: BaseProperties[]
   constellations: Constellations[]

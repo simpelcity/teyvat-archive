@@ -1,0 +1,169 @@
+@use '../variables' as *;
+
+.team-search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+
+  .form-control::placeholder {
+    color: $secondary;
+  }
+}
+
+.team-search__count {
+  flex-shrink: 0;
+  color: $secondary;
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+
+  strong {
+    color: $primary;
+  }
+}
+
+.team-list {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0.75rem 1.125rem;
+  color: $body-color;
+  text-decoration: none;
+  background: $card-bg;
+  border: 1px solid $card-border-color;
+  border-radius: 8px;
+  transition: border-color 0.2s ease-out;
+
+  &:hover,
+  &:focus-visible {
+    color: $body-color;
+    border-color: $primary;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary;
+    outline-offset: 3px;
+  }
+}
+
+.team-row__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.team-row__name {
+  margin: 0 0 0.5rem;
+  font-size: 1.375rem;
+  line-height: 1.2;
+}
+
+.team-row__elements {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.team-row__element {
+  width: 18px;
+  height: 18px;
+}
+
+.team-row__lineup {
+  display: grid;
+  grid-template-columns: repeat(4, 118px);
+  gap: 0.625rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team-row__member {
+  min-width: 0;
+  text-align: center;
+}
+
+.team-row__portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 118 / 96;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+// Signature move: the party "readies" left to right
+.team-row:hover,
+.team-row:focus-visible {
+  .team-row__portrait {
+    transform: translateY(-4px);
+  }
+
+  .team-row__member:nth-child(2) .team-row__portrait { transition-delay: 40ms; }
+  .team-row__member:nth-child(3) .team-row__portrait { transition-delay: 80ms; }
+  .team-row__member:nth-child(4) .team-row__portrait { transition-delay: 120ms; }
+}
+
+.team-row__member-name {
+  display: block;
+  margin-top: 0.25rem;
+  overflow: hidden;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.team-empty {
+  padding: 3rem 1rem;
+  color: $secondary;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .team-search {
+    gap: 0.75rem;
+  }
+
+  .team-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .team-row__name {
+    font-size: 1.25rem;
+  }
+
+  .team-row__lineup {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  // "Cryo Traveler" wraps instead of being cut off
+  .team-row__member-name {
+    font-size: 0.75rem;
+    line-height: 1.15;
+    white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-row__portrait {
+    transition: none;
+  }
+
+  .team-row:hover .team-row__portrait,
+  .team-row:focus-visible .team-row__portrait {
+    transform: none;
+  }
+}

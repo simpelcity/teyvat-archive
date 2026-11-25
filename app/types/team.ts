@@ -4,10 +4,10 @@ type Character = Database['public']['Tables']['characters']['Row']
 
 export interface TeamMember {
   position: number
-  character: Character | null
+  character: Character
 }
 
-export interface Teams {
+export interface Team {
   id: number
   name: string
   members: TeamMember[]

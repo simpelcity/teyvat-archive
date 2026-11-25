@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Characters, Element as ElementType } from '~/types/character'
+import type { Character, Element as ElementType } from '~/types/character'
 
 useHead({
   title: 'Home'
@@ -41,7 +41,7 @@ const { data: characters } = await useAsyncData('characters', async () => {
     `)
     .order('id')
   if (error) throw error
-  return data.map((build): Characters => {
+  return data.map((build): Character => {
     const bw = build.build_weapons
 
     return {
@@ -71,7 +71,7 @@ const { data: characters } = await useAsyncData('characters', async () => {
       },
     }
   })
-}, { default: () => [] as Characters[] })
+}, { default: () => [] as Character[] })
 
 const query = ref('')
 
