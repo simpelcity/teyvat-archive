@@ -7,9 +7,9 @@ const props = defineProps<{ team: Team }>()
 
 const members = computed(() =>
   props.team.members.map(({ character }) => {
-    const { color, icon } = getElementColors(character.element as Element)
+    const { color, flat } = getElementColors(character.element as Element)
     return {
-      icon,
+      flat,
       character,
       displayName: character.name.toLowerCase() === 'traveler' ? `${character.element} Traveler` : character.name,
       color,
@@ -20,31 +20,34 @@ const members = computed(() =>
 
 const elements = computed(() => members.value.map(m => m.character.element).join(', '))
 
-const slug = computed(() => props.team.name.toLowerCase().replace(/ /g, '-'))
+const slug = computed(() => props.team.name.toLowerCase().replace(/ /g, '_'))
 </script>
 
 <template>
-  <NuxtLink :to="`/teams/${slug}`" class="team-row">
-    <div class="team-row__info">
-      <h2 class="team-row__name font-genshin">{{ team.name }}</h2>
-      <div class="team-row__elements" role="img" :aria-label="`Elements: ${elements}`">
-        <img v-for="m in members" :key="m.character.id" :src="m.icon" alt="" width="18" height="18" class="team-row__element" />
-      </div>
-    </div>
-
-    <ul class="team-row__lineup">
-      <li v-for="m in members" :key="m.character.id" class="team-row__member">
-        <img
-          :src="m.character.icon"
-          alt=""
-          width="118"
-          height="96"
-          loading="lazy"
-          class="team-row__portrait"
-          :style="{ background: m.gradient }"
-        />
-        <span class="team-row__member-name">{{ m.displayName }}</span>
-      </li>
-    </ul>
+  <NuxtLink :to="`/teams/${slug}`" class="team-row text-decoration-none">
+    <BCard class="" no-body>
+      <BCardBody class="d-flex align-items-center gap-4 w-100">
+        <div class="team-row__info flex-grow-1 flex-shrink-1">
+          <h2 class="team-row__name font-genshin fs-4">{{ team.name }}</h2>
+          <div class="team-row__elements d-flex gap-1" role="img" :aria-label="`Elements: ${elements}`">
+            <img v-for="m in members" :key="m.character.id" :src="m.flat" :style="{ borderColor: `${m.color} !important`, padding: '1px' }" alt="" width="30" height="30" class="team-row__element rounded-circle border border-2 bg-dark" />
+          </div>
+        </div>
+    
+        <ul class="team-row__lineup list-unstyled m-0">
+          <li v-for="m in members" :key="m.character.id" class="team-row__member text-center">
+            <div class="member-side_icon-wrap rounded-circle border border-2" :style="{ background: `${getElementColors(m.character.element as Element).bg}`, boxShadow: `0px 0px 6px 3px ${getElementColors(m.character.element as Element).color}` }">
+              <img
+                :src="m.character.side_icon"
+                :alt="`${m.displayName} side icon`"
+                loading="lazy"
+                class="team-row__portrait side-icon"
+              />
+            </div>
+            <span class="team-row__member-name">{{ m.displayName }}</span>
+          </li>
+        </ul>
+      </BCardBody>
+    </BCard>
   </NuxtLink>
 </template>

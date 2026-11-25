@@ -7,6 +7,14 @@ import IconGeo from '~/assets/images/elements/Icon_Geo.png'
 import IconHydro from '~/assets/images/elements/Icon_Hydro.png'
 import IconPyro from '~/assets/images/elements/Icon_Pyro.png'
 
+import IconAnemoFlat from '~/assets/images/elements/Icon_Anemo_Flat.png'
+import IconCyroFlat from '~/assets/images/elements/Icon_Cryo_Flat.png'
+import IconDendroFlat from '~/assets/images/elements/Icon_Dendro_Flat.png'
+import IconElectroFlat from '~/assets/images/elements/Icon_Electro_Flat.png'
+import IconGeoFlat from '~/assets/images/elements/Icon_Geo_Flat.png'
+import IconHydroFlat from '~/assets/images/elements/Icon_Hydro_Flat.png'
+import IconPyroFlat from '~/assets/images/elements/Icon_Pyro_Flat.png'
+
 const elementBg: Record<Element, string> = {
   "Anemo": "#00bc7d90",
   "Cryo": "#00d3f390",
@@ -37,9 +45,20 @@ const elementIcon: Record<Element, string> = {
   "Pyro": IconPyro
 }
 
+const elementIconFlat: Record<Element, string> = {
+  "Anemo": IconAnemoFlat,
+  "Cryo": IconCyroFlat,
+  "Dendro": IconDendroFlat,
+  "Electro": IconElectroFlat,
+  "Geo": IconGeoFlat,
+  "Hydro": IconHydroFlat,
+  "Pyro": IconPyroFlat
+}
+
 export function getElementColors(element: Element) {
   const bg = elementBg[element]
   const color = elementColor[element]
   const icon = elementIcon[element]
-  return { bg, color, icon }
+  const flat = elementIconFlat[element]
+  return { bg, color, icon, flat }
 }

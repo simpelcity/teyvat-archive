@@ -60,7 +60,7 @@ console.log('Teams:', teams.value)
       <p v-if="error" class="team-empty">Couldn't load teams. Check the Supabase connection and reload.</p>
 
       <section v-else-if="teams.length" aria-label="Teams">
-        <div class="team-search">
+        <div class="team-search d-flex align-items-center gap-3 mb-4">
           <label for="team-search" class="visually-hidden">Search teams</label>
           <input
             id="team-search"
@@ -69,13 +69,13 @@ console.log('Teams:', teams.value)
             class="form-control shadow-none border-secondary font-nunito fw-bold"
             placeholder="Search by team or character…"
           />
-          <p class="team-search__count mb-0" aria-live="polite">
-            <template v-if="query.trim()"><strong>{{ filteredTeams.length }}</strong> of {{ teams.length }} {{ teams.length === 1 ? 'team' : 'teams' }}</template>
-            <template v-else><strong>{{ teams.length }}</strong> {{ teams.length === 1 ? 'team' : 'teams' }}</template>
+          <p class="team-search__count mb-0 flex-shrink-0 text-secondary small" aria-live="polite">
+            <template v-if="query.trim()"><strong class="text-primary">{{ filteredTeams.length }}</strong> of {{ teams.length }} {{ teams.length === 1 ? 'team' : 'teams' }}</template>
+            <template v-else><strong class="text-primary">{{ teams.length }}</strong> {{ teams.length === 1 ? 'team' : 'teams' }}</template>
           </p>
         </div>
 
-        <ul v-if="filteredTeams.length" class="team-list">
+        <ul v-if="filteredTeams.length" class="team-list d-grid gap-3 p-0 m-0 list-unstyled">
           <li v-for="team in filteredTeams" :key="team.id">
             <TeamIndexCard :team="team" />
           </li>
