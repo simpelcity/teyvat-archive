@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { Team } from '~/types/team'
 import type { Element } from '~/types/character'
-import { getElementColors } from '~/constants/elements'
-import { Star, MoveLeft } from '@lucide/vue'
+import { getElementColors, getElementIcons, getTeamBonus } from '~/constants/elements'
+import { Star, MoveLeft, Check, Ban, Diamond } from '@lucide/vue'
 import Rarity6 from '~/assets/images/rarity_bg/rarity_6.png'
 
 const route = useRoute()
@@ -24,14 +24,10 @@ const { data: team } = await useAsyncData(`team-${route.params.id}`, async () =>
     .ilike('name', name)
     .order('position', { referencedTable: 'team_members' })
     .maybeSingle()
-  
-  console.log(data)
 
   if (error) throw error
   return data as Team | null
 })
-
-console.log(team.value)
 
 if (!team.value) {
   throw createError({ statusCode: 404, statusMessage: 'Team not found', fatal: true })
@@ -39,7 +35,15 @@ if (!team.value) {
 
 useHead({ title: team.value.name })
 
-const displayName = team.value.members.map(m => m.character.name.toLowerCase() === 'traveler' ? `test` : m.character.name)
+const elementCounts: Elements = Object.entries(
+  Object.groupBy(team.value.members, m => m.character.element)
+).map(([name, members]) => ({ name, amount: members!.length}))
+
+const teamBonus = getTeamBonus(elementCounts, team.value)
+
+const elementsArray: Element[] = ["Pyro", "Hydro", "Electro", "Cryo", "Anemo", "Geo", "Dendro"]
+
+console.log('elements:', elementCounts)
 </script>
 
 <template>
@@ -53,10 +57,12 @@ const displayName = team.value.members.map(m => m.character.name.toLowerCase() =
         <span class="back-btn-text">Back to Teams</span>
       </NuxtLink>
 
-      <section class="d-flex flex-column text-center">
-        <div class="border-bottom mb-4">
-          <h1 class="">{{ team.name }}</h1>
-        </div>
+      <div class="border-bottom mb-4 text-center">
+        <h1>{{ team.name }}</h1>
+      </div>
+
+      <section class="mb-4 text-center" aria-labelledby="members-heading">
+        <h2 id="members-heading">Members</h2>
 
         <BRow cols="4">
           <BCol v-for="member in team.members" :key="member.character.id">
@@ -64,7 +70,7 @@ const displayName = team.value.members.map(m => m.character.name.toLowerCase() =
               <div class="d-flex align-items-center justify-content-center gap-1 py-1">
                 <span class="fs-5">{{ member.character.name.toLowerCase() === 'traveler' ? `${member.character.element} Traveler` : member.character.name }}</span>
                 <img
-                  :src="getElementColors(member.character.element as Element).icon"
+                  :src="getElementIcons(member.character.element as Element).image"
                   width="25"
                   height="25"
                 />
@@ -88,10 +94,49 @@ const displayName = team.value.members.map(m => m.character.name.toLowerCase() =
             </BCard>
           </BCol>
         </BRow>
+      </section>
 
-        <div class="mt-4">
-          <span class="h4">Team Bonus:</span>
-        </div>
+      <section aria-labelledby="bonus-heading">
+        <h2 id="bonus-heading" class="text-center">Team Bonus</h2>
+
+        <BRow>
+          <BCol cols="4" class="elements-circle">
+            <div class="position-relative h-100">
+              <!--<div v-for="element in elementCounts">
+                <img
+                  :src="getElementIcons(element.name as Element).icon"
+                  :alt="`${element.name} icon`"
+                  width="30"
+                  height="30"
+                  class=""
+                />
+              </div>-->
+              <img v-for="element in elementsArray" :src="getElementIcons(element).icon" width="50" height="50" :class="`border border-3 rounded-circle ${element.toLowerCase()}-icon element-icon`" :style="{ background: `${getElementColors(element).bg2}`, borderColor: `${getElementColors(element).color} !important`, padding: '2px' }" />
+            </div>
+          </BCol>
+          <BCol cols="8">
+            <div class="d-flex flex-column ms-5">
+              <div v-for="bonus in teamBonus">
+                <div :class="`d-flex bg-dark-subtle justify-content-between fs-5 py-1 px-3 rounded-1 ${bonus.active ? '' : 'opacity-25'}`">
+                  <div v-if="bonus.element !== 'any'" class="d-flex align-items-center column-gap-1">
+                    <img :src="getElementIcons(bonus.element as Element).icon" width="25" height="25" class="border border-2 rounded-circle" :style="{ background: `${getElementColors(bonus.element as Element).bg2}`, borderColor: `${getElementColors(bonus.element as Element).color} !important` }" />
+                    <img :src="getElementIcons(bonus.element as Element).icon" width="25" height="25" class="border border-2 rounded-circle" :style="{ background: `${getElementColors(bonus.element as Element).bg2}`, borderColor: `${getElementColors(bonus.element as Element).color} !important` }" />
+                  </div>
+                  <span v-else :class="`text-primary`">Any 4 Unique Elements</span>
+
+                  <span v-if="bonus.active">Activated <Check class="text-success" :size="30" /></span>
+                  <span v-else><Ban class="mirror text-secondary" /></span>
+                </div>
+
+                <div class="p-3">
+                  <h5 :class="`${bonus.active ? 'text-primary' : 'text-secondary opacity-50'}`"><Diamond class="" :fill="bonus.active ? '#d3bc8e' : 'transparent'" :size="10" /> {{ bonus.name }}</h5>
+
+                  <p :class="`${bonus.active ? '' : 'text-secondary opacity-50'}`">{{ bonus.description }}</p>
+                </div>
+              </div>
+            </div>
+          </BCol>
+        </BRow>
       </section>
     </BContainer>
   </main>

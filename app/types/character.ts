@@ -14,6 +14,11 @@ export type WeaponType =
   | 'Bow'
   | 'Catalyst'
 
+export type Elements = {
+  name: Element | string
+  amount: number
+}[]
+
 export interface Weapon {
   affix_level: number
   icon: string

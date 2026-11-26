@@ -48,6 +48,54 @@
   line-height: 1.15;
 }
 
+// .team-row__element {
+//   padding: 1px;
+// }
+
+.elements-circle {
+  max-height: 350px;
+}
+
+.element-icon {
+  position: absolute;
+}
+
+.pyro-icon {
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.anemo-icon {
+  top: 20%;
+  right: 8%;
+}
+
+.electro-icon {
+  bottom: 30%;
+  right: 0;
+}
+
+.dendro-icon {
+  bottom: 0;
+  right: 25%;
+}
+
+.cryo-icon {
+  bottom: 0;
+  left: 25%;
+}
+
+.geo-icon {
+  bottom: 30%;
+  left: 0;
+}
+
+.hydro-icon {
+  top: 20%;
+  left: 8%;
+}
+
 @media (max-width: 767.98px) {
   .team-row .card-body {
     flex-direction: column;

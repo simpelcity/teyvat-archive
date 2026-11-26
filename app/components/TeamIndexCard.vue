@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import type { Team } from '~/types/team'
 import type { Element } from '~/types/character'
-import { getElementColors } from '~/constants/elements'
+import { getElementColors, getElementIcons } from '~/constants/elements'
 
 const props = defineProps<{ team: Team }>()
 
 const members = computed(() =>
   props.team.members.map(({ character }) => {
-    const { color, flat } = getElementColors(character.element as Element)
+    const { color } = getElementColors(character.element as Element)
+    const { image } = getElementIcons(character.element as Element)
     return {
-      flat,
+      image,
       character,
       displayName: character.name.toLowerCase() === 'traveler' ? `${character.element} Traveler` : character.name,
       color,
@@ -30,7 +31,7 @@ const slug = computed(() => props.team.name.toLowerCase().replace(/ /g, '_'))
         <div class="team-row__info flex-grow-1 flex-shrink-1">
           <h2 class="team-row__name font-genshin fs-4">{{ team.name }}</h2>
           <div class="team-row__elements d-flex gap-1" role="img" :aria-label="`Elements: ${elements}`">
-            <img v-for="m in members" :key="m.character.id" :src="m.flat" :style="{ borderColor: `${m.color} !important`, padding: '1px' }" alt="" width="30" height="30" class="team-row__element rounded-circle border border-2 bg-dark" />
+            <img v-for="m in members" :key="m.character.id" :src="m.image" :style="{ borderColor: `${m.color} !important`, padding: '3px' }" alt="" width="30" height="30" class="team-row__element rounded-circle border border-2 bg-dark" />
           </div>
         </div>
     

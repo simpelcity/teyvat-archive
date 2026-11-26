@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getElementColors } from '~/constants/elements'
+import { getElementColors, getElementIcons } from '~/constants/elements'
 import { getRarityBg } from '~/constants/weapons'
 import { useLookupsStore } from '~/stores/lookups'
 import type { BaseCharacter, BuildSkills, Element } from '~/types/character'
@@ -231,7 +231,7 @@ watch(selectedSkill, () => { skillTabIndex.value = 0 })
 
           <BCol md="8">
             <div class="d-flex align-items-center gap-2">
-              <img class="" width="50" height="50" :src="getElementColors(character.character.element as Element).icon" />
+              <img class="" width="50" height="50" :src="getElementIcons(character.character.element as Element).image" />
               <div>
                 <div class="d-flex align-items-center gap-2">
                   <h4 class="font-genshin mb-0">{{ displayName(character) }}</h4>

@@ -6,6 +6,8 @@ useHead({
 
 <template>
   <BApp>
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </BApp>
 </template>
